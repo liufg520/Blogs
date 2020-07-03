@@ -87,10 +87,10 @@ deploy:
 # backup
 backup:
   type: git
-  message: backup my blog of https://liufg520:Liufg919521!@github.com/liufg520.github.io/
+  message: backup my blog of github and coding
   repository:
-     github: git@github.com:liufg520/liufg520.github.io.git,backup
-     coding: git@e.coding.net:liufg/liufg/liufg.git,backup
+    github: https://liufg520:Liufg919521!@github.com/liufg520.github.io.git,backup
+    coding: git@e.coding.net:liufg/liufg/liufg.git,backup
 #RSS
 feed:
   type: atom
