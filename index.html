@@ -228,127 +228,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/02/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/07/02/test/" itemprop="url">test</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-02T23:21:45+08:00">
-                2020-07-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>一.Hexo搭建流程<br>1.下载安装Termux并注册GitHub<br>2.更换镜像源并安装Termux常用工具<br>3.安装配置Hexo主题等特性<br>4.将Hexo部署到GitHubPages<br>5.将GitHub地址解析到个人域名<br>6.Hexo如何发表一篇文章<br>二.Hexo实施步骤<br>1.下载安装Termux并注册GitHub<br>Termux下载地址：<a href="https://www.coolapk.com/apk/com.termux" target="_blank" rel="noopener">https://www.coolapk.com/apk/com.termux</a><br>GitHub注册地址：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a><br>2.更换国内源为清华源<br>sed -i ‘s@^(deb.<em>stable main)$@#\1\ndeb <a href="https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24</a> stable main@’ $PREFIX/etc/apt/sources.list<br>sed -i ‘s@^(deb.</em>games stable)$@#\1\ndeb <a href="https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24</a> games stable@’ $PREFIX/etc/apt/sources.list.d/game.list<br>sed -i ‘s@^(deb.*science stable)$@#\1\ndeb <a href="https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24</a> science stable@’ $PREFIX/etc/apt/sources.list.d/science.list<br>apt update &amp;&amp; apt upgrade<br>3.安装常用基础工具<br>pkg install vim curl wget git tree openssh -y<br>4.下载安装Nodejs<br>      pkg install nodejs-lts 安装稳定版本<br>  node -v 查看node版本     npm -v  查看npm版本<br>5.安装并初始化Hexo<br>npm install hexo-cli -g  使用npm安装hexo<br>hexo -v  查看版本<br>PS：安装完成后你会看到有WARN，不用担心，不影响使用。<br>mkdir hexo 创建一个目录<br>cd hexo    进入hexo目录<br>hexo init  将hexo初始化到hexo目录下<br>6.生成静态文件并启动Hexo<br>hexo g 生成静态网页存放于public目录下<br>hexo s 启动hexo  默认端口4000<br>7.可以修改Hexo默认端口号<br>vi ~/hexo/node_modules/hexo-server/index.js<br>找到port字段修改默认端口为8081，如下：<br>hexo.config.server = Object.assign({                       port: 8081,<br>PS：这里我修改过默认端口所以访问<a href="http://localhost:8081，如果能够正常访问，则说明">http://localhost:8081，如果能够正常访问，则说明</a> Hexo 本地博客已经搭建起来了，将hexo关联到github就可以在外网访问您的博客了。<br>8.配置next主题、语言、菜单、侧栏等特性<br>参考官网：<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a><br>9.配置Hexo部署到GitHubPages<br>1)注册GitHub 注意用户密码不要包含@字符，后面会有说明<br>2)登录GitHub创建仓库 名字必须为：&lt;Github账号名称&gt;.github.io  格式如下：<br>我之前创建过，所以提示这个名称已存在。如下图：<br>content://com.bxs.note.fileprovider/external_files/%E9%85%B7%E8%AE%B0%E4%BA%8B/Cache/.img/m_1593691808553.kjs<br>3)安装hexo-deployer-git插件<br>npm install hexo-deployer-git –save<br>注意：在你初始化hexo目录下执行此命令安装插件<br>4)创建ssh key，密码为空<br>ssh-keygen -t rsa -C “邮箱地址”<br>注意：输入以上命令直接回车3下密码为空，邮箱地址是注册登录github使用的邮箱地址，改成你自己的邮箱即可。<br>5)把生成的公钥添加到GitHub<br>cat .ssh/id_rsa.pub  查看复制生成的公钥文件内容<br>6)在GitHub设置页面添加ssh key粘贴公钥内容<br>content://com.bxs.note.fileprovider/external_files/%E9%85%B7%E8%AE%B0%E4%BA%8B/Cache/.img/m_1593696754827.kjs<br>7)测试ssh key是否添加成功<br>ssh -T <a href="mailto:git@github.com">git@github.com</a><br>content://com.bxs.note.fileprovider/external_files/%E9%85%B7%E8%AE%B0%E4%BA%8B/Cache/.img/m_1593696953571.kjs<br>8)配置 Deployment参数<br>vi ~/hexo/_config.yml   这是站点配置文件<br>注意：https后面跟的是github的用户名和密码截止到@符号之前,所以密码中不要包含@符号 否则会报错。</p>
-<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repo: <a href="https://liufg520:*****@github.com/liufg520/liufg520.github.io.git" target="_blank" rel="noopener">https://liufg520:*****@github.com/liufg520/liufg520.github.io.git</a><br>  branch: master<br>9)配置个人信息告诉github你是谁来进行权限处理<br>git config –global user.email “<a href="mailto:9@qq.com">9@qq.com</a>“<br>git config –global user.name “liufg520”<br>10)测试Hexo是否推送到GithubPages<br>hexo clean  清除旧public目录文件<br>hexo g      生成新public目录文件<br>hexo d      部署推送到github<br>content://com.bxs.note.fileprovider/external_files/%E9%85%B7%E8%AE%B0%E4%BA%8B/Cache/.img/m_1593699554688.kjs<br>如果返回以上信息表示部署推送成功，使用浏览器访问<a href="https://liufg520.github.io就OK了！！！" target="_blank" rel="noopener">https://liufg520.github.io就OK了！！！</a><br>10.配置github地址解析到个人域名<br>1)申请个人域名 PS：可免费使用一年<br><a href="http://www.freenom.com/zh/index.html" target="_blank" rel="noopener">http://www.freenom.com/zh/index.html</a><br>2.在域名管理配置域名解析添加CNAME类型<br>content://com.bxs.note.fileprovider/external_files/%E9%85%B7%E8%AE%B0%E4%BA%8B/Cache/.img/m_1593701001499.kjs<br>PS：此时你可以使用你的个人域名来访问你的博客了，是不是很开心呢！<br>11.Hexo如何发布一篇文章</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/02/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -514,7 +393,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
