@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ちいの小本
+title: 🌸ちいの小本
 subtitle:
 description: 介里是萌萌的二次元群喵~可卖腐可卖基可卖萌可中二~米娜要好好相处~在二次元创造一个美好的大家庭~⊙▽⊙
 keywords: 
@@ -89,7 +89,7 @@ backup:
   type: git
   message: backup my blog of github and coding
   repository:
-    github: git@github.com:liufg520:Liufg919521!/liufg520.github.io.git,backup
+    github: git@github.com:liufg520/liufg520.github.io.git,backup
     coding: git@e.coding.net:liufg/liufg/liufg.git,backup
 #RSS
 feed:
