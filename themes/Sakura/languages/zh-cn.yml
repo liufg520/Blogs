@@ -42,14 +42,27 @@ insight:
 
 #category
 技术:
-    zh: 野生技术协会
-    en: Geek – Only for Love
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg
+    zh: 网络安全
+    en: Network Security
+    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/Coding.jpg
 生活:
-    zh: 生活
-    en: live
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg
-
+    zh: 生活趣事
+    en: Interesting events in life
+    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/iimg/banner/Life.jpg
+书单:
+    zh: 书籍阅读
+    en: Book reading
+    img: https://cdn.jsdelivr.net/gh/liufg520/Sakura CDN/img/banner/Reading.jpg
+绘画:
+    zh: 绘画作品
+    en: painting                        
+    img: https://cdn.jsdelivr.net/gh/liufg520/Sakura CDN/img/banner/Painting.jpg
+歌单:
+    zh: 舒心音乐                                    
+    en: Comfortable music                          
+    img: https://cdn.jsdelivr.net/gh/liufg520/Sakura CDN/img/banner/Music.jpg
 #tag
-悦读:
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
+随想: 
+    zh: 灵感小记                              
+    en: Comfortable music
+    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/Inspiration.jpg
