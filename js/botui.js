@@ -27,11 +27,11 @@ function bot_ui_ini() {
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "ようこそ～私の世界へ【欢迎来到我的世界】<( ‵□′)>豪横"
+            content: "ようこそ～私の世界【欢迎来到我的世界】(๑•॒̀ ູ॒•́๑)啦啦啦"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
-                content: "哈？人家这么可爱当然是男孩子啦！   ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄"
+                content: "哈？人家这么可爱当然是男孩子啦!害羞〃∀〃"
             }).then(function () {
                 botui.action.button({
                     delay: 1600,
@@ -74,11 +74,11 @@ function bot_ui_ini() {
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
-                        content: "为了自己喜欢的东西让我们一起努力吧！加油 (ง •̀o•́)ง (ง •̀o•́)งがんばれ!!!"
+                        content: "让我们一起加油(ง •̀o•́)ง がんばれ!!!"
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
-                            content: "喜欢听日语音乐发呆或思考，音乐真的能让人静下心来♪⸜(๑ ॑꒳ ॑๑)⸝♪✰"
+                            content: "喜欢听日语音乐发呆或思考，音乐能让人静下心来♪⸜(๑ ॑꒳ ॑๑)⸝♪✰"
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
@@ -127,7 +127,7 @@ function bot_ui_ini() {
             }).then(function () {
                 botui.message.add({
                     delay: 1100,
-                    content: "而且我喜欢本子,你懂吧？(´͈ꄃ `͈"
+                    content: "而且我喜欢本子,你懂吧?(́ಢ.౪ಢ‵)哟哟哟,你不会也喜欢吧？(PS：纯属开玩笑) "
                 }).then(function () {
                     botui.action.button({
                         delay: 1500,
