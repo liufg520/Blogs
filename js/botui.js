@@ -22,16 +22,16 @@ function bot_ui_ini() {
     var botui = new BotUI("hello-mashiro")
     botui.message.add({
         delay: 800,
-        content: "こんにちは【您好】ฅ ฅ我的爪爪"
+        content: "こんにちは【您好】ฅ ฅ"
 
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "ようこそ～私の世界【欢迎来到我的世界】(◕ˇ∀ˇ◕)啦啦啦"
+            content: "ようこそ～私の世界【欢迎来到我的世界】(◕ˇ∀ˇ◕)啦啦啦!"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
-                content: "哈？人家这么可爱当然是男孩子啦!害羞〃∀〃"
+                content: "人家这么可爱当然是男孩子啦!害羞〃∀〃"
             }).then(function () {
                 botui.action.button({
                     delay: 1600,
@@ -74,19 +74,19 @@ function bot_ui_ini() {
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
-                        content: "让我们一起加油(ง •̀o•́)ง がんばれ!!!"
+                        content: "让我们一起加油吧!【がんば】(。•﹃ •。)啊吧啊吧，学习使我快乐。"
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
-                            content: "喜欢听日语音乐发呆或思考，音乐能让人静下心来♪⸜(๑ ॑꒳ ॑๑)⸝♪✰"
+                            content: "喜欢听日语音乐发呆或思考，音乐能让人静下心来。♪⸜(๑ ॑꒳ ॑๑)⸝♪✰"
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
-                                content: "我喜欢的经典语录：隐约雷鸣 阴霾天空 但盼风雨来 能留你在此。隐约雷鸣 阴霾天空 即使天无雨 我亦留此地"
+                                content: "我喜欢的经典语录：隐约雷鸣 阴霾天空 但盼风雨来 能留你在此。隐约雷鸣 阴霾天空 即使天无雨 我亦留此地。"
                             }).then(function () {
                                 botui.message.add({
                                     delay: 1800,
-                                    content: "喜欢画画，希望有一天能够被称为画师|•'-'•)و✧"
+                                    content: "喜欢画画，希望有一天能够被称为画师•'-'•)و✧"
                                 }).then(function () {
                                     botui.action.button({
                                         delay: 1100,
@@ -107,7 +107,7 @@ function bot_ui_ini() {
         thirdpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "希望自己能像《人形电脑天使心》的女主角一样遇到“专属于自己的人”"
+                content: "希望自己能像《人形电脑天使心》的女主角一样遇到“专属于自己的人”。"
             }).then(function () {
                 botui.action.button({
                     delay: 1500,
@@ -123,7 +123,7 @@ function bot_ui_ini() {
         fourthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "因为这里是我的世界啊，当然是我的小本本啦(˘͈ᵕ ˘͈❀)"
+                content: "因为这里是我的世界啊，当然是我的小本本啦!(˘͈ᵕ ˘͈❀)"
             }).then(function () {
                 botui.message.add({
                     delay: 1100,
@@ -144,7 +144,7 @@ function bot_ui_ini() {
         fifthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "emmm，注册域名的时候想名字真的很纠结啊π_π，突然跳出伊莉雅喊basaka的画面，感觉挺顺口的就用了"
+                content: "emmm，注册域名的时候想名字真的很纠结啊π_π，突然跳出伊莉雅喊basaka的画面，感觉挺顺口的就用了。"
             }).then(function () {
                 botui.message.add({
                     delay: 1600,
