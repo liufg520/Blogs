@@ -78,11 +78,11 @@ function bot_ui_ini() {
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
-                            content: "喜欢听动漫日语音乐发呆或思考，音乐真的能让人静下心来♪⸜(๑ ॑꒳ ॑๑)⸝♪✰"
+                            content: "喜欢听日语音乐发呆或思考，音乐真的能让人静下心来♪⸜(๑ ॑꒳ ॑๑)⸝♪✰"
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
-                                content: ""
+                                content: "我喜欢的经典语录：隐约雷鸣 阴霾天空 但盼风雨来 能留你在此。隐约雷鸣 阴霾天空 即使天无雨 我亦留此地"
                             }).then(function () {
                                 botui.message.add({
                                     delay: 1800,
