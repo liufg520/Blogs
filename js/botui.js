@@ -74,7 +74,7 @@ function bot_ui_ini() {
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
-                        content: "让我们一起加油吧! 学习使我快，(。•﹃ •。)阿巴阿巴。"
+                        content: "学习使我快乐，(。•﹃ •。)阿巴阿巴,让我们一起加油吧! "
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
