@@ -27,7 +27,7 @@ function bot_ui_ini() {
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "ようこそ～私の世界【欢迎来到我的世界】(๑•॒̀ ູ॒•́๑)啦啦啦"
+            content: "ようこそ～私の世界【欢迎来到我的世界】(◕ˇ∀ˇ◕)啦啦啦"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
