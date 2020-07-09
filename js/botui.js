@@ -31,7 +31,7 @@ function bot_ui_ini() {
         }).then(function () {
             botui.message.add({
                 delay: 1100,
-                content: "哈？人家这么可爱当然是男孩子啦！⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄"
+                content: "哈？人家这么可爱当然是男孩子啦！   ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄"
             }).then(function () {
                 botui.action.button({
                     delay: 1600,
