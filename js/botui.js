@@ -144,7 +144,7 @@ function bot_ui_ini() {
         fifthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "emmm，注册域名的时候想名字真的很纠结啊π_π，突然跳出伊莉雅喊basaka的画面，感觉挺顺口的就用了。"
+                content: "emmm，注册域名的时候起名字真的很纠结啊π_π，脑袋里突然跳出伊莉雅喊basaka的画面，感觉basaka念起来挺顺口的所以就用了这个域名，没什么特别含义就是随缘吧!"
             }).then(function () {
                 botui.message.add({
                     delay: 1600,
