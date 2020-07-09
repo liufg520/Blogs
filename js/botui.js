@@ -74,7 +74,7 @@ function bot_ui_ini() {
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
-                        content: "让我们一起加油吧!(。•﹃ •。)阿巴阿巴，学习使我快乐。"
+                        content: "让我们一起加油吧! 学习使我快，(。•﹃ •。)阿巴阿巴。"
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
@@ -82,7 +82,7 @@ function bot_ui_ini() {
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
-                                content: "我喜欢的经典语录：隐约雷鸣 阴霾天空 但盼风雨来 能留你在此。隐约雷鸣 阴霾天空 即使天无雨 我亦留此地。"
+                                content: "我喜欢的经典语录：隐约雷鸣 阴霾天空 但盼风雨来 能留你在此。           隐约雷鸣 阴霾天空 即使天无雨 我亦留此地。"
                             }).then(function () {
                                 botui.message.add({
                                     delay: 1800,
@@ -123,7 +123,7 @@ function bot_ui_ini() {
         fourthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "因为这里是我的世界啊，当然是我的小本本啦!(˘͈ᵕ ˘͈❀)"
+                content: "因为这里是我的世界啊，当然是我的小本本啦! (˘͈ᵕ ˘͈❀)"
             }).then(function () {
                 botui.message.add({
                     delay: 1100,
