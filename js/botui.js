@@ -27,7 +27,7 @@ function bot_ui_ini() {
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "ようこそ～私の世界【欢迎来到我的世界】(◕ˇ∀ˇ◕)啦啦啦!"
+            content: "ようこそ～私の世界【欢迎来到我的世界】啦啦啦!(◕ˇ∀ˇ◕)"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
@@ -70,11 +70,11 @@ function bot_ui_ini() {
             }).then(function () {
                 botui.message.add({
                     delay: 1500,
-                    content: "呐呐呐，你也有喜欢的东西吧？"
+                    content: "呐呐呐，你内心也有最初喜欢的东西吧？"
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
-                        content: "让我们一起加油吧!【がんば】(。•﹃ •。)啊吧啊吧，学习使我快乐。"
+                        content: "让我们一起加油吧!(。•﹃ •。)阿巴阿巴，学习使我快乐。"
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
