@@ -537,21 +537,6 @@ $(document).ready(function() {
   }
 });
 </script>
-<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span><script>
-  var now = new Date();
-  function createtime() {
-    var grt= new Date("03/07/2020 16:44:00");//此处修改你的建站时间或者网站上线时间
-    now.setTime(now.getTime()+250);
-    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
-    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
-    if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
-    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
-    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
-    document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
-    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-  }
-  setInterval("createtime()",250);</script>
 
   <div id="binft"></div>
   <script>
@@ -574,7 +559,7 @@ $(document).ready(function() {
         c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
       }
       var l = "",
-      o = ["“呐，你知道吗？听说樱花飘落的速度是秒速五厘米哦。" 秒速5厘米，那是樱花飘落的速度，那么怎样的速度才能走完我与你之间的距离？"].map(function (r) {
+      o = ["呐，你知道吗？", "听说樱花飘落的速度是秒速五厘米哦。"," 秒速5厘米，那是樱花飘落的速度，那么怎样的速度才能走完我与你之间的距离？"].map(function (r) {
       return r + ""
       }),
       a = 2,
