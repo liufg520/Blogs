@@ -45,7 +45,7 @@ insight:
     zh: 网络安全
     en: Network Security
     img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/Coding.jpg
-生活:
+娱乐:
     zh: 生活趣事
     en: Interesting events in life
     img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/iimg/banner/Life.jpg
@@ -62,7 +62,15 @@ insight:
     en: Comfortable music                          
     img: https://cdn.jsdelivr.net/gh/liufg520/Sakura CDN/img/banner/Music.jpg
 #tag
-随想: 
+灵感: 
     zh: 灵感小记                              
     en: Comfortable music
     img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/Inspiration.jpg
+笔记:   
+    zh: 学习笔记  
+    en: Study Notes
+    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/Reading.jpg
+日语:
+    zh: 动漫日语     
+    en: Japanese Language 
+    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/startdash/DMweimei.jpg

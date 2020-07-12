@@ -18,27 +18,27 @@ menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
     技术: {path: /categories/技术/, fa: fa-code }, 
-    生活: {path: /categories/生活/, fa: fa-file-text-o }, 
-    资源: {path: /categories/资源/, fa: fa-cloud-download }, 
-    随想: {path: /categories/随想/, fa: fa-commenting-o },
-    转载: {path: /categories/转载/, fa: fa-book }
+   
+    娱乐: {path: /categories/娱乐/, fa: fa-file-text-o }, 
+    灵感: {path: /categories/灵感/, fa: fa-commenting-o },
+    笔记: {path: /categories/笔记/, fa: fa-book }
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
-    书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
+    日语: {path: /tags/日语/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-headphones },
-    图集: {path: /tags/图集/, fa: fa-photo }
+
+    绘画: {path: /tags/绘画/, fa: fa-photo }
   } }
-  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
-  友人帐: { path: /links/, fa: fa-link faa-shake }
+  标签: {path: /tags/, fa: fa-tag }
+  分类: {path: /categories/, fa: fa-bookmark }
+  留言: { path: /comment/, fa: fa-pencil-square-o faa-tada }
+  友链: { path: /links/, fa: fa-link faa-shake }
   赞赏: { path: /donate/, fa: fa-heart faa-pulse }
   关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
     我？: {path: /about/, fa: fa-meetup}, 
-    主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
-    Lab: {path: /lab/, fa: fa-cogs },
+     RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
   } }
-  客户端: { path: /client/, fa: fa-android faa-vertical }
-  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 
 
 # Home page sort type: -1: newer first，1: older first.
@@ -62,7 +62,8 @@ startdash:
   - {url: http://lackk.com, title: 兰客创意, desc: 分享创意及美的一切, img: /img/startdash/QQyinyue.jpg}
   - {url: https://zh.wikihow.com, title: 万事指南, desc: 汇聚各个领域值得信赖的研究与专业知识, img: /img/startdash/DMweimei.jpg}
 # your site build time or founded date
-siteBuildingTime: 07/02/2020
+#
+siteBuildingTime: 07/07/2020
 
 #social  url, img PC端配置
 social:
@@ -104,5 +105,15 @@ aplayer:
 
 # Valine
 valine: true
-v_appId: uzplhc16vro3Qlv9KCuILRck-9Nh9j0Va
-v_appKey: hLydJe5lBWrat2l4f44WlO3M
+v_appId: Xhd551Tf1hoG00sepshn9etC-MdYXbMMI
+v_appKey: GU4a4ia1MLzjWUsHSRCMEOpN
+v_verify: true
+v_ pageSize: 10 # comment list page size
+v_avatar: monsterid # gravatar style https://valine.js.org/#/avatar
+v_lang: zh-cn # i18n: zh-CN/zh-TW/en/ja
+v_ placeholder: 昵称填写qq可以显示qq头像和昵称哦~ # valine comment input placeholder(like: Please leave your footprints )
+v_guest_info: nick,mail,link #valine comment header info
+v_recordIP: true # Record reviewer IP
+v_ serverURLs: '' #https://cungudafa.top # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+v_bg: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich30.gif #/img/comment_bg.png # valine background
+v_count: true # top_img顯示評論數

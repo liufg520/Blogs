@@ -1,10 +1,10 @@
 ---
 title: comment
 date: 2020-07-02 23:13:48
-keywords: 留言板
+keywords: 
 description: 
 comments: true
-photos: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.4/img/banner/Comment.jpg
+photos: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/Comment.jpg
 ---
 {% raw %}
 <div class="entry-content">
