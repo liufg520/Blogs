@@ -77,9 +77,12 @@
           <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.5/img/custom/avatar.jpg">
         </a>
       </div>
-      <div class="header-info">
-        <p>只要有想见的人，就不再是孤身一人了。</p>
+      <div class="header-info">  <!-- 找到这个位置 -->
+        <!-- <p>只要有想见的人，就不再是孤身一人了。</p> -->  把这句注释掉        <p id="jinrishici-sentence">正在加载今日诗词....</p>
+        <script src="https://v1.hitokoto.cn/?c=a&encode=text&max_length=20" charset="utf-8"></script>
+  <!-- 添加上面的两句 -->
         <div class="top-social_v2">
+
           <li id="bg-pre">
             <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
           </li>
@@ -161,6 +164,7 @@
     </span>
   </div>
 </div>
+
     <div id="page" class="site wrapper">
       <header class="site-header no-select gizle sabit" role="banner">
   <div class="site-top">
