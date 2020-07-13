@@ -6,12 +6,12 @@ favicon: /images/favicon.ico
 avatar: /img/custom/avatar.jpg
 url: https://liufg.basaka.ga
 description: 只要有想见的人，就不再是孤身一人了。
-cdn: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.5
+cdn: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.6
 pjax: 1
 # 1开启
 mathjax: 0
 
-notice: 欢迎访问ちいの小破站，本站持续搭建中.........
+notice: ｡:.ﾟヽ(｡◕‿◕｡)ﾉﾟ.:｡+ﾟ
 lazyloadImg: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
@@ -53,6 +53,8 @@ bg:
   - https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/cover/bg4.jpg
   - https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/cover/bg5.jpg
   - https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/cover/bg6.jpg
+  - https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/cover/bg7.jpg
+  - https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/cover/bg8.jpg
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-grid
 
@@ -88,9 +90,9 @@ donate:
 
 # 视频地址为https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.1/Unbroken.mp4，配置如下
 movies:
-  url: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.4
+  url: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.6
   # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
-  name: BeautifulWorld.mp4,Asmv.mp4
+  name: BeautifulWorld.mp4
 aplayer: 
   id: 2149082231
   server: netease
