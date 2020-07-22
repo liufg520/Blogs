@@ -1,9 +1,9 @@
 @font-face {font-family: "mengna";
-  src: url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/mengna/mengna.eot"); /* IE9*/
-  src: url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/mengna/mengna.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
-  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/mengna/mengna.woff")
-  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/mengna/mengna.ttf") format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/mengna/mengna.svg#fangzheng") format('svg'); /* iOS 4.1- */
+  src: url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.9/fonts/mengna/mengna.eot"); /* IE9*/
+  src: url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.9/fonts/mengna/mengna.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
+  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.9/fonts/mengna/mengna.woff")
+  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.9/fonts/mengna/mengna.ttf") format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.9/fonts/mengna/mengna.svg#fangzheng") format('svg'); /* iOS 4.1- */
   font-weight: normal;
   font-size:16px;
   font-style:normal;
