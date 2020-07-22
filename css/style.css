@@ -1,4 +1,5 @@
-@font-face {font-family: "shuiyun"; 
+@font-face {
+  font-family: "shuiyun"; 
   src: url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.eot"); /* IE9*/  
   src: url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */  
   url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.woff") 
