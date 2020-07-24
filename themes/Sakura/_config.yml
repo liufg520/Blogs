@@ -2,11 +2,11 @@
 prefixName: さくら村の
 siteName: 小叽
 # favicon and site master avatar
-favicon: /images/favicon.ico
+favicon: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/images/favicon.ico
 avatar: /img/custom/avatar.jpg
 url: https://liqian.5201314920.xyz
 description: 只要有想见的人，就不再是孤身一人了。
-cdn: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.1
+cdn: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2
 pjax: 1
 # 1开启
 mathjax: 0
