@@ -1,14 +1,3 @@
-@font-face {
-  font-family: "shuiyun"; 
-  src: url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.eot"); /* IE9*/  
-  src: url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */  
-  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.woff") 
-  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.ttf") format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.svg#fangzheng") format('svg'); /* iOS 4.1- */                                     
-  font-weight: normal;                                
-  font-size:16px;                                     
-  font-style:normal;                                     }
-
 .aplayer-container {
     position: absolute;
     bottom: 0;
@@ -693,7 +682,7 @@ to {
     transform:translateX(0)
 }
 }html {
-    font-family:mengna;
+    font-family:sans-serif;
     -webkit-text-size-adjust:100%;
     -ms-text-size-adjust:100%;
     overflow-x:hidden
@@ -4112,7 +4101,7 @@ li.feature-2 {
 }
 .header-info p {
     margin:0;
-    font-family:mengna,'Ubuntu',sans-serif;
+    font-family:'Ubuntu',sans-serif;
     font-weight:700
 }
 .top-social {
@@ -7458,7 +7447,7 @@ to {
     overflow:hidden
 }
 .chinese-font {
-    font-family: mengna, 'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
+    font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
 .chinese-tranditional-font {
     font-family:Helvetica,Tahoma,Arial,"文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro","微軟正黑體","Microsoft JhengHei","標楷體",DFKai-SB,sans-serif
@@ -7476,14 +7465,14 @@ to {
     font-family:'Ubuntu',sans-serif
 }
 .serif {
-    font-family: mengna, 'Source Han Serif SC','Source Han Serif','source-han-serif-sc','PT Serif','SongTi SC','MicroSoft Yahei',Georgia,serif
+    font-family:'Source Han Serif SC','Source Han Serif','source-han-serif-sc','PT Serif','SongTi SC','MicroSoft Yahei',Georgia,serif
 }
 @media(max-width:860px) {
     .serif {
-    font-family: mengna, 'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
+    font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
 }.moe-mashiro {
-    font-family: mengna,'Moe-Mashiro','Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
+    font-family:'Moe-Mashiro','Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
 .skin-menu {
     position:fixed;

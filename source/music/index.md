@@ -4,7 +4,7 @@ date: 2018-12-20 23:14:28
 keywords: 喜欢的音乐
 description: 
 comments: false
-photos: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/inspiration.jpg
+photos: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/inspiration.webp
 ---
 {% raw %}
 <meting-js

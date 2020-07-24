@@ -44,19 +44,19 @@ insight:
 技术:
     zh: 网络安全
     en: Network Security
-    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/Coding.jpg
+    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/Coding.webp
 娱乐:
     zh: 生活趣事
     en: Interesting events in life
-    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/iimg/banner/Life.jpg
+    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/iimg/banner/Life.webp
 书单:
     zh: 书籍阅读
     en: Book reading
-    img: https://cdn.jsdelivr.net/gh/liufg520/Sakura CDN/img/banner/Reading.jpg
+    img: https://cdn.jsdelivr.net/gh/liufg520/Sakura CDN/img/banner/Reading.webp
 绘画:
     zh: 绘画作品
     en: painting                        
-    img: https://cdn.jsdelivr.net/gh/liufg520/Sakura CDN/img/banner/Painting.jpg
+    img: https://cdn.jsdelivr.net/gh/liufg520/Sakura CDN/img/banner/painting.webp
 歌单:
     zh: 舒心音乐                                    
     en: Comfortable music                          
@@ -64,13 +64,13 @@ insight:
 #tag
 灵感: 
     zh: 灵感小记                              
-    en: Comfortable music
-    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/Inspiration.jpg
+    en: Inspiration notes
+    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/inspiration.webp
 笔记:   
     zh: 学习笔记  
     en: Study Notes
-    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/Reading.jpg
+    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/Reading.webp
 日语:
-    zh: 动漫日语     
+    zh: 日语小记     
     en: Japanese Language 
-    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/startdash/DMweimei.jpg
+    img: https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/banner/japanese.webp
