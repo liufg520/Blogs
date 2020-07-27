@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-07-23T12:22:07.262Z</updated>
+  <updated>2020-07-27T14:00:17.346Z</updated>
   <id>/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>文章测试</title>
-    <link href="/2020/07/23/%E6%97%A5%E8%AF%AD%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>/2020/07/23/日语基础知识/</id>
-    <published>2020-07-23T12:22:07.272Z</published>
-    <updated>2020-07-23T12:22:07.262Z</updated>
+    <title></title>
+    <link href="/2020/07/27/%E6%97%A5%E8%AF%AD%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>/2020/07/27/日语基础知识/</id>
+    <published>2020-07-27T14:00:17.356Z</published>
+    <updated>2020-07-27T14:00:17.346Z</updated>
     
     <summary type="html">
     
@@ -29,17 +29,12 @@
       
         
         
-          &lt;hr&gt;
-&lt;p&gt;一.日语表记法：&lt;br&gt;假名（表音、表义）&lt;br&gt;汉字（表义）&lt;br&gt;罗马字（表音）&lt;br&gt;1.最基本的表音单位：&lt;br&gt;假名：分片假名（表外来语音义）、平假名（表音、独立或与汉字一起表义）&lt;br&gt;假名表（五十音图）&lt;br&gt;2.日语中的汉字：常用汉字1945字（实
+          &lt;p&gt;title: 文章测试&lt;br&gt;author: ちい&lt;br&gt;avatar: &lt;a href=&quot;https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/custom/avatar.jpg&quot; target=&quot;_blank&quot;
         
       
     
     </summary>
     
-      <category term="笔记" scheme="/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="日语" scheme="/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
