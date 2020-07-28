@@ -1,7 +1,7 @@
 /*
- * @auther	 rstyro
- * @blog	 http://sealo.xyz/
- * @Date	 2018-04-05 
+ * @auther	 sakura
+ * @blog	 http://liufg.basaka.ga
+ * @Date	 2020-07-28
  */
 
 (function($) {
@@ -92,4 +92,5 @@
 		
 	}
 
-})(jQuery);</=>
+})(jQuery);
+</=>
