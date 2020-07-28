@@ -398,10 +398,12 @@
   <div class="notice" style="margin-top:60px">
     <i class="iconfont icon-notification">
     </i>
-    <div class="notice-content"><span id="hitokoto" style="margin-left:5px;"> :D 获取中...</span>
-      <p align="right" id="afrom"></p>
-      <script src="https://v1.hitokoto.cn/?c=a&encode=js&select=%23hitokoto" defer></script>
-      <script>
+    <div class="notice-content">
+    <p id="hitokoto":D 获取中...</p> 
+    <span style="margin-left:5px;"></span>
+    <p align="right" id="afrom"></p>
+    <script src="https://v1.hitokoto.cn/?c=a&encode=js&select=%23hitokoto" defer></script>
+    <script>
        fetch('https://v1.hitokoto.cn')
        .then(response => response.json())
        .then(data => {
