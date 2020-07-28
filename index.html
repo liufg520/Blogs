@@ -399,20 +399,25 @@
     <i class="iconfont icon-notification">
     </i>
     <div class="notice-content">
-    <p id="hitokoto":D 获取中...</p> 
-    <span style="margin-left:5px;"></span>
-    <p align="right" id="afrom"></p>
-    <script src="https://v1.hitokoto.cn/?c=a&encode=js&select=%23hitokoto" defer></script>
-    <script>
-       fetch('https://v1.hitokoto.cn')
-       .then(response => response.json())
-       .then(data => {
-       const hitokoto = document.getElementById('hitokoto_text')
-       hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-       hitokoto.innerText = data.hitokoto
-    })
-       .catch(console.error)
-     </script>
+   <span id="hitokoto" style="margin-left:5px;"> :D 获取中...</span>
+      <p align="right" id="afrom"></p>
+      <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+      <script>
+        fetch('https://v1.hitokoto.cn/?c=d&c=j&c=a')
+          .then(function (res){
+            return res.json();
+          })
+          .then(function (data) {
+            var hitokoto = document.getElementById('hitokoto');
+            var afrom = document.getElementById('afrom');
+            hitokoto.innerText = data.hitokoto;
+            afrom.innerText =  '——【' + data.from + ' ' + data.from_who + '】';
+          })
+          .catch(function (err) {
+            console.error(err);
+          })
+      </script> 
     </div>
   </div>
   
