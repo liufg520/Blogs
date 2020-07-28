@@ -39,8 +39,8 @@
   mashiro_option.site_name = "さくら村の小叽";
   mashiro_option.author_name = "小叽";
   mashiro_option.site_url = "https://liqian.5201314920.xyz";
-  mashiro_option.v_appId = "Xhd551Tf1hoG00sepshn9etC-MdYXbMMI";
-  mashiro_option.v_appKey = "GU4a4ia1MLzjWUsHSRCMEOpN";
+  mashiro_option.appId = "";
+  mashiro_option.appKey = "";
   mashiro_option.mathjax = "0";
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
@@ -423,20 +423,40 @@ var _hmt = _hmt || [];
       
       <!-- .entry-content -->
       
-<div id="vcomments"></div>
-<script>
-  window.onload = function(){
-      var valine = new Valine();
-      valine.init({
-        el: '#vcomments',
-        appId: "Xhd551Tf1hoG00sepshn9etC-MdYXbMMI",
-        appKey: "GU4a4ia1MLzjWUsHSRCMEOpN",
-        path: window.location.pathname,
-        placeholder: "你是我一生只会遇见一次的惊喜 ..."
-      })
-  }
-</script>
-
+  <div id="vcomments"></div>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <script>
+      new Valine({
+          el: '#vcomments',
+          appId: "Xhd551Tf1hoG00sepshn9etC-MdYXbMMI",
+          appKey: "GU4a4ia1MLzjWUsHSRCMEOpN",
+          path: window.location.pathname,
+          notify: false,
+          verify: true,
+          avatar: 'wavatar',//不同面孔和背景合成的头像
+          placeholder: "你是我一生只会遇见一次的惊喜 ..."  
+    });
+    document.body.addEventListener('click', function(e) {
+      if (e.target.classList.contains('vsubmit')) {
+          const email = document.querySelector('input[type=email]');
+          const nick = document.querySelector('input[name=nick]');
+          const reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+          if (!email.value || !nick.value || !reg.test(email.value)) {
+              const str = `<div class="valert txt-center"><div class="vtext">请填写正确的昵称和邮箱！</div></div>`;
+              const vmark = document.querySelector('.vmark');
+              vmark.innerHTML = str;
+              vmark.style.display = 'block';
+  
+              setTimeout(function() {
+                  vmark.style.display = 'none';
+                  vmark.innerHTML = '';
+              }, 2500);
+          }
+        }
+      });
+  </script>
+  
+  
       <div class="single-reward">
         <div class="reward-open">赏
           <div class="reward-main">
