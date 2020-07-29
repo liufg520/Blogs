@@ -424,9 +424,11 @@ var _hmt = _hmt || [];
       <!-- .entry-content -->
       
   <div id="vcomments"></div>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
   <script>
-      new Valine({
+    window.onload = function(){
+        var valine = new Valine();
+        valine.init({
           el: '#vcomments',
           enableQQ: true,
           boolean: true,
@@ -498,9 +500,10 @@ var _hmt = _hmt || [];
             "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
             "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png"
        // ... 更多表情
-      }
-    });
-    path: window.location.pathname,
+       }
+    })
+ }
+
     document.body.addEventListener('click', function(e) {
       if (e.target.classList.contains('vsubmit')) {
           const email = document.querySelector('input[type=email]');
