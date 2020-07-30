@@ -506,24 +506,6 @@ var _hmt = _hmt || [];
         // 设置Bilibili表情包地址
         emojiCDN: '//i0.hdslb.com/bfs/emote/', 
     });
-    document.body.addEventListener('click', function(e) {
-      if (e.target.classList.contains('vsubmit')) {
-          const email = document.querySelector('input[type=email]');
-          const nick = document.querySelector('input[name=nick]');
-          const reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
-          if (!email.value || !nick.value || !reg.test(email.value)) {
-              const str = `<div class="valert txt-center"><div class="vtext">请填写正确的昵称和邮箱！</div></div>`;
-              const vmark = document.querySelector('.vmark');
-              vmark.innerHTML = str;
-              vmark.style.display = 'block';
-  
-              setTimeout(function() {
-                  vmark.style.display = 'none';
-                  vmark.innerHTML = '';
-              }, 2500);
-          }
-        }
-      });
   </script>
   
   
@@ -615,7 +597,7 @@ var _hmt = _hmt || [];
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.0/js/zoom.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.0/js/sakura-app.js"></script>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script type="text/javascript" src="/js/Valine.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.0/js/Valine.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.0/js/botui.js"></script>
 <!-- 不蒜子 网页计数器 -->
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
