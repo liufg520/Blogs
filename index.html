@@ -423,15 +423,14 @@ var _hmt = _hmt || [];
     <i class="iconfont icon-notification">
     </i>
     <div class="notice-content">
-      <span id="hitokoto" style="margin-left:5px;"> :D 获取中...</span>
-      <p align="right" id="afrom"></p>
-      <script src="https://v1.hitokoto.cn/?c=j&encode=js&select=%23hitokoto" defer></script>
+<span id="hitokoto" style="margin-left:5px;"> :D 获取中...</span>
+      <p align="right" id="afrom"></p>	
       <script>
          fetch('https://v1.hitokoto.cn/?c=j&c=a')
-          .then(function (res){
+           .then(function (res){
             return res.json();
           })
-          .then(function (data) {
+           .then(function (data) {
             var hitokoto = document.getElementById('hitokoto');
             var afrom = document.getElementById('afrom');
             hitokoto.innerText = data.hitokoto;
