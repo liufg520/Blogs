@@ -423,11 +423,11 @@ var _hmt = _hmt || [];
     <i class="iconfont icon-notification">
     </i>
     <div class="notice-content">
-      <p id="hitokoto">:D 获取中...</p>
+       <span id="hitokoto" style="margin-left:5px;"> :D 获取中...</span>
       <p align="right" id="afrom"></p>
       <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
-      <script>
+    <script>
         fetch('https://v1.hitokoto.cn/?c=j')
           .then(function (res){
             return res.json();
@@ -441,7 +441,7 @@ var _hmt = _hmt || [];
           .catch(function (err) {
             console.error(err);
           })
-      </script>
+    </script>
     </div>
   </div>
   
