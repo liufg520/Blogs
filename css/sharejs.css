@@ -3,9 +3,9 @@
 src:url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/mengna/mengna.eot?#iefix") format("embedded-opentype"),url("https://cdn.jsdelivr.net/gh/liufg520/Sakura/fonts/mengna/mengna.woff") format("woff"),url("https://cdn.jsdelivr.net/gh/liufg520/Sakura/fonts/mengna/mengna.ttf") format("truetype"),url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/mengna/mengna.svg#mengna") format("svg")
 }
 
-.mengna {
+.social-share {
     display: inline-block;
-  font-family: "mengna" !important;
+  font-family: "social-share" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
