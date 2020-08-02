@@ -3,7 +3,7 @@
 src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.eot?#iefix") format("embedded-opentype"),url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.woff") format("woff"),url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.ttf") format("truetype"),url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.svg#mengna") format("svg")
 }
 
-.social-share {
+.mengna {
     display: inline-block;
   font-family: "mengna" !important;
   font-size: 16px;
@@ -13,7 +13,7 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
   -moz-osx-font-smoothing: grayscale
 }
 
-.social-share * {
+.mengna * {
   font-family: "mengna" !important
 }
 
