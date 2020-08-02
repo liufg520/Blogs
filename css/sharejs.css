@@ -3,7 +3,7 @@
 src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.eot?#iefix") format("embedded-opentype"),url("https://cdn.jsdelivr.net/gh/liufg520/Sakura/fonts/mengna/mengna.woff") format("woff"),url("https://cdn.jsdelivr.net/gh/liufg520/Sakura/fonts/mengna/mengna.ttf") format("truetype"),url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.svg#mengna") format("svg")
 }
 
-.social-share {
+.mengna {
     display: inline-block;
   font-family: "mengna" !important;
   font-size: 16px;
@@ -13,63 +13,63 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
   -moz-osx-font-smoothing: grayscale
 }
 
-.social-share * {
+.mengna * {
   font-family: "mengna" !important
 }
 
-.social-share .icon-tencent:before {
+.mengna .icon-tencent:before {
   content: "\f07a"
 }
 
-.social-share .icon-qq:before {
+.mengna .icon-qq:before {
   content: "\f11a"
 }
 
-.social-share .icon-weibo:before {
+.mengna .icon-weibo:before {
   content: "\f12a"
 }
 
-.social-share .icon-wechat:before {
+.mengna .icon-wechat:before {
   content: "\f09a"
 }
 
-.social-share .icon-douban:before {
+.mengna .icon-douban:before {
   content: "\f10a"
 }
 
-.social-share .icon-heart:before {
+.mengna .icon-heart:before {
   content: "\f20a"
 }
 
-.social-share .icon-like:before {
+.mengna .icon-like:before {
   content: "\f00a"
 }
 
-.social-share .icon-qzone:before {
+.mengna .icon-qzone:before {
   content: "\f08a"
 }
 
-.social-share .icon-linkedin:before {
+.mengna .icon-linkedin:before {
   content: "\f01a"
 }
 
-.social-share .icon-diandian:before {
+.mengna .icon-diandian:before {
   content: "\f05a"
 }
 
-.social-share .icon-facebook:before {
+.mengna .icon-facebook:before {
   content: "\f03a"
 }
 
-.social-share .icon-google:before {
+.mengna .icon-google:before {
   content: "\f04a"
 }
 
-.social-share .icon-twitter:before {
+.mengna .icon-twitter:before {
   content: "\f06a"
 }
 
-.social-share a {
+.mengna a {
   position: relative;
   text-decoration: none;
     margin: 0 4px;
@@ -77,7 +77,7 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
   outline: none
 }
 
-.social-share .social-share-icon {
+.mengna .mengna-icon {
     position: relative;
     display: inline-block;
     width: 16px;
@@ -91,112 +91,112 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
     transition: background 0.6s ease-out 0s;
 }
 
-.social-share .social-share-icon:hover {
+.mengna .mengna-icon:hover {
   background: #666;
   color: #fff
 }
 
-.social-share .icon-weibo {
+.mengna .icon-weibo {
   color: #ff763b;
   border-color: #ff763b
 }
 
-.social-share .icon-weibo:hover {
+.mengna .icon-weibo:hover {
   background: #ff763b
 }
 
-.social-share .icon-tencent {
+.mengna .icon-tencent {
   color: #56b6e7;
   border-color: #56b6e7
 }
 
-.social-share .icon-tencent:hover {
+.mengna .icon-tencent:hover {
   background: #56b6e7
 }
 
-.social-share .icon-qq {
+.mengna .icon-qq {
   color: #56b6e7;
   border-color: #56b6e7
 }
 
-.social-share .icon-qq:hover {
+.mengna .icon-qq:hover {
   background: #56b6e7
 }
 
-.social-share .icon-qzone {
+.mengna .icon-qzone {
   color: #FDBE3D;
   border-color: #FDBE3D
 }
 
-.social-share .icon-qzone:hover {
+.mengna .icon-qzone:hover {
   background: #FDBE3D
 }
 
-.social-share .icon-douban {
+.mengna .icon-douban {
   color: #33b045;
   border-color: #33b045
 }
 
-.social-share .icon-douban:hover {
+.mengna .icon-douban:hover {
   background: #33b045
 }
 
-.social-share .icon-linkedin {
+.mengna .icon-linkedin {
   color: #0077B5;
   border-color: #0077B5
 }
 
-.social-share .icon-linkedin:hover {
+.mengna .icon-linkedin:hover {
   background: #0077B5
 }
 
-.social-share .icon-facebook {
+.mengna .icon-facebook {
   color: #44619D;
   border-color: #44619D
 }
 
-.social-share .icon-facebook:hover {
+.mengna .icon-facebook:hover {
   background: #44619D
 }
 
-.social-share .icon-google {
+.mengna .icon-google {
   color: #db4437;
   border-color: #db4437
 }
 
-.social-share .icon-google:hover {
+.mengna .icon-google:hover {
   background: #db4437
 }
 
-.social-share .icon-twitter {
+.mengna .icon-twitter {
   color: #55acee;
   border-color: #55acee
 }
 
-.social-share .icon-twitter:hover {
+.mengna .icon-twitter:hover {
   background: #55acee
 }
 
-.social-share .icon-diandian {
+.mengna .icon-diandian {
   color: #307DCA;
   border-color: #307DCA
 }
 
-.social-share .icon-diandian:hover {
+.mengna .icon-diandian:hover {
   background: #307DCA
 }
 
-.social-share .icon-wechat {
+.mengna .icon-wechat {
   position: relative;
   color: #7bc549;
   border-color: #7bc549
 }
 
-.social-share .icon-wechat:hover {
+.mengna .icon-wechat:hover {
   background: #7bc549
 }
 
-.social-share .icon-wechat .wechat-qrcode {
+.mengna .icon-wechat .wechat-qrcode {
   display: none;
   border: 1px solid #eee;
   position: absolute;
@@ -215,16 +215,16 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
   -moz-transition: all 350ms
 }
 
-.social-share .icon-wechat .wechat-qrcode.bottom {
+.mengna .icon-wechat .wechat-qrcode.bottom {
   top: 40px;
   left: -84px
 }
 
-.social-share .icon-wechat .wechat-qrcode.bottom:after {
+.mengna .icon-wechat .wechat-qrcode.bottom:after {
   display: none
 }
 
-.social-share .icon-wechat .wechat-qrcode h4 {
+.mengna .icon-wechat .wechat-qrcode h4 {
   font-weight: normal;
   height: 26px;
   line-height: 26px;
@@ -235,23 +235,23 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
   color: #777
 }
 
-.social-share .icon-wechat .wechat-qrcode .qrcode {
+.mengna .icon-wechat .wechat-qrcode .qrcode {
   width: 105px;
   margin: 10px auto
 }
 
-.social-share .icon-wechat .wechat-qrcode .qrcode table {
+.mengna .icon-wechat .wechat-qrcode .qrcode table {
   margin: 0 !important
 }
 
-.social-share .icon-wechat .wechat-qrcode .help p {
+.mengna .icon-wechat .wechat-qrcode .help p {
   font-weight: normal;
   line-height: 16px;
   padding: 0;
   margin: 0
 }
 
-.social-share .icon-wechat .wechat-qrcode:after {
+.mengna .icon-wechat .wechat-qrcode:after {
   content: '';
   position: absolute;
   left: 50%;
@@ -264,10 +264,10 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
   border-color: #fff transparent transparent transparent
 }
 
-.social-share .icon-wechat:hover .wechat-qrcode {
+.mengna .icon-wechat:hover .wechat-qrcode {
   display: block
 }
-.share-mobile .social-share-icon {
+.share-mobile .mengna-icon {
     position: relative;
     display: inline-block;
     width: 32px;
