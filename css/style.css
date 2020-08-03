@@ -1,13 +1,3 @@
-@font-face {
-  font-family: "shuiyun"; 
-  src: url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.eot"); /* IE9*/  
-  src: url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */  
-  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.woff") 
-  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.ttf") format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/fonts/fangzheng/shuiyun.svg#fangzheng") format('svg'); /* iOS 4.1- */                                     
-  font-weight: normal;                                
-  font-size:16px;                                     
-  font-style:normal;                                     }
 
 .aplayer-container {
     position: absolute;
@@ -16,7 +6,7 @@
     width: 400px;
 }
 #veditor {
-    background-image: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/comment-bg.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/comment-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -29,7 +19,7 @@
 }
 .aplayer {
     background:#fff;
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:mengna,Arial,Helvetica,sans-serif;
     margin:5px;
     box-shadow:0 2px 2px 0 rgba(0,0,0,.07),0 1px 5px 0 rgba(0,0,0,.1);
     border-radius:2px;
@@ -731,13 +721,13 @@ audio:not([controls]) {
 a {
     background-color:transparent;
     text-decoration:none;
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/ayuda.cur),auto
 }
 a:active,a:hover {
     outline:0
 }
 a:active {
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/work.cur),alias
+    cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/work.cur),alias
 }
 abbr[title] {
     border-bottom:1px dotted
@@ -858,7 +848,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
     margin-bottom:1.5em;
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/texto.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/texto.cur),auto
 }
 dfn,cite,em,i {
     font-style:italic
@@ -944,7 +934,7 @@ html {
 body {
     background:#fff;
     background-attachment:fixed;
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/normal.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/normal.cur),auto
 }
 blockquote:before,blockquote:after,q:before,q:after {
     content:""
@@ -1102,13 +1092,13 @@ a:hover,a:active {
     opacity:1
 }
 .video-play,.loadvideo {
-    background-image:url('https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/play@32x32.png')
+    background-image:url('https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/play@32x32.png')
 }
 .video-pause {
-    background-image:url('https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/pause@32x32.png')
+    background-image:url('https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/other/pause@32x32.png')
 }
 #video-add {
-    background-image:url('https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/add@32x32.png');
+    background-image:url('https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/add@32x32.png');
     bottom:45px;
     display:none
 }
@@ -2244,11 +2234,11 @@ h1.page-title.mb- {
     z-index:99;
     width:70px;
     height:900px;
-    background:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/scroll.png) no-repeat center;
+    background:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/scroll.png) no-repeat center;
     background-size:contain;
     -webkit-transition:all .5s ease-in-out;
     transition:all .5s ease-in-out;
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur),auto;
+    cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/No_Disponible.cur),auto;
     opacity:1
 }
 .cd-top.cd-is-visible {
@@ -2825,7 +2815,7 @@ to {
     height:40px;
     text-align:center;
     line-height:45px;
-    background-image:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg");
+    background-image:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/disqus-preloader.svg");
     background-position:center;
     background-repeat:no-repeat;
     background-size:auto 100%
@@ -3612,7 +3602,7 @@ a.page-numbers {
     background-color:rgba(255,255,255,0)
 }
 .comment-respond textarea {
-    background-image:url('https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/comment-bg.png');
+    background-image:url('https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/comment-bg.png');
     background-size:contain;
     background-repeat:no-repeat;
     background-position:right;
@@ -3894,14 +3884,14 @@ li.feature-2 {
     background-color:rgba(0,0,0,.3)
 }
 .headertop.filter-grid::before {
-    background-image:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/grid.png)
+    background-image:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/grid.png)
 }
 .headertop.filter-dot::before {
-    background-image:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/dot.gif)
+    background-image:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/dot.gif)
 }
 @media(max-width:860px) {
     .headertop.filter-dot::before {
-    background-image:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/grid.png)
+    background-image:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/grid.png)
 }
 }.headertop-bar::after {
     content:'';
@@ -3964,7 +3954,7 @@ li.feature-2 {
     }
     .top-social_v2 li {
         margin-right: 0px !important; 
-        cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur),auto !important;
+        cursor: url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/ayuda.cur),auto !important;
     }
 }
 #bgvideo {
@@ -4257,7 +4247,7 @@ i.iconfont.js-toggle-search.iconsearch {
     visibility:visible;
     opacity:.99;
     animation:elastic .5s;
-    background-image:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/iloli.gif);
+    background-image:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/other/iloli.gif);
     background-repeat:no-repeat;
     background-position:bottom right
 }
@@ -4647,7 +4637,7 @@ i.iconfont.down {
     color:orange
 }
 #pagination .loading {
-    background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg");
+    background:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/wordpress-rotating-ball-o.svg");
     background-position:center;
     background-repeat:no-repeat;
     color:#555;
@@ -5426,7 +5416,7 @@ i.iconfont.js-toggle-search.iconsearch {
 }.oshimai {
     height:2em;
     width:6.11em;
-    background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/oshimai.svg");
+    background:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/oshimai.svg");
     background-size:cover;
     margin:0 auto
 }
@@ -5572,7 +5562,7 @@ i.iconfont.js-toggle-search.iconsearch {
     border:0;
     color:#fff;
     line-height:1;
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur),auto;
+    cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/No_Disponible.cur),auto;
     font-size:14px;
     font-weight:500;
     padding:7px 15px;
@@ -5698,7 +5688,7 @@ button.botui-actions-buttons-button::-moz-focus-inner,input.botui-actions-text-i
     padding:0
 }
 button.botui-actions-buttons-button {
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur),auto;
+    cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/No_Disponible.cur),auto;
     -webkit-appearance:button
 }
 .botui-app-container {
@@ -6938,7 +6928,7 @@ to {
     background-color:rgba(245,245,245,.8)
 }
 #emotion-toggle,.emotion-box,.on-hover,.emotion-item,.emoji-item,.tieba-container span {
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/No_Disponible.cur),auto
 }
 .alignright {
     width:auto !important
@@ -7339,7 +7329,7 @@ to {
     padding:2px;
     text-shadow:none;
     border-radius:0 0 5px 5px;
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/texto.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/texto.cur),auto
 }
 .highlight-wrap code[data-rel]:before {
     color:#fff;
@@ -7643,7 +7633,7 @@ img[src*="#in-center"] {
 #banner_wave_1 {
     width:auto;
     height:65px;
-    background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wave1.png") repeat-x;
+    background:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/wave1.png") repeat-x;
     position:absolute;
     bottom:0;
     width:400%;
@@ -7656,7 +7646,7 @@ img[src*="#in-center"] {
 #banner_wave_2 {
     width:auto;
     height:80px;
-    background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wave2.png") repeat-x;
+    background:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/wave2.png") repeat-x;
     position:absolute;
     bottom:0;
     width:400%;
@@ -7855,3 +7845,48 @@ td.hljs-ln-numbers {
 
 .chip-container {    margin-top: 60px;}.chip-container .tag-title {    margin-bottom: 10px;    color: #3C4858;    font-size: 1.75rem;    font-weight: 400;}.chip-container .tag-chips {    margin: 1rem auto 0.5rem;    max-width: 850px;    text-align: center;}.chip-container .tags-posts {    margin-top: 20px;}.chip-container .chip-default {    color: #34495e;}.chip-container .chip-active {    color: #FFF !important;    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;    box-shadow: 2px 5px 10px #aaa !important;}.chip-container .chip {    margin: 10px 10px;    padding: 19px 14px;    display: inline-flex;    line-height: 0;    font-size: 1rem;    font-weight: 500;    border-radius: 5px;    cursor: pointer;    box-shadow: 0 3px 5px rgba(0, 0, 0, .12);}.chip-container .chip:hover {    color: #fff;    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;}.chip .tag-length {    margin-left: 5px;    margin-right: -2px;    font-size: 0.5rem;}.chip-default .tag-length {    color: #e91e63;    margin-top: 1px;}.chip-active .tag-length {    color: #fff;}.tag-title.center-align{    margin-top: 100px;    text-align : center;}
 
+my_post_copyright {
+  width: 85%;
+  max-width: 45em;
+  margin: 2.8em auto 0;
+  padding: 0.5em 1.0em;
+  border: 1px solid #d3d3d3;
+  font-size: 0.93rem;
+  line-height: 1.6em;
+  word-break: break-all;
+  background: rgba(255,255,255,0.4);
+}
+.my_post_copyright p{margin:0;}
+.my_post_copyright span {
+  display: inline-block;
+  width: 5.2em;
+  color: #b5b5b5;
+  font-weight: bold;
+}
+.my_post_copyright .raw {
+  margin-left: 1em;
+  width: 5em;
+}
+.my_post_copyright a {
+  color: #808080;
+  border-bottom:0;
+}
+.my_post_copyright a:hover {
+  color: #a3d2a3;
+  text-decoration: underline;
+}
+.my_post_copyright:hover .fa-clipboard {
+  color: #000;
+}
+.my_post_copyright .post-url:hover {
+  font-weight: normal;
+}
+.my_post_copyright .copy-path {
+  margin-left: 1em;
+  width: 1em;
+  +mobile(){display:none;}
+}
+.my_post_copyright .copy-path:hover {
+  color: #808080;
+  cursor: pointer;
+}

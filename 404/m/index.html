@@ -1,24 +1,58 @@
+<!--网页预加载-->
 <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.9.0">
+  <!--百度网站收录验证-->
+<meta name="baidu-site-verification" content="LPeTwvVj0R">
+<meta name="baidu-site-verification" content="8eu8gxkm2Z">
+  <!--收录网站提交-->
+  require 'net/http'
+  urls = ['http://www.basaka.ga/index.html', 'http://liqian.5201314920.xyz/index.html']
+  uri = URI.parse('http://data.zz.baidu.com/urls?site=https://liufg.basaka.ga&token=tQfGXPoamkd7ea3K')
+  req = Net::HTTP::Post.new(uri.request_uri)
+  req.body = urls.join("\n")
+  req.content_type = 'text/plain'
+  res = Net::HTTP.start(uri.hostname, uri.port) { |http| http.request(req) }
+  puts res.body
+  <!--网站分析百度统计-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?031fd9971798fd45fb565657fa9c062a";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1998ccee6b56512f639a4b1749371177";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
   <title itemprop="name">🌈ちいの小本🎈</title>
   
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/images/favicon.ico">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/custom/Favicon.ico">
   
   <meta http-equiv="x-dns-prefetch-control" content="on">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/css/lib.min.css" media="all">
-  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" id="saukra_css-css" href="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/css/font.css" media="all">
   <link rel="stylesheet" href="/css/insight.css" media="all">
-  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
-  <link rel="stylesheet" href="/css/zoom.css" media="all">
-  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/css/sharejs.css">
 <!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
 " type="text/css" media="all"> -->
   <script>
@@ -37,13 +71,13 @@
   mashiro_option.site_name = "さくら村の小叽";
   mashiro_option.author_name = "小叽";
   mashiro_option.site_url = "https://liqian.5201314920.xyz";
-  mashiro_option.v_appId = "Xhd551Tf1hoG00sepshn9etC-MdYXbMMI";
-  mashiro_option.v_appKey = "GU4a4ia1MLzjWUsHSRCMEOpN";
+  mashiro_option.v_appId = "";
+  mashiro_option.v_appKey = "";
   mashiro_option.mathjax = "0";
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
 
-  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/css/lib.min.css";
   // mashiro_option.float_player_on = true;
 
   /*End of Initial Variables*/
@@ -55,6 +89,9 @@
     alert('朋友，IE浏览器未适配哦~');
   }
   </script>
+  <!--Davoice在线联系-->
+  <script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/fd57d550.js","daovoice")</script>
+
   <style type="text/css">
   .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
   </style>
@@ -74,22 +111,22 @@
     <div class="focusinfo no-select">
       <div class="header-tou">
         <a href="https://liqian.5201314920.xyz">
-          <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/custom/avatar.jpg">
+          <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/custom/avatar.jpg">
         </a>
       </div>
       <div class="header-info"> 
-        <p id="hitokoto"><a href="#" id="hitokoto_text">:D 获取中...</a></p>
+        <p id="hitokoto">:D 获取中...</a></p>
         <script src="https://v1.hitokoto.cn/?c=a&max_length=24&encode=js&select=%23hitokoto" defer></script>
         <div class="top-social_v2">
           <li id="bg-pre">
-            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/next-b.svg">
           </li>
           
             
               
                 <li>
                   <a href="http://github.com/liufg520" target="_blank" class="social-github" title="github">
-                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/social/github.png">
+                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/social/github.png">
                   </a>
                 </li>
               
@@ -97,7 +134,7 @@
               
                 <li>
                   <a href="http://weibo.com/liufg520?is_all=1" target="_blank" class="social-github" title="sina">
-                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/social/sina.png">
+                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/social/sina.png">
                   </a>
                 </li>
               
@@ -105,7 +142,7 @@
               
                 <li>
                   <a href="http://music.163.com/playlist?id=2149082231" target="_blank" class="social-github" title="wangyiyun">
-                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/social/wangyiyun.png">
+                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/social/wangyiyun.png">
                   </a>
                 </li>
               
@@ -113,7 +150,7 @@
               
                 <li>
                   <a href="https://www.zhihu.com/people/a-liang-85-58" target="_blank" class="social-github" title="zhihu">
-                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/social/zhihu.png">
+                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/social/zhihu.png">
                   </a>
                 </li>
               
@@ -121,7 +158,7 @@
               
                 <li>
                   <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=945356012@qq.com" target="_blank" class="social-github" title="email">
-                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/social/email.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/social/email.svg">
                   </a>
                 </li>
               
@@ -129,17 +166,17 @@
               
                 <li class="wechat">
                   <a href="/#">
-                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/social/wechat.png">
+                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/social/wechat.png">
                   </a>
                   <div class="wechatInner">
-                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/custom/wechat.jpg">
+                    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/custom/wechat.jpg">
                   </div>
                 </li>
               
             
           
           <li id="bg-next">
-            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+            <img src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/next-b.svg">
           </li>
         </div>
       </div>
@@ -477,25 +514,90 @@
       <!-- .entry-content -->
       
 <div id="vcomments"></div>
+<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/Valine.min.js"></script>
 <script>
-  window.onload = function(){
-      var valine = new Valine();
-      valine.init({
-        el: '#vcomments',
+   new Valine({
+        el: '#vcomments', //Valine的初始化挂载器
+        enableQQ: true, //昵称填写QQ自动获取昵称和头像
+        boolean: true,
+        meta: ['nick','mail','link'], //评论者相关属性
         appId: "Xhd551Tf1hoG00sepshn9etC-MdYXbMMI",
         appKey: "GU4a4ia1MLzjWUsHSRCMEOpN",
         path: window.location.pathname,
-        placeholder: "你是我一生只会遇见一次的惊喜 ..."
-      })
-  }
+        notify: "false",
+        verify: "false",
+        avatar: "wavatar",
+        placeholder: "昵称填写QQ可以显示QQ头像和昵称哦~",
+        pageSize: "10",
+        lang: "zh-cn",
+        recordIP: "true",
+        serverURLs: "",
+        requiredFields: ['nick','mail'], //设置必填项
+        // 设置Bilibili表情包地址
+        emojiCDN: '//i0.hdslb.com/bfs/emote/', 
+        // 表情title和图片映射
+        emojiMaps: {
+           "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+           "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+           "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+           "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+           "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+           "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+           "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+           "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+           "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+           "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+           "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+           "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+           "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+           "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+           "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+           "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+           "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+           "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+           "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+           "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+           "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+           "tv_打脸": "56ab10b624063e966bfcb76ea5dc4794d87dfd47.png",
+           "tv_抓狂": "fe31c08edad661d63762b04e17b8d5ae3c71a757.png",
+           "tv_抠鼻": "c666f55e88d471e51bbd9fab9bb308110824a6eb.png",
+           "tv_斜眼笑": "911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png",
+           "tv_无奈": "ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png",
+           "tv_晕": "5443c22b4d07fb1907ccc610c8e6db254f2461b7.png",
+           "tv_流汗": "cead1c351ab8d79e9f369605beb90148db0fbed3.png",
+           "tv_流泪": "7e71cde7858f0cd50d74b0264aa26db612a8a167.png",
+           "tv_流鼻血": "c32d39db2737f89b904ca32700d140a9241b0767.png",
+           "tv_点赞": "f85c354995bd99e28fc76c869bfe42ba6438eff4.png",
+           "tv_生气": "26702dcafdab5e8225b43ffd23c94ac1ff932654.png",
+           "tv_生病": "8b0ec90e6b86771092a498c54f09fc94621c1900.png",
+           "tv_疑问": "0793d949b18d7be716078349c202c15ff166f314.png",
+           "tv_白眼": "c1d59f439e379ee50eef488bcb5e5378e5044ea4.png",
+           "tv_皱眉": "72ccad6679fea0d14cce648b4d818e09b8ffea2d.png",
+           "tv_目瞪口呆": "0b8cb81a68de5d5365212c99375e7ace3e7891b7.png",
+           "tv_睡着": "8b196675b53af58264f383c50ad0945048290b33.png",
+           "tv_笑哭": "1abc628f6d4f4caf9d0e7800878f4697abbc8273.png",
+           "tv_腼腆": "89712c0d4af73e67f89e35cbc518420380a7f6f4.png",
+           "tv_色": "61822c7e9aae5da76475e7892534545336b23a6f.png",
+           "tv_调侃": "4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png",
+           "tv_调皮": "b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png",
+           "tv_鄙视": "6e72339f346a692a495b123174b49e4e8e781303.png",
+           "tv_闭嘴": "c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png",
+           "tv_难过": "87f46748d3f142ebc6586ff58860d0e2fc8263ba.png",
+           "tv_馋": "fc7e829b845c43c623c8b490ee3602b7f0e76a31.png",
+           "tv_鬼脸": "0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png",
+           "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
+           "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png"
+      // ... 更多表情
+     }
+   });
 </script>
 
       <div class="single-reward">
         <div class="reward-open">赏
           <div class="reward-main">
             <ul class="reward-row">
-              <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/custom/donate/AlipayQR.jpg"></li>
-              <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/custom/donate/WeChanQR.jpg"></li>
+              <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/custom/donate/AlipayQR.jpg"></li>
+              <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/custom/donate/wechanQR.jpg"></li>
             </ul>
           </div>
         </div>
@@ -514,7 +616,7 @@
       <!-- #post-## -->
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="/about/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/custom/avatar.jpg" itemprop="image" alt="小叽" height="70" width="70"></a>
+          <a href="/about/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/custom/avatar.jpg" itemprop="image" alt="小叽" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
@@ -568,31 +670,49 @@
   <div class="site-info">
     <div class="footertext">
       <div class="img-preload">
-        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
-        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+        <img src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/other/disqus-preloader.svg">
       </div>
       <p style="color: #666666;">&copy 2020</p>
     </div>
     <div class="footer-device">
-    <p style="font-family: mengna,'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages</a>
+      <p style="font-family: mengna,'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://liufg.basaka.ga" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> 
         </span>
+	
+        <span id="timeDate">载入天数...</span>
+        <span id="times">载入时分秒...</span>
       </p>
     </div>
   </div><!-- .site-info -->
 </footer>
-
-
+<!-- 在博客底部添加网站运行时间 -->
+<script>
+  var now = new Date();
+  function createtime() {
+    var grt= new Date("07/07/2020 16:44:00");//此处修改你的建站时间或者网站上线时间
+    now.setTime(now.getTime()+250);
+    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+    if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+    document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 ";
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+  }
+  setInterval("createtime()",250);
+</script>
 
 <!-- <script src="/js/tocbot.js"></script> -->
-<script type="text/javascript" src="/js/lib.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/lib.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-<script type="text/javascript" src="/js/InsightSearch.js"></script>
-<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/js/zoom.min.js"></script>
-<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/InsightSearch.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/zoom.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/sakura-app.js"></script>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script type="text/javascript" src="/js/Valine.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/Valine.min.js"></script>
 <script src="/js/botui.js"></script>
 <!-- 不蒜子 网页计数器 -->
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -600,9 +720,9 @@
 <script type="text/javascript">
 /* <![CDATA[ */
 if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.6","name":"BeautifulWorld.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN","name":"BeautifulWorld.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 } else {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.6","name":"BeautifulWorld.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN","name":"BeautifulWorld.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 }
 /* ]]> */
 
@@ -662,7 +782,7 @@ $(document).ready(function() {
   </section>
   <div id="mo-nav" class="">
   <div class="m-avatar">
-    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@2.2/img/custom/avatar.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN/img/custom/avatar.jpg">
   </div>
   <p style="text-align: center; color: #333; font-weight: 900; font-family: mengna,'Ubuntu', sans-serif; letter-spacing: 1.5px">さくら村の小叽</p>
   <p style="text-align: center; word-spacing: 20px;">
@@ -895,7 +1015,7 @@ $(document).ready(function() {
 
     fixed="true"
 
-    autoplay="true"
+    autoplay="false"
 
     loop="all"
 
@@ -921,15 +1041,28 @@ $(document).ready(function() {
 </script>
 </body>
 </html>
+<!--Davoice在线联系，调用下边的js与用户沟通-->
+<script>
+  daovoice('init', { 
+     app_id: "fd57d550",
+     user_id: "NO_89757", 
+     email: "945356012@qq.com", 
+     name: "小叽", 
+     signed_up: 1449821660 
+     });
+  daovoice('update');
+  daovoice('init', {
+    app_id: "fd57d550"
+     });
+  daovoice('update');
+</script>
 
-	
+<!--<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/sakura.js"></script>   樱花飘落特效-->
+<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/xuehua.js"></script>   <!--鼠标雪花特效-->
+<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/canvas-nest.min.js"></script><!--背景线条特效-->
+<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/noSomeKey.js"></script>  <!--禁止鼠标复制-->
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>  <!--不蒜子计数-->
+<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/Live2d/autoload.js"></script>  <!--lived2d看板娘-->
 
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script>   
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehua.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
 
-<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	
-<script src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/live2d/autoload.js"></script>
 
