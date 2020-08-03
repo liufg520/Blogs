@@ -1,6 +1,6 @@
 @font-face {
-  font-family:"mengna";src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.eot");
-src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.eot?#iefix") format("embedded-opentype"),url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.woff") format("woff"),url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.ttf") format("truetype"),url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.svg#mengna") format("svg")
+  font-family:"mengna";src:url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.9/fonts/mengna/mengna.eot");
+src:url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.9/fonts/mengna/mengna.eot?#iefix") format("embedded-opentype"),url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.9/fonts/mengna/mengna.woff") format("woff"),url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.9/fonts/mengna/mengna.ttf") format("truetype"),url("https://cdn.jsdelivr.net/gh/liufg520/SakuraCDN@1.9/fonts/mengna/mengna.svg#shuiyun") format("svg")
 }
 
 .mengna {
@@ -17,7 +17,7 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
   font-family: "mengna" !important
 }
 
-.social-share .icon-tencent:before {
+.mengna .icon-tencent:before {
   content: "\f07a"
 }
 
