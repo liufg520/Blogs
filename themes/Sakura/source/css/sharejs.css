@@ -3,7 +3,7 @@
 src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.eot?#iefix") format("embedded-opentype"),url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.woff") format("woff"),url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.ttf") format("truetype"),url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengna.svg#mengna") format("svg")
 }
 
-.mengna {
+.social-share {
     display: inline-block;
   font-family: "mengna" !important;
   font-size: 16px;
@@ -13,7 +13,7 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
   -moz-osx-font-smoothing: grayscale
 }
 
-.mengna * {
+.social-share * {
   font-family: "mengna" !important
 }
 
@@ -22,19 +22,19 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
 }
 
 .social-share .icon-qq:before {
-  content: "\f11a"
+  content: "\E829"
 }
 
 .social-share .icon-weibo:before {
-  content: "\f12a"
+  content: "\E82D"
 }
 
 .social-share .icon-wechat:before {
-  content: "\f09a"
+  content: "\E82A"
 }
 
 .social-share .icon-douban:before {
-  content: "\f10a"
+  content: "\E828"
 }
 
 .social-share .icon-heart:before {
@@ -46,11 +46,11 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
 }
 
 .social-share .icon-qzone:before {
-  content: "\f08a"
+  content: "\E827"
 }
 
 .social-share .icon-linkedin:before {
-  content: "\f01a"
+  content: "\E81A"
 }
 
 .social-share .icon-diandian:before {
@@ -58,15 +58,15 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
 }
 
 .social-share .icon-facebook:before {
-  content: "\f03a"
+  content: "\E81F"
 }
 
 .social-share .icon-google:before {
-  content: "\f04a"
+  content: "\E821"
 }
 
 .social-share .icon-twitter:before {
-  content: "\f06a"
+  content: "\E825"
 }
 
 .social-share a {

@@ -1,3 +1,4 @@
+<!--网页预加载-->
 <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 <%- partial('_partial/head') %>
 <body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
@@ -25,15 +26,28 @@
   <%- partial('_partial/aplayer', null, {cache: !config.relative_link}) %>
 </body>
 </html>
+<!--Davoice在线联系，调用下边的js与用户沟通-->
+<script>
+  daovoice('init', { 
+     app_id: "fd57d550",
+     user_id: "NO_89757", 
+     email: "945356012@qq.com", 
+     name: "小叽", 
+     signed_up: 1449821660 
+     });
+  daovoice('update');
+  daovoice('init', {
+    app_id: "fd57d550"
+     });
+  daovoice('update');
+</script>
 
-	
+<!--<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/sakura.js"></script>   樱花飘落特效-->
+<!--<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/xuehua.js"></script>   鼠标雪花特效-->
+<!--<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/canvas-nest.min.js"></script>背景线条特效-->
+<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/noSomeKey.js"></script>  <!--禁止鼠标复制-->
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>  <!--不蒜子计数-->
+<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/Live2d/autoload.js"></script>  <!--lived2d看板娘-->
 
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script>   
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehua.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
 
-<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	
-<script src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/live2d/autoload.js"></script>
 
