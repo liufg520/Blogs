@@ -2,7 +2,7 @@
  小白们，不懂的先问百度，百度实在找不到问我谢谢*/
 body{
 	margin: 0;
-	background:url(../img/404-bg.jpg)no-repeat center center fixed;
+	background:url(/404/img/404-bg.jpg)no-repeat center center fixed;
 	background-size:cover;
 	    width: 100%;  
     min-height: 100%;  
