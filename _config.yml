@@ -91,7 +91,7 @@ backup:
   type: git
   message: backup my blog of github and coding
   repository:
-    github: https://github.com/liufg520/liufg520.github.io.git,backup
+    github: git@github.com:liufg520/liufg520.github.io.git,backup
     coding: https://e.coding.net/liufg/liufg/liufg.git,backup
 #RSS
 feed:
