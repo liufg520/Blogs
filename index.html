@@ -417,7 +417,7 @@
             return response.json();
           })
           .then(function (data) {
-            var hitokoto = document.getElementById('hitokoto_text');
+            var hitokoto = document.getElementById('hitokoto');
             var afrom = document.getElementById('afrom');
             hitokoto.innerText = data.hitokoto;
             afrom.innerText =  '——【' + data.from + ' ' + data.from_who + '】';
