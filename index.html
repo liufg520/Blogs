@@ -412,7 +412,7 @@
       <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
       <script>
-        fetch('https://v1.hitokoto.cn/?c=j&c=a')
+        fetch('https://v1.hitokoto.cn/?c=a&c=j&max_length=30&encode=js&select=%23hitokoto')
           .then(function (response){
             return response.json();
           })
