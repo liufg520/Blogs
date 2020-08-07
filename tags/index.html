@@ -26,7 +26,21 @@
     s.parentNode.insertBefore(hm, s);
   })();
   </script>
-
+  <!--百度自动推送-->
+  <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
@@ -95,7 +109,7 @@
   </div>
   <a href="#" class="cd-top faa-float animated"></a>
   <section id="main-container">
-    <div class="headertop filter-grid">
+    <div class="headertop ">
   <div id="banner_wave_1"></div>
   <div id="banner_wave_2"></div>
   <figure id="centerbg" class="centerbg">
@@ -720,6 +734,29 @@
         <span id="times">载入时分秒...</span>
       </p>
     </div>
+    <!--网站底部主题切换工具栏-->
+    <div class="skin-menu no-select" id="mainskin" style="position: fixed">
+      <div class="theme-controls row-container">
+       <ul class="menu-list">
+        <li id="white-bg"> <i class="fa fa-television" aria-hidden="true"></i></li>
+        <li id="sakura-bg"> <i class="iconfont icon-sakura"></i></li>
+        <li id="gribs-bg"> <i class="fa fa-slack" aria-hidden="true"></i></li>
+        <li id="KAdots-bg"> <i class="iconfont icon-dots"></i></li>
+        <li id="totem-bg"> <i class="fa fa-optin-monster" aria-hidden="true"></i></li>
+        <li id="pixiv-bg"> <i class="iconfont icon-pixiv"></i></li>
+        <li id="bing-bg"> <i class="iconfont icon-bing"></i></li>
+        <li id="dark-bg"> <i class="fa fa-moon-o" aria-hidden="true"></i></li>
+       </ul>
+      </div>
+     </div>
+     <canvas id="night-mode-cover"></canvas>
+     <div class="changeSkin-gear no-select cc_pointer" style="visibility: visible; bottom: 0px;">
+      <div class="keys cc_pointer" id="setbtn"> 
+       <span id="open-skinMenu"> 切换主题 | SCHEME TOOL  
+         <i class="iconfont icon-gear inline-block rotating cc_pointer"></i> 
+       </span>
+      </div>
+    </div>
   </div><!-- .site-info -->
 </footer>
 <!-- 在博客底部添加网站运行时间 -->
@@ -807,6 +844,8 @@ $(document).ready(function() {
 
 
 
+
+
     <div class="openNav no-select" style="height: 50px;">
       <div class="iconflat no-select" style="width: 50px; height: 50px;">
         <div class="icon"></div>
@@ -828,7 +867,7 @@ $(document).ready(function() {
       
         <a href="http://weibo.com/liufg520?is_all=1" class="fa fa-weibo" target="_blank" style="color: #dd4b39; margin-left:20px"></a>
       
-        <a href="https://wpa.qq.com/msgrd?v=3&uin=945356012&site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
+        <a href="http://mqqwpa://im/chat?chat_type=wpa&uin=945356012&version=1&src_type=web&web_src=lvlingseeds.com" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
       
     
   </p>
