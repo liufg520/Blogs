@@ -421,14 +421,16 @@
     <i class="iconfont icon-notification">
     </i>
     <div class="notice-content">
-      <p id="hitokoto" style="margin-left:5px;"> :D 获取中...</p>
+      <span id="hitokoto" style="margin-left:5px;"> :D 获取中...</span>
       <p align="right" id="afrom"></p>
       <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
       <script>
-        fetch('https://v1.hitokoto.cn/?c=a&c=j')
-        .then(response => response.json())
-        .then(data => { 
+        fetch('https://v1.hitokoto.cn/?c=h')
+          .then(function (res){
+            return res.json();
+          })
+          .then(function (data) {
             var hitokoto = document.getElementById('hitokoto');
             var afrom = document.getElementById('afrom');
             hitokoto.innerText = data.hitokoto;
