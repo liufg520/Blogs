@@ -18,7 +18,7 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
 }
 
 .social-share .icon-tencent:before {
-  content: "\f07a"
+  content: "\E824"
 }
 
 .social-share .icon-qq:before {
@@ -38,11 +38,11 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
 }
 
 .social-share .icon-heart:before {
-  content: "\f20a"
+  content: "\E82E"
 }
 
 .social-share .icon-like:before {
-  content: "\f00a"
+  content: "\E81B"
 }
 
 .social-share .icon-qzone:before {
@@ -54,7 +54,7 @@ src:url("https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/fonts/mengna/mengn
 }
 
 .social-share .icon-diandian:before {
-  content: "\f05a"
+  content: "\E820"
 }
 
 .social-share .icon-facebook:before {

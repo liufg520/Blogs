@@ -26,7 +26,8 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: 
+  - 404.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -81,16 +82,16 @@ theme: Sakura
 deploy:
   type: git
   repo: 
-    github: git@github.com:liufg520/liufg520.github.io.git
+    github: git@github.com:liufg520/Blogs.git
     coding: git@e.coding.net:liufg/liufg/liufg.git
   branch: master
 
 # backup
 backup:
   type: git
-  message: backup my blog of github and coding
+  message: Backup My Blog of Github and Coding
   repository:
-    github: https://github.com/liufg520/liufg520.github.io.git,backup
+    github: git@github.com:liufg520/Blogs.git,Backup
     coding: https://e.coding.net/liufg/liufg/liufg.git,backup
 #RSS
 feed:
@@ -102,9 +103,4 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-#字数和阅读时间
-symbols_count_time:
-  symbols: true
-  time: true
-  total_symbols: true
-  total_time: true
+ 

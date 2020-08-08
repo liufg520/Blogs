@@ -2,7 +2,7 @@
 prefixName: さくら村の
 siteName: 小叽
 # favicon and site master avatar
-favicon: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/custom/Favicon.ico
+favicon: /img/custom/Favicon.ico
 avatar: /img/custom/avatar.jpg
 url: https://liqian.5201314920.xyz
 description: 只要有想见的人，就不再是孤身一人了。
@@ -11,7 +11,8 @@ pjax: 1
 # 1开启
 mathjax: 0
 
-notice: ｡:.ﾟヽ(｡◕‿◕｡)ﾉﾟ.:｡+ﾟ
+notice: (。•﹃ •。)孤独一人也没关系，只要能发自内心地爱着一个人，人生就会有救。哪怕不能和他生活在一起。
+#我喜欢你并不是一定要和你在一起，只是希望今后的你在遭遇人生低谷的时候不要灰心，至少曾经有人被你的魅力所吸引，曾经是，以后也会是”。————【村上春树】
 lazyloadImg: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
@@ -90,7 +91,7 @@ social:
 msocial:
   github: {url: http://github.com/liufg520, fa: fa-github, color: 333}
   weibo: {url: http://weibo.com/liufg520?is_all=1, fa: fa-weibo, color: dd4b39}
-  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=945356012&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
+  qq: {url: http://mqqwpa://im/chat?chat_type=wpa&uin=945356012&version=1&src_type=web&web_src=lvlingseeds.com, fa: fa-qq, color: 25c6fe}
 
    # 赞赏二维码 #
 donate:
@@ -135,9 +136,9 @@ valine:
   recordIP: true # 是否记录评论者IP
   serverURLs: '' 
   count: true # top_img顯示評論數
-# Online contact 
-# daovoice: false
-# daovoice_app_id: fd57d550
+#Online contact 
+#daovoice: false
+#daovoice_app_id: fd57d550
 
 #Hexo 字数和阅读时间统计插件
 symbols_count_time:
