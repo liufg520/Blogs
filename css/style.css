@@ -7882,10 +7882,10 @@ td.hljs-ln-numbers {
   font-weight: normal;
 }
 .my_post_copyright .copy-path {
-  margin-left: 1em;
-  width: 1em;
-  +mobile(){display:none;}
-}
+    margin-left: 1em;
+    width: 1em; 
+    display:none;
+  }
 .my_post_copyright .copy-path:hover {
   color: #808080;
   cursor: pointer;
