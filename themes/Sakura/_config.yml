@@ -91,7 +91,7 @@ social:
 msocial:
   github: {url: http://github.com/liufg520, fa: fa-github, color: 333}
   weibo: {url: http://weibo.com/liufg520?is_all=1, fa: fa-weibo, color: dd4b39}
-  qq: {url: http://mqqwpa://im/chat?chat_type=wpa&uin=945356012&version=1&src_type=web&web_src=lvlingseeds.com, fa: fa-qq, color: 25c6fe}
+  qq: {url: mqqwpa://im/chat?chat_type=wpa&uin=945356012&version=1&src_type=web&web_src=lvlingseeds.com, fa: fa-qq, color: 25c6fe}
 
    # 赞赏二维码 #
 donate:
