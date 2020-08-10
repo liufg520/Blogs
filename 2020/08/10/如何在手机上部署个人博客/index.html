@@ -420,6 +420,30 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
 
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/背景图/20200810002337.jpg);" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/背景图/20200810002337.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      如何在手机上部署个人博客</h1>
+      <p class="entry-census">
+        <span>
+          <a href="www.basaka.ga">
+            <img src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/custom/avatar.jpg">
+          </a>
+        </span>
+        <span>
+          <a href="www.basaka.ga">ちい</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2020-8-10<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
+  </div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
@@ -427,26 +451,11 @@
         <div class="toc"></div>
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
-          <header class="entry-header">
-            <h1 class="entry-title">如何在手机上部署个人博客</h1>
-            <p class="entry-census">ちい&nbsp;·&nbsp;2020-8-10&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
-
-            <hr>
-          </header>
-        
         <div class="entry-content">
-          <h1 id><a href="#" class="headerlink" title=" "></a> </h1><h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><blockquote>
-<p>​               <strong>此教程主要记录本人搭建Hexo博客的过程及遇到的相关问题，方便以后自行查看。如果想在安卓手机上搭建Hexo那就不得不提到Termux这个强大的高级模拟终端了，关于Termux本文只涉及到Hexo的相关配置。有关Termux更多美妙的用法请自行度娘研究。以下文件配置修改我用的是Vim，不建议使用Vim。编辑器使用建议：电脑端推荐Vscode，手机端推荐jota+。为什么推荐专业的编辑器呢？因为第二篇关于修改主题的教程非Vscode莫属，最主要还是Vscode支持的语言多，修改代码比较方便。另外还可以通Xshell，Xftp连接到Temux进行远程管理修改文件。关于博客搭建的方法多种多样，可根据实际的配置环境去度娘寻找适合自己的部署方案。建议用宝塔面板一键部署，省事省力。</strong></p>
-</blockquote>
-<h2 id="一-博客平台对比"><a href="#一-博客平台对比" class="headerlink" title="一.博客平台对比"></a>一.博客平台对比</h2><blockquote>
-<p><strong>Hexo博客平台:</strong> Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。一般选择结合github使用，无需支付服务器成本。</p>
-</blockquote>
-<blockquote>
+          <h1 id><a href="#" class="headerlink" title=" "></a> </h1><h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>​               <strong>此教程主要记录本人搭建Hexo博客的过程及遇到的相关问题，方便以后自行查看。如果想在安卓手机上搭建Hexo那就不得不提到Termux这个强大的高级模拟终端了，关于Termux本文只涉及到Hexo的相关配置。有关Termux更多美妙的用法请自行度娘研究。以下文件配置修改我用的是Vim，不建议使用Vim。编辑器使用建议：电脑端推荐Vscode，手机端推荐jota+。为什么推荐专业的编辑器呢？因为第二篇关于修改主题的教程非Vscode莫属，最主要还是Vscode支持的语言多，修改代码比较方便。另外还可以通Xshell，Xftp连接到Temux进行远程管理修改文件。关于博客搭建的方法多种多样，可根据实际的配置环境去度娘寻找适合自己的部署方案。建议用宝塔面板一键部署，省事省力。</strong></p>
+<h2 id="一-博客平台对比"><a href="#一-博客平台对比" class="headerlink" title="一.博客平台对比"></a>一.博客平台对比</h2><p><strong>Hexo博客平台:</strong> Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。一般选择结合github使用，无需支付服务器成本。</p>
 <p><strong>Typecho博客平台:</strong> Typecho是由type和echo两个词合成的，来自于开发团队的头脑风暴。Typecho基于PHP5开发，支持多种数据库，是一款内核强健﹑扩展方便﹑体验友好﹑运行流畅的轻量级开源博客程序。选用Typecho，搭建独一无二个人网络日志发布平台，享受创作的快乐。</p>
-</blockquote>
-<blockquote>
 <p><strong>WordPress博客平台：</strong>WordPress是一款个人博客系统，并逐步演化成一款内容管理系统软件，它是使用PHP语言和MySQL数据库开发的。用户可以在支持 PHP 和 MySQL数据库的服务器上使用自己的博客。</p>
-</blockquote>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F.png" alt></p>
 <h2 id="二-博客部署流程"><a href="#二-博客部署流程" class="headerlink" title="二.博客部署流程"></a>二.博客部署流程</h2><ol>
 <li><h3 id="在安卓手机上安装Termux高级模拟终端："><a href="#在安卓手机上安装Termux高级模拟终端：" class="headerlink" title="在安卓手机上安装Termux高级模拟终端："></a><strong>在安卓手机上安装Termux高级模拟终端：</strong></h3></li>
@@ -519,9 +528,7 @@ PS:这里我修改过默认端口所以访问http://localhost:8081， 如果能�
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8DCname%E7%B1%BB%E5%9E%8B%E8%AE%B0%E5%BD%95.png" alt></p>
 <p><strong>⑶  在仓库设置—GitHub Pages绑定个人域名</strong></p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Github%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt></p>
-<blockquote>
 <p>​      <strong>PS:此时你可以使用你的个人域名来访问你的博客了，是不是很开心呢！</strong></p>
-</blockquote>
 
         </div>
         <!-- .entry-content -->
