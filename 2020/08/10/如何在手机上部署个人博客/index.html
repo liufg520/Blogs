@@ -422,7 +422,7 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/背景图/20200810002337.jpg);" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/背景图/20200810002337.jpg">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810092709.jpg);" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810092709.jpg">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
@@ -452,15 +452,14 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h1 id><a href="#" class="headerlink" title=" "></a> </h1><h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>​               <strong>此教程主要记录本人搭建Hexo博客的过程及遇到的相关问题，方便以后自行查看。如果想在安卓手机上搭建Hexo那就不得不提到Termux这个强大的高级模拟终端了，关于Termux本文只涉及到Hexo的相关配置。有关Termux更多美妙的用法请自行度娘研究。以下文件配置修改我用的是Vim，不建议使用Vim。编辑器使用建议：电脑端推荐Vscode，手机端推荐jota+。为什么推荐专业的编辑器呢？因为第二篇关于修改主题的教程非Vscode莫属，最主要还是Vscode支持的语言多，修改代码比较方便。另外还可以通Xshell，Xftp连接到Temux进行远程管理修改文件。关于博客搭建的方法多种多样，可根据实际的配置环境去度娘寻找适合自己的部署方案。建议用宝塔面板一键部署，省事省力。</strong></p>
+          <h1 id><a href="#" class="headerlink" title=" "></a> </h1><h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p><strong>此教程主要记录本人搭建Hexo博客的过程及遇到的相关问题，方便以后自行查看。如果想在安卓手机上搭建Hexo那就不得不提到 Termux这个强大的高级模拟终端了，关于Termux本文只涉及到Hexo的相关配置。有关Termux更多美妙的用法请自行度娘研究。以下文件配置修改我用的是Vim，不建议使用Vim。编辑器使用建议：电脑端推荐Vscode，手机端推荐jota+。为什么推荐专业的编辑器呢？因为第二篇关于修改主题的教程非Vscode莫属，最主要还是Vscode支持的语言多，修改代码比较方便。另外还可以通Xshell，Xftp连接到Temux进行远程管理修改文件。关于博客搭建的方法多种多样，可根据实际的配置环境去度娘寻找适合自己的部署方案。建议用宝塔面板一键部署，省事省力。</strong></p>
 <h2 id="一-博客平台对比"><a href="#一-博客平台对比" class="headerlink" title="一.博客平台对比"></a>一.博客平台对比</h2><p><strong>Hexo博客平台:</strong> Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。一般选择结合github使用，无需支付服务器成本。</p>
 <p><strong>Typecho博客平台:</strong> Typecho是由type和echo两个词合成的，来自于开发团队的头脑风暴。Typecho基于PHP5开发，支持多种数据库，是一款内核强健﹑扩展方便﹑体验友好﹑运行流畅的轻量级开源博客程序。选用Typecho，搭建独一无二个人网络日志发布平台，享受创作的快乐。</p>
 <p><strong>WordPress博客平台：</strong>WordPress是一款个人博客系统，并逐步演化成一款内容管理系统软件，它是使用PHP语言和MySQL数据库开发的。用户可以在支持 PHP 和 MySQL数据库的服务器上使用自己的博客。</p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F.png" alt></p>
 <h2 id="二-博客部署流程"><a href="#二-博客部署流程" class="headerlink" title="二.博客部署流程"></a>二.博客部署流程</h2><ol>
-<li><h3 id="在安卓手机上安装Termux高级模拟终端："><a href="#在安卓手机上安装Termux高级模拟终端：" class="headerlink" title="在安卓手机上安装Termux高级模拟终端："></a><strong>在安卓手机上安装Termux高级模拟终端：</strong></h3></li>
-</ol>
-<ol start="2">
+<li><h3 id="在安卓手机上安装Termux高级模拟终端："><a href="#在安卓手机上安装Termux高级模拟终端：" class="headerlink" title="**在安卓手机上安装Termux高级模拟终端："></a>**在安卓手机上安装Termux高级模拟终端：</h3><p> <strong>下载地址：<a href="https://pan.baidu.com/s/1oNcGOc-_I6oSAbyTz99eNA" target="_blank" rel="noopener">https://pan.baidu.com/s/1oNcGOc-_I6oSAbyTz99eNA</a></strong></p>
+</li>
 <li><h3 id="首次启动Termux会从Termux官网远程服务器加载数据，极大概率会出现以下问题："><a href="#首次启动Termux会从Termux官网远程服务器加载数据，极大概率会出现以下问题：" class="headerlink" title="首次启动Termux会从Termux官网远程服务器加载数据，极大概率会出现以下问题："></a><strong>首次启动Termux会从Termux官网远程服务器加载数据，极大概率会出现以下问题：</strong></h3><pre><code>Ubable to install
 Termux was unable to install the bootstrap packages.
 Check your network connection and try again.
@@ -486,49 +485,47 @@ apt update &amp;&amp; apt upgrade
 </code></pre><pre><code>hexo s     启动hexo默认端口4000
 </code></pre><pre><code>vi ~/hexo/node_modules/hexo-server/index.js       修改默认端口(可选)
 hexo.config.server = Object.assign({ port: 8081,  这里我将默认端口改为了8081
-PS:这里我修改过默认端口所以访问http://localhost:8081， 如果能够正常访问，则说明 Hexo本地博客已经搭建起来了，将Hexo关联到Github就可以在外网访问您的博客了。
-</code></pre></li>
-<li><h3 id="将Hexo部署到GitHubPages"><a href="#将Hexo部署到GitHubPages" class="headerlink" title="将Hexo部署到GitHubPages"></a><strong>将Hexo部署到GitHubPages</strong></h3><p><strong>①</strong> <strong>需要一个Github账号，自行注册。</strong></p>
+</code></pre><p><strong>PS:这里我修改过默认端口所以访问<a href="http://localhost:8081，" target="_blank" rel="noopener">http://localhost:8081，</a> 如果能够正常访问，则说明 Hexo本地博客已经搭建起来了，将Hexo关联到Github就可以在外网访问您的博客了。</strong></p>
+</li>
+<li><h3 id="将Hexo部署到GitHubPages"><a href="#将Hexo部署到GitHubPages" class="headerlink" title="将Hexo部署到GitHubPages"></a><strong>将Hexo部署到GitHubPages</strong></h3><p><strong>① 需要一个Github账号，自行注册。注册地址：GIthub官网 <a href="https://github.com" target="_blank" rel="noopener">https://github.com</a></strong> </p>
+<p><strong>②</strong> <strong>新建一个 repository。如果你希望你的站点能通过 <code>&lt;你的 GitHub 用户名&gt;.github.io</code> 域名访问，你的 repository 应该直接命名为 <code>&lt;你的 GitHub 用户名&gt;.github.io</code>。如下图所示：</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E7%AB%99%E7%82%B9%E9%80%9A%E8%BF%87Github%E8%AE%BF%E9%97%AE%E5%BB%BA%E7%AB%8BGithub%E4%BB%93%E5%BA%93%E5%90%8D%E6%A0%BC%E5%BC%8F.png" alt></p>
+<p>  <strong>③</strong> <strong>安装hexo-deployer-git插件</strong></p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>  <strong>④</strong> <strong>配置一键 Deployment参数</strong></p>
+<pre><code>vi ~/hexo/_config.yml   这是站点配置文件
+</code></pre><pre><code># Deployment(修改部署配置)
+## Docs:https://hexo.io/docs/deployment.html
+    deploy:
+      type: git
+      repo: git@github.com:liufg520/liufg520.github.io.git  
+      branch: master
+</code></pre><p>  <strong>⑤</strong> <strong>创建ssh key，密码为空</strong></p>
+<pre><code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;
+</code></pre><p><strong>注意：输入以上命令直接回车3下密码为空，邮箱地址是注册登录github使用的邮箱地址，改成你自己的邮箱即可。</strong></p>
+<p>  <strong>⑥</strong> <strong>将生成的公钥添加到GitHub</strong></p>
+<pre><code>cat .ssh/id_rsa.pub  查看复制生成的公钥文件内容
+</code></pre><p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-sshkey.pub.png" alt></p>
+<p>  <strong>⑦</strong>  <strong>测试ssh key是否添加成功</strong></p>
+<pre><code>ssh -T git@github.com
+</code></pre><p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%B7%BB%E5%8A%A0sshKey%E6%B5%8B%E8%AF%95%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F.png" alt></p>
+<p>  <strong>⑧</strong>  <strong>配置个人信息告诉github你是谁来进行权限处理</strong></p>
+<pre><code>git config --global user.email &quot;945356012@qq.com&quot;
+</code></pre><pre><code>git config --global user.name &quot;liufg520&quot;
+</code></pre><p>  <strong>⑨</strong>  <strong>测试Hexo是否将网页推送到GithubPages</strong></p>
+<pre><code>hexo clean  清除旧public目录文件
+</code></pre><pre><code>hexo g      生成新public目录文件
+</code></pre><pre><code>hexo d      部署推送到github
+</code></pre><p><strong>PS：如果返回以下信息表示部署推送成功，使用浏览器访问<a href="https://liufg520.github.io就可以访问到我的博客了！如下图所示：" target="_blank" rel="noopener">https://liufg520.github.io就可以访问到我的博客了！如下图所示：</a></strong><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%A3%80%E6%9F%A5Hexo%E6%98%AF%E5%90%A6%E5%B0%86%E7%BD%91%E9%A1%B5%E6%88%90%E5%8A%9F%E6%8E%A8%E9%80%81%E5%88%B0Github.png" alt></p>
 </li>
 </ol>
-<p>   <strong>②</strong> <strong>新建一个 repository。如果你希望你的站点能通过 <code>&lt;你的 GitHub 用户名&gt;.github.io</code> 域名访问，你的 repository 应该直接命名为 <code>&lt;你的 GitHub 用户名&gt;.github.io</code>。如下：</strong></p>
-<p>   <img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E7%AB%99%E7%82%B9%E9%80%9A%E8%BF%87Github%E8%AE%BF%E9%97%AE%E5%BB%BA%E7%AB%8BGithub%E4%BB%93%E5%BA%93%E5%90%8D%E6%A0%BC%E5%BC%8F.png" alt></p>
-<p>   <strong>③</strong> <strong>安装hexo-deployer-git插件</strong></p>
-<pre><code>   npm install hexo-deployer-git --save
-</code></pre><p>   <strong>④</strong> <strong>配置一键 Deployment参数</strong></p>
-<pre><code>   vi ~/hexo/_config.yml   这是站点配置文件
-</code></pre><pre><code>   # Deployment(修改部署配置)
-   ## Docs:https://hexo.io/docs/deployment.html
-       deploy:
-         type: git
-         repo: git@github.com:liufg520/liufg520.github.io.git  
-         branch: master
-</code></pre><p>   <strong>⑤</strong> <strong>创建ssh key，密码为空</strong></p>
-<pre><code>   ssh-keygen -t rsa -C &quot;邮箱地址&quot;
-</code></pre><blockquote>
-<p><strong>注意：输入以上命令直接回车3下密码为空，邮箱地址是注册登录github使用的邮箱地址，改成你自己的邮箱即可。</strong></p>
-</blockquote>
-<p>   <strong>⑥</strong> <strong>将生成的公钥添加到GitHub</strong></p>
-<pre><code>   cat .ssh/id_rsa.pub  查看复制生成的公钥文件内容
-</code></pre><p>   <img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-sshkey.pub.png" alt></p>
-<p>   <strong>⑦</strong>  <strong>测试ssh key是否添加成功</strong></p>
-<pre><code>   ssh -T git@github.com
-</code></pre><p>   <img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%B7%BB%E5%8A%A0sshKey%E6%B5%8B%E8%AF%95%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F.png" alt></p>
-<p>   <strong>⑧</strong>  <strong>配置个人信息告诉github你是谁来进行权限处理</strong></p>
-<pre><code>   git config --global user.email &quot;945356012@qq.com&quot;
-</code></pre><pre><code>   git config --global user.name &quot;liufg520&quot;
-</code></pre><p>   <strong>⑨</strong>  <strong>测试Hexo是否将网页推送到GithubPages</strong></p>
-<pre><code>   hexo clean  清除旧public目录文件
-</code></pre><pre><code>   hexo g      生成新public目录文件
-</code></pre><pre><code>   hexo d      部署推送到github
-</code></pre><p>   <strong>PS：如果返回以下信息表示部署推送成功，使用浏览器访问<a href="https://liufg520.github.io就可以访问到我的博客了！如下图所示：" target="_blank" rel="noopener">https://liufg520.github.io就可以访问到我的博客了！如下图所示：</a></strong><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%A3%80%E6%9F%A5Hexo%E6%98%AF%E5%90%A6%E5%B0%86%E7%BD%91%E9%A1%B5%E6%88%90%E5%8A%9F%E6%8E%A8%E9%80%81%E5%88%B0Github.png" alt></p>
-<p><strong>⑩</strong>  <strong>Github绑定自定义域名</strong></p>
-<p><strong>⑴  免费申请个人域名</strong> </p>
-<p><strong>⑵  在域名配置管理添加CNAME类型</strong></p>
+<p>​        <strong>⑩</strong>  <strong>Github绑定自定义域名</strong></p>
+<p>​        <strong>⑴  免费申请个人域名  申请域名地址 <a href="http://www.freenom.com/zh/index.html" target="_blank" rel="noopener">http://www.freenom.com/zh/index.html</a></strong> </p>
+<p>​        <strong>⑵  在域名配置管理添加CNAME类型</strong></p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8DCname%E7%B1%BB%E5%9E%8B%E8%AE%B0%E5%BD%95.png" alt></p>
-<p><strong>⑶  在仓库设置—GitHub Pages绑定个人域名</strong></p>
+<p>​     <strong>⑶  在仓库设置—GitHub Pages绑定个人域名</strong></p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Github%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt></p>
-<p>​      <strong>PS:此时你可以使用你的个人域名来访问你的博客了，是不是很开心呢！</strong></p>
+<p>​             <strong>PS:此时你可以使用你的个人域名来访问你的博客了，是不是很开心呢！</strong></p>
 
         </div>
         <!-- .entry-content -->
