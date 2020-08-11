@@ -44,7 +44,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">文章测试 | 🌈ちいの小本🎈</title>
+  <title itemprop="name">安卓手机部署个人博客 | 🌈ちいの小本🎈</title>
   
     <link rel="shortcut icon" href="/img/custom/Favicon.ico">
   
@@ -422,11 +422,11 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp);" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810101650.jpg);" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810101650.jpg">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      文章测试</h1>
+      安卓手机部署个人博客</h1>
       <p class="entry-census">
         <span>
           <a href="www.basaka.ga">
@@ -438,7 +438,7 @@
         </span>
         <span class="bull">
         ·</span>
-        2020-8-4<span class="bull">
+        2020-8-11<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -452,8 +452,77 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <hr>
-<p>一.日语表记法：<br>假名（表音、表义）<br>汉字（表义）<br>罗马字（表音）<br>1.最基本的表音单位：<br>假名：分片假名（表外来语音义）、平假名（表音、独立或与汉字一起表义）<br>假名表（五十音图）<br>2.日语中的汉字：常用汉字1945字（实际使用的汉字为3000左右）数量少，但读音多。（音读、训读）字体大多为繁体，有简体与中文汉字形同义异的字词：<br>娘——女儿          手紙——信         汽車——火车<br>国字:日本自己创造的仿形字。<br>3.罗马字：表记地名及人名的读音。如：Toukyou/東京、Tanka/田中。由于历史原因，多种拼法并存，可参考五十音图的注音。</p>
+          <h1 id><a href="#" class="headerlink" title=" "></a> </h1><h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>​                <strong>此教程主要记录Hexo博客搭建过程及遇到的相关问题，方便以后自行查看。为什么要在手机上搭建博客呢？手机作为人们每时每刻都离不开的工具，在手机上搭建自己的个人博客一是可以用来装逼二是可以随时随地的发布自己的博文，岂不是美滋滋？(๑•؎ •๑)✧那么问题来了，该怎么在手机上搭建博客呢？这就不得不提到 Termux这个强大的高级模拟终端了，它的存在可以让你的手机瞬间变成一台小型主机服务器。此时此真想说一声：Termux赛高！！！( •̀ ω •́ )✧关于Termux更多美妙的用法请自行度娘研究。在这里呢作为小白萌新的我给出一些建议；关于源代码编辑器：电脑端推荐Vscode，手机端推荐jota+。为什么推荐专业的编辑器呢？那是因为在博客搭建完成之后，还需要找一款自己喜欢的主题风格进行源代码修改。在修改源代码的过程中你就会体会到专业的源代码编辑器是多么的美好，瞬间想起了我之前像SB一样用手机vim去改源代码，留下了痛苦的泪水。vim大佬可以忽略我的吐槽！尽量使用电脑去修改源代码，如果不方便用电脑可以用上边推荐的jota+。另外还可以通过Xshell，Xftp连接到Temux进行远程管理修改文件。关于博客搭建的方法多种多样，可根据实际的配置环境去度娘寻找适合自己的部署方案。那么接下来我们就乘坐着哆啦A梦的时光机开始进入愉快的搭建之旅吧！</strong></p>
+<h2 id="一-博客平台对比"><a href="#一-博客平台对比" class="headerlink" title="一.博客平台对比"></a>一.博客平台对比</h2><p><strong>Hexo博客平台:</strong> Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。一般选择结合github使用，无需支付服务器成本。</p>
+<p><strong>Typecho博客平台:</strong> Typecho是由type和echo两个词合成的，来自于开发团队的头脑风暴。Typecho基于PHP5开发，支持多种数据库，是一款内核强健﹑扩展方便﹑体验友好﹑运行流畅的轻量级开源博客程序。选用Typecho，搭建独一无二个人网络日志发布平台，享受创作的快乐。</p>
+<p><strong>WordPress博客平台：</strong>WordPress是一款个人博客系统，并逐步演化成一款内容管理系统软件，它是使用PHP语言和MySQL数据库开发的。用户可以在支持 PHP 和 MySQL数据库的服务器上使用自己的博客。</p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F.png" alt></p>
+<h2 id="二-博客部署流程"><a href="#二-博客部署流程" class="headerlink" title="二.博客部署流程"></a>二.博客部署流程</h2><h3 id="1-安装配置Termux："><a href="#1-安装配置Termux：" class="headerlink" title="1.安装配置Termux："></a>1.安装配置Termux：</h3><p><strong>① 下载地址：<a href="https://pan.baidu.com/s/1yaeFOAJHusuIQL9654whdg" target="_blank" rel="noopener">https://pan.baidu.com/s/1yaeFOAJHusuIQL9654whdg</a> 提取码:e2i6</strong></p>
+<p><strong>② 首次启动Termux会从官网远程服务器加载数据，极大概率会出现以下问题：</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Termux%E5%AE%89%E8%A3%85%E5%88%9D%E5%A7%8B%E5%8C%96%E6%8A%A5%E9%94%99.png" alt></p>
+<p>✨<strong>问题原因</strong>：<strong>从服务器获取数据失败，网络问题。</strong></p>
+<p>🎉<strong>解决办法</strong>：<strong>需要挂梯子去谷歌商店或者从F-Droid开源仓库里重新下载安装Termux。</strong></p>
+<p><strong>③ 打开termux终端，输入以下命令更换默认源为清华大学源加快软件包的下载速度。</strong></p>
+<pre><code>sed -i &#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&#39; $PREFIX/etc/apt/sources.list
+sed -i &#39;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&#39; $PREFIX/etc/apt/sources.list.d/game.list
+sed -i &#39;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&#39; $PREFIX/etc/apt/sources.list.d/science.list
+apt update &amp;&amp; apt upgrade
+</code></pre><p><strong>④ 安装常用基础工具</strong></p>
+<pre><code>pkg install vim curl wget git tree openssh -y
+</code></pre><h3 id="2-安装配置Hexo："><a href="#2-安装配置Hexo：" class="headerlink" title="2.安装配置Hexo："></a>2.安装配置Hexo：</h3><p><strong>① 由于Hexo基于Nodejs环境运行，所以必须安装Nodejs</strong></p>
+<pre><code>pkg install nodejs-lts  安装稳定版本       
+</code></pre><pre><code>node -v 查看node版本
+</code></pre><pre><code>npm -v  查看npm版本
+</code></pre><p><strong>② 安装初始化Hexo</strong></p>
+<pre><code>npm install hexo-cli -g   使用npm安装Hexo 
+</code></pre><pre><code>hexo -v    查看版本        
+</code></pre><pre><code>mkdir Hexo 新建文件夹
+</code></pre><pre><code>cd Hexo    进入Hexo文件夹 
+</code></pre><pre><code>hexo init  将hexo初始化到Hexo目录下
+</code></pre><p><strong>PS:安装完成后你会看到有WARN，不用担心，不影响使用</strong></p>
+<p><strong>③ 生成静态文件并启动Hexo，如果端口被占用我们还可以修改Hexo端口</strong></p>
+<pre><code>hexo g     生成静态网页存放于public目录下
+</code></pre><pre><code>hexo s     启动hexo默认端口4000
+</code></pre><pre><code>vi ~/hexo/node_modules/hexo-server/index.js       修改默认端口(可选)
+hexo.config.server = Object.assign({ port: 8081,  这里我将默认端口改为了8081
+</code></pre><p><strong>PS:这里我修改过默认端口所以访问<a href="http://localhost:8081，" target="_blank" rel="noopener">http://localhost:8081，</a> 如果能够正常访问，则说明 Hexo本地博客已经搭建起来了，将Hexo关联到Github就可以在外网访问您的博客了。</strong></p>
+<h3 id="3-将Hexo部署到GitHubPages"><a href="#3-将Hexo部署到GitHubPages" class="headerlink" title="3.将Hexo部署到GitHubPages"></a>3.将Hexo部署到GitHubPages</h3><p><strong>① 需要一个Github账号，自行注册。注册地址：GIthub官网 <a href="https://github.com" target="_blank" rel="noopener">https://github.com</a></strong> </p>
+<p><strong>② 新建一个 repository。如果你希望你的站点能通过 &lt;你的 GitHub 用户名&gt;.github.io 域名访问，你的 repository 应该直接命名为 &lt;你的 GitHub 用户名&gt;.github.io。如下图所示：</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E7%AB%99%E7%82%B9%E9%80%9A%E8%BF%87Github%E8%AE%BF%E9%97%AE%E5%BB%BA%E7%AB%8BGithub%E4%BB%93%E5%BA%93%E5%90%8D%E6%A0%BC%E5%BC%8F.png" alt></p>
+<p>  <strong>③</strong> <strong>安装hexo-deployer-git插件</strong></p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>  <strong>④</strong> <strong>配置一键 Deployment参数</strong></p>
+<pre><code>vi ~/hexo/_config.yml   这是站点配置文件
+# Deployment(修改部署配置)
+## Docs:https://hexo.io/docs/deployment.html
+    deploy:
+      type: git
+      repo: git@github.com:liufg520/liufg520.github.io.git  
+      branch: master
+</code></pre><p>  <strong>⑤</strong> <strong>创建ssh key，密码为空</strong></p>
+<pre><code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;
+</code></pre><p> <strong>注意：输入以上命令直接回车3下密码为空，邮箱地址是注册登录github使用的邮箱地址，改成你自己的邮箱即可。</strong></p>
+<p>  <strong>⑥</strong> <strong>将生成的公钥添加到GitHub</strong></p>
+<pre><code>cat .ssh/id_rsa.pub  查看复制生成的公钥文件内容
+</code></pre><p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-sshkey.pub.png" alt></p>
+<p>  <strong>⑦</strong>  <strong>测试ssh key是否添加成功</strong></p>
+<pre><code>ssh -T git@github.com
+</code></pre><p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%B7%BB%E5%8A%A0sshKey%E6%B5%8B%E8%AF%95%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F.png" alt></p>
+<p>  <strong>⑧</strong>  <strong>配置个人信息告诉github你是谁来进行权限处理</strong></p>
+<pre><code>git config --global user.email &quot;945356012@qq.com&quot;
+</code></pre><pre><code>git config --global user.name &quot;liufg520&quot;
+</code></pre><p>  <strong>⑨</strong>  <strong>测试Hexo是否将网页推送到GithubPages</strong></p>
+<pre><code>hexo clean  清除旧public目录文件
+</code></pre><pre><code>hexo g      生成新public目录文件
+</code></pre><pre><code>hexo d      部署推送到github
+</code></pre><p><strong>PS：如果返回以下信息表示部署推送成功，使用浏览器访问<a href="https://liufg520.github.io就可以访问到我的博客了！如下图所示：" target="_blank" rel="noopener">https://liufg520.github.io就可以访问到我的博客了！如下图所示：</a></strong><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%A3%80%E6%9F%A5Hexo%E6%98%AF%E5%90%A6%E5%B0%86%E7%BD%91%E9%A1%B5%E6%88%90%E5%8A%9F%E6%8E%A8%E9%80%81%E5%88%B0Github.png" alt></p>
+<p>​    <strong>⑩  Github绑定自定义域名</strong></p>
+<p>​        <strong>⑴  免费申请个人域名  申请域名地址 <a href="http://www.freenom.com/zh/index.html" target="_blank" rel="noopener">http://www.freenom.com/zh/index.html</a></strong> </p>
+<p>​        <strong>⑵  在域名配置管理添加CNAME类型</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8DCname%E7%B1%BB%E5%9E%8B%E8%AE%B0%E5%BD%95.png" alt></p>
+<p>​     <strong>⑶  在仓库设置—GitHub Pages绑定个人域名</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Github%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt></p>
+<p>​           <strong>🎉至此，我们的搭建之旅到此结束了，此时您可以使用你的个人域名来访问你的博客了，是不是很开心呢！😊如有疑问可留言给我！能解答的我尽量解答。那么关于下一篇Hexo二次元主题之Sakura我尽量写的详细易懂一些。哆啦A梦：“大雄”，快点回家吃饭啦！！！不说了不说了，哆啦A梦喊我回家吃饭了呢！みなさん米娜桑，さようなら撒由那拉！！！</strong></p>
 
         </div>
         <!-- .entry-content -->
@@ -482,23 +551,23 @@
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
+        
           
-            <div class="post-nepre full previous">
+            <div class="post-nepre full next">
           
-            <a href="/2020/08/10/安卓手机部署个人博客/" rel="prev">
+            <a href="/2020/08/10/ 日语小记/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810101650.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810101650.jpg">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp">
               </div>
               <span class="label">
-              Previous Post</span>
+              Next Post</span>
               <div class="info">
                 <h3>
-                安卓手机部署个人博客</h3>
+                日语小记</h3>
                 <hr>
               </div>
             </a>
           </div>
-        
         
       </section>
       
