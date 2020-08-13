@@ -464,73 +464,58 @@
 <p>✨<strong>问题原因</strong>：<strong>从服务器获取数据失败，网络问题。</strong></p>
 <p>🎉<strong>解决办法</strong>：<strong>需要挂梯子去谷歌商店或者从F-Droid开源仓库里重新下载安装Termux。</strong></p>
 <p><strong>③ 打开termux终端，输入以下命令更换默认源为清华大学源加快软件包的下载速度。</strong></p>
-<pre><code>sed -i &#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&#39; $PREFIX/etc/apt/sources.list
-sed -i &#39;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&#39; $PREFIX/etc/apt/sources.list.d/game.list
-sed -i &#39;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&#39; $PREFIX/etc/apt/sources.list.d/science.list
-apt update &amp;&amp; apt upgrade
-</code></pre><p><strong>④ 安装常用基础工具</strong></p>
-<pre><code>pkg install vim curl wget git tree openssh -y
-</code></pre><h3 id="2-安装配置Hexo："><a href="#2-安装配置Hexo：" class="headerlink" title="2.安装配置Hexo："></a>2.安装配置Hexo：</h3><p><strong>① 由于Hexo基于Nodejs环境运行，所以必须安装Nodejs</strong></p>
-<pre><code>pkg install nodejs-lts  安装稳定版本       
-</code></pre><pre><code>node -v 查看node版本
-</code></pre><pre><code>npm -v  查看npm版本
-</code></pre><p><strong>② 安装初始化Hexo</strong></p>
-<pre><code>npm install hexo-cli -g   使用npm安装Hexo 
-</code></pre><pre><code>hexo -v    查看版本        
-</code></pre><pre><code>mkdir Hexo 新建文件夹
-</code></pre><pre><code>cd Hexo    进入Hexo文件夹 
-</code></pre><pre><code>hexo init  将hexo初始化到Hexo目录下
-</code></pre><p><strong>PS:安装完成后你会看到有WARN，不用担心，不影响使用</strong></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sed -<span class="selector-tag">i</span> <span class="string">'s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@'</span> <span class="variable">$PREFIX</span>/etc/apt/sources.list</span><br><span class="line">sed -<span class="selector-tag">i</span> <span class="string">'s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@'</span> <span class="variable">$PREFIX</span>/etc/apt/sources<span class="selector-class">.list</span>.d/game.list</span><br><span class="line">sed -<span class="selector-tag">i</span> <span class="string">'s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@'</span> <span class="variable">$PREFIX</span>/etc/apt/sources<span class="selector-class">.list</span>.d/science.list</span><br><span class="line">apt update &amp;&amp; apt upgrade</span><br></pre></td></tr></table></figure>
+<p><strong>④ 安装常用基础工具</strong></p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> vim curl wget git tree openssh -y</span><br></pre></td></tr></table></figure>
+<h3 id="2-安装配置Hexo："><a href="#2-安装配置Hexo：" class="headerlink" title="2.安装配置Hexo："></a>2.安装配置Hexo：</h3><p><strong>① 由于Hexo基于Nodejs环境运行，所以必须安装Nodejs</strong></p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> nodejs-lts  安装稳定版本</span><br></pre></td></tr></table></figure>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">node</span> <span class="title">-v</span> 查看<span class="keyword">node</span><span class="title">版本</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> -v  查看<span class="built_in">npm</span>版本</span><br></pre></td></tr></table></figure>
+<p><strong>② 安装初始化Hexo</strong></p>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> install hexo-cli -g   使用<span class="built_in">npm</span>安装Hexo</span><br></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo</span> -v    查看版本</span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> Hexo 新建文件夹</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Hexo    进入Hexo文件夹</span><br></pre></td></tr></table></figure>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">init</span>  将hexo初始化到Hexo目录下</span><br></pre></td></tr></table></figure>
+<p><strong>PS:安装完成后你会看到有WARN，不用担心，不影响使用</strong></p>
 <p><strong>③ 生成静态文件并启动Hexo，如果端口被占用我们还可以修改Hexo端口</strong></p>
-<pre><code>hexo g     生成静态网页存放于public目录下
-</code></pre><pre><code>hexo s     启动hexo默认端口4000
-</code></pre><pre><code>vi ~/hexo/node_modules/hexo-server/index.js       修改默认端口(可选)
-hexo.config.server = Object.assign({ port: 8081,  这里我将默认端口改为了8081
-</code></pre><p><strong>PS:这里我修改过默认端口所以访问<a href="http://localhost:8081，" target="_blank" rel="noopener">http://localhost:8081，</a> 如果能够正常访问，则说明 Hexo本地博客已经搭建起来了，将Hexo关联到Github就可以在外网访问您的博客了。</strong></p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g     生成静态网页存放于<span class="keyword">public</span>目录下</span><br></pre></td></tr></table></figure>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s     启动hexo默认端口<span class="number">4000</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi ~/hexo/node_modules/hexo-<span class="keyword">server</span>/<span class="keyword">index</span>.js       修改默认端口(可选)</span><br><span class="line">hexo.config.<span class="keyword">server</span> = Object.assign(&#123; port: <span class="number">8081</span>,  这里我将默认端口改为了<span class="number">8081</span></span><br></pre></td></tr></table></figure>
+<p><strong>PS:这里我修改过默认端口所以访问<a href="http://localhost:8081，" target="_blank" rel="noopener">http://localhost:8081，</a> 如果能够正常访问，则说明 Hexo本地博客已经搭建起来了，将Hexo关联到Github就可以在外网访问您的博客了。</strong></p>
 <h3 id="3-将Hexo部署到GitHubPages"><a href="#3-将Hexo部署到GitHubPages" class="headerlink" title="3.将Hexo部署到GitHubPages"></a>3.将Hexo部署到GitHubPages</h3><p><strong>① 需要一个Github账号，自行注册。注册地址：GIthub官网 <a href="https://github.com" target="_blank" rel="noopener">https://github.com</a></strong> </p>
 <p><strong>② 新建一个 repository。如果你希望你的站点能通过 &lt;你的 GitHub 用户名&gt;.github.io 域名访问，你的 repository 应该直接命名为 &lt;你的 GitHub 用户名&gt;.github.io。如下图所示：</strong></p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E7%AB%99%E7%82%B9%E9%80%9A%E8%BF%87Github%E8%AE%BF%E9%97%AE%E5%BB%BA%E7%AB%8BGithub%E4%BB%93%E5%BA%93%E5%90%8D%E6%A0%BC%E5%BC%8F.png" alt></p>
 <p>  <strong>③</strong> <strong>安装hexo-deployer-git插件</strong></p>
-<pre><code>npm install hexo-deployer-git --save
-</code></pre><p>  <strong>④</strong> <strong>配置一键 Deployment参数，repo改为你的仓库地址</strong></p>
-<pre><code>vi ~/hexo/_config.yml   这是站点配置文件
-# Deployment
-## Docs:https://hexo.io/docs/deployment.html
-    deploy:
-      type: git
-      repo: git@github.com:liufg520/liufg520.github.io.git  
-      branch: master
-</code></pre><p>  <strong>⑤ 配置一键备份Backup参数，需新建仓库分支为Backup作为博客备份</strong></p>
-<pre><code># backup
-backup:
-  type: git
-  message: Backup My Blog of Github and Coding
-  repository:
-    github: git@github.com:liufg520/liufg520.github.io.git,Backup
-</code></pre><p>  <strong>⑥</strong> <strong>创建ssh key，密码为空</strong></p>
-<pre><code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;
-</code></pre><p> <strong>注意：输入以上命令直接回车3下密码为空，邮箱地址是注册登录github使用的邮箱地址，改成你自己的邮箱即可。</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+<p>  <strong>④</strong> <strong>配置一键 Deployment参数，repo改为你的仓库地址</strong></p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vi ~<span class="meta-keyword">/hexo/</span>_config.yml   这是站点配置文件</span><br><span class="line"><span class="meta"># Deployment</span></span><br><span class="line"><span class="meta">## Docs:https:<span class="comment">//hexo.io/docs/deployment.html</span></span></span><br><span class="line"><span class="symbol">    deploy:</span></span><br><span class="line"><span class="symbol">      type:</span> git</span><br><span class="line"><span class="symbol">      repo:</span> git@github.com:liufg520/liufg520.github.io.git  </span><br><span class="line"><span class="symbol">      branch:</span> master</span><br></pre></td></tr></table></figure>
+<p>  <strong>⑤ 配置一键备份Backup参数，需新建仓库分支为Backup作为博客备份</strong></p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># backup</span></span><br><span class="line"><span class="symbol">backup:</span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol">  message:</span> Backup My Blog of Github and Coding</span><br><span class="line"><span class="symbol">  repository:</span></span><br><span class="line"><span class="symbol">    github:</span> git@github.com:liufg520/liufg520.github.io.git,Backup</span><br></pre></td></tr></table></figure>
+<p>  <strong>⑥</strong> <strong>创建ssh key，密码为空</strong></p>
+<figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -<span class="built_in">t</span> rsa -C <span class="string">"邮箱地址"</span></span><br></pre></td></tr></table></figure>
+<p> <strong>注意：输入以上命令直接回车3下密码为空，邮箱地址是注册登录github使用的邮箱地址，改成你自己的邮箱即可。</strong></p>
 <p>  <strong>⑥</strong> <strong>将生成的公钥添加到GitHub</strong></p>
-<pre><code>cat .ssh/id_rsa.pub  查看复制生成的公钥文件内容
-</code></pre><p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-sshkey.pub.png" alt></p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat <span class="string">.ssh/id_rsa.pub</span>  查看复制生成的公钥文件内容</span><br></pre></td></tr></table></figure>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-sshkey.pub.png" alt></p>
 <p>  <strong>⑦</strong>  <strong>测试ssh key是否添加成功</strong></p>
-<pre><code>ssh -T git@github.com
-</code></pre><p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%B7%BB%E5%8A%A0sshKey%E6%B5%8B%E8%AF%95%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F.png" alt></p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh</span> -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%B7%BB%E5%8A%A0sshKey%E6%B5%8B%E8%AF%95%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F.png" alt></p>
 <p>  <strong>⑧</strong>  <strong>配置个人信息告诉github你是谁来进行权限处理</strong></p>
-<pre><code>git config --global user.email &quot;945356012@qq.com&quot;
-</code></pre><pre><code>git config --global user.name &quot;liufg520&quot;
-</code></pre><p>  <strong>⑨</strong>  <strong>测试Hexo是否将网页推送到GithubPages</strong></p>
-<pre><code>hexo clean  清除旧public目录文件
-</code></pre><pre><code>hexo g      生成新public目录文件
-</code></pre><pre><code>hexo d      部署推送到github
-</code></pre><p><strong>PS：如果返回以下信息表示部署推送成功，使用浏览器访问<a href="https://liufg520.github.io就可以访问到我的博客了！如下图所示：" target="_blank" rel="noopener">https://liufg520.github.io就可以访问到我的博客了！如下图所示：</a></strong><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%A3%80%E6%9F%A5Hexo%E6%98%AF%E5%90%A6%E5%B0%86%E7%BD%91%E9%A1%B5%E6%88%90%E5%8A%9F%E6%8E%A8%E9%80%81%E5%88%B0Github.png" alt></p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git<span class="built_in"> config </span>--global user.email <span class="string">"945356012@qq.com"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git<span class="built_in"> config </span>--global user.name <span class="string">"liufg520"</span></span><br></pre></td></tr></table></figure>
+<p>  <strong>⑨</strong>  <strong>测试Hexo是否将网页推送到GithubPages</strong></p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  清除旧<span class="keyword">public</span>目录文件</span><br></pre></td></tr></table></figure>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g      生成新<span class="keyword">public</span>目录文件</span><br></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo</span> d      部署推送到github</span><br></pre></td></tr></table></figure>
+<p><strong>PS：如果返回以下信息表示部署推送成功，使用浏览器访问<a href="https://liufg520.github.io就可以访问到我的博客了！如下图所示：" target="_blank" rel="noopener">https://liufg520.github.io就可以访问到我的博客了！如下图所示：</a></strong><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%A3%80%E6%9F%A5Hexo%E6%98%AF%E5%90%A6%E5%B0%86%E7%BD%91%E9%A1%B5%E6%88%90%E5%8A%9F%E6%8E%A8%E9%80%81%E5%88%B0Github.png" alt></p>
 <p>​    <strong>⑩  Github绑定自定义域名</strong></p>
 <p>​        <strong>⑴  免费申请个人域名  申请域名地址 <a href="http://www.freenom.com/zh/index.html" target="_blank" rel="noopener">http://www.freenom.com/zh/index.html</a></strong> </p>
 <p>​        <strong>⑵  在域名配置管理添加CNAME类型</strong></p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8DCname%E7%B1%BB%E5%9E%8B%E8%AE%B0%E5%BD%95.png" alt></p>
 <p>​     <strong>⑶  在仓库设置—GitHub Pages绑定个人域名</strong></p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Github%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt></p>
-<p>​        <strong>至此，我们的搭建之旅到此结束了，此时您可以使用您的个人域名来访问自己的博客了，是不是很开心呢！如有疑问可留言给我！能解答的我尽量解答。那么关于下一篇Hexo二次元主题之Sakura我尽量写的详细易懂一些。哆啦A梦：“大雄”，快点回家吃饭啦！不说了不说了，哆啦A梦喊我回家吃饭了呢。みなさん米娜桑，さようなら撒由那拉！！！</strong></p>
+<p>​        <strong>至此，我们的搭建之旅到此结束了，此时您可以使用您的个人域名来访问自己的博客了，是不是很开心呢！☺如有疑问可留言给我！能解答的我尽量解答。那么关于下一篇Hexo二次元主题之Sakura我尽量写的详细易懂一些。哆啦A梦：“大雄”，快点回家吃饭啦！不说了不说了，哆啦A梦喊我回家吃饭了呢。みなさん米娜桑，さようなら撒由那拉！！！</strong></p>
 
         </div>
         <!-- .entry-content -->
