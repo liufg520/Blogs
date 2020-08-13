@@ -438,7 +438,7 @@
         </span>
         <span class="bull">
         ·</span>
-        2020-8-11<span class="bull">
+        2020-8-13<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -452,8 +452,8 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p><strong>此教程主要记录Hexo博客搭建过程及遇到的相关问题，方便以后自行查看。为什么要在手机上搭建博客呢？手机作为人们每时每刻都离不开的工具，在手机上搭建自己的个人博客一是可以用来装逼二是可以随时随地的发布自己的博文，岂不是美滋滋？(๑•؎ •๑)那么问题来了，该怎么在手机上搭建博客呢？这就不得不提到 Termux这个强大的高级模拟终端了，它的存在可以让你的手机瞬间变成一台小型主机服务器。此时此刻真想说一声：Termux赛高！！！(́ಢ.౪ಢ‵)关于Termux更多美妙的用法请自行度娘研究。</strong></p>
-<p><strong>在这里呢作为小白萌新的我给出一些建议；关于源代码编辑器：电脑端推荐Vscode，手机端推荐jota+。为什么推荐专业的编辑器呢？那是因为在博客搭建完成之后，还需要找一款自己喜欢的主题进行源代码修改。在修改源代码的过程中你就会体会到专业的源代码编辑器是多么的美好，瞬间想起了我之前像SB一样用手机Vim去修改源代码，说多了都是痛苦，哭唧唧(*꒦ິ⌓꒦ີ)。Vim大佬可以忽略我的吐槽！尽量使用电脑去修改源代码，如果不方便用电脑可以用上边推荐的jota+。另外还可以通过Xshell，Xftp连接到Temux终端进行远程管理修改文件。关于博客搭建的方法多种多样，可根据实际的配置环境去度娘寻找适合自己的部署方案。那么接下来我们就乘坐着哆啦A梦的时光机开始进入愉快的搭建之旅吧！</strong></p>
+          <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>​        <strong>此教程主要记录Hexo博客搭建过程及遇到的相关问题，方便以后自行查看。为什么要在手机上搭建博客呢？手机作为人们每时每刻都离不开的工具，在手机上搭建自己的个人博客一是可以用来装逼二是可以随时随地的发布自己的博文，岂不是美滋滋？(๑•؎ •๑)那么问题来了，该怎么在手机上搭建博客呢？这就不得不提到 Termux这个强大的高级模拟终端了，它的存在可以让你的手机瞬间变成一台小型主机服务器。(́ಢ.౪ಢ‵)此时此刻真想说一声：Termux赛高！！！关于Termux更多美妙的用法请自行度娘研究。</strong></p>
+<p>​        <strong>在这里呢作为小白萌新的我给出一些建议,关于源代码编辑器：电脑端推荐Vscode，手机端推荐jota+。为什么推荐专业的编辑器呢？那是因为在博客搭建完成之后，还需要找一款自己喜欢的主题进行源代码修改。在修改源代码的过程中你就会体会到专业的源代码编辑器是多么的美好，瞬间想起了我之前像SB一样用手机Vim去修改源代码，说多了都是痛苦，哭唧唧(*꒦ິ⌓꒦ີ)。Vim大佬可以忽略我的吐槽！尽量使用电脑去修改源代码，如果不方便用电脑可以用上边推荐的jota+。另外还可以通过Xshell，Xftp连接到Temux终端进行远程管理修改文件。关于博客搭建的方法多种多样，可根据实际的配置环境去度娘寻找适合自己的部署方案。那么接下来我们就乘坐着哆啦A梦的时光机开始进入愉快的搭建之旅吧！</strong></p>
 <h2 id="一-博客平台对比"><a href="#一-博客平台对比" class="headerlink" title="一.博客平台对比"></a>一.博客平台对比</h2><p><strong>Hexo博客平台:</strong> Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。一般选择结合github使用，无需支付服务器成本。</p>
 <p><strong>Typecho博客平台:</strong> Typecho是由type和echo两个词合成的，来自于开发团队的头脑风暴。Typecho基于PHP5开发，支持多种数据库，是一款内核强健﹑扩展方便﹑体验友好﹑运行流畅的轻量级开源博客程序。选用Typecho，搭建独一无二个人网络日志发布平台，享受创作的快乐。</p>
 <p><strong>WordPress博客平台：</strong>WordPress是一款个人博客系统，并逐步演化成一款内容管理系统软件，它是使用PHP语言和MySQL数据库开发的。用户可以在支持 PHP 和 MySQL数据库的服务器上使用自己的博客。</p>
@@ -492,15 +492,22 @@ hexo.config.server = Object.assign({ port: 8081,  这里我将默认端口改为
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E7%AB%99%E7%82%B9%E9%80%9A%E8%BF%87Github%E8%AE%BF%E9%97%AE%E5%BB%BA%E7%AB%8BGithub%E4%BB%93%E5%BA%93%E5%90%8D%E6%A0%BC%E5%BC%8F.png" alt></p>
 <p>  <strong>③</strong> <strong>安装hexo-deployer-git插件</strong></p>
 <pre><code>npm install hexo-deployer-git --save
-</code></pre><p>  <strong>④</strong> <strong>配置一键 Deployment参数</strong></p>
+</code></pre><p>  <strong>④</strong> <strong>配置一键 Deployment参数，repo改为你的仓库地址</strong></p>
 <pre><code>vi ~/hexo/_config.yml   这是站点配置文件
-# Deployment(修改部署配置)
+# Deployment
 ## Docs:https://hexo.io/docs/deployment.html
     deploy:
       type: git
       repo: git@github.com:liufg520/liufg520.github.io.git  
       branch: master
-</code></pre><p>  <strong>⑤</strong> <strong>创建ssh key，密码为空</strong></p>
+</code></pre><p>  <strong>⑤ 配置一键备份Backup参数，需新建仓库分支为Backup作为博客备份</strong></p>
+<pre><code># backup
+backup:
+  type: git
+  message: Backup My Blog of Github and Coding
+  repository:
+    github: git@github.com:liufg520/liufg520.github.io.git,Backup
+</code></pre><p>  <strong>⑥</strong> <strong>创建ssh key，密码为空</strong></p>
 <pre><code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;
 </code></pre><p> <strong>注意：输入以上命令直接回车3下密码为空，邮箱地址是注册登录github使用的邮箱地址，改成你自己的邮箱即可。</strong></p>
 <p>  <strong>⑥</strong> <strong>将生成的公钥添加到GitHub</strong></p>
@@ -523,7 +530,7 @@ hexo.config.server = Object.assign({ port: 8081,  这里我将默认端口改为
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8DCname%E7%B1%BB%E5%9E%8B%E8%AE%B0%E5%BD%95.png" alt></p>
 <p>​     <strong>⑶  在仓库设置—GitHub Pages绑定个人域名</strong></p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Github%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt></p>
-<p><strong>至此，我们的搭建之旅到此结束了，此时您可以使用您的个人域名来访问自己的博客了，是不是很开心呢！😊如有疑问可留言给我！能解答的我尽量解答。那么关于下一篇Hexo二次元主题之Sakura我尽量写的详细易懂一些。哆啦A梦：“大雄”，快点回家吃饭啦！！！不说了不说了，哆啦A梦喊我回家吃饭了呢！みなさん米娜桑，さようなら撒由那拉！！！</strong></p>
+<p>​        <strong>至此，我们的搭建之旅到此结束了，此时您可以使用您的个人域名来访问自己的博客了，是不是很开心呢！如有疑问可留言给我！能解答的我尽量解答。那么关于下一篇Hexo二次元主题之Sakura我尽量写的详细易懂一些。哆啦A梦：“大雄”，快点回家吃饭啦！不说了不说了，哆啦A梦喊我回家吃饭了呢。みなさん米娜桑，さようなら撒由那拉！！！</strong></p>
 
         </div>
         <!-- .entry-content -->
