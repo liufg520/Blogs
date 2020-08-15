@@ -417,32 +417,6 @@
       <div class="blank" style="padding-top: 0px;"></div>
 <div id="content" class="site-content">
   
-  <div class="notice" style="margin-top:60px">
-    <i class="iconfont icon-notification">
-    </i>
-    <div class="notice-content">
-      <span id="hitokoto" style="margin-left:5px;"> :D 获取中...</span>
-      <p align="right" id="afrom"></p>
-      <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
-      <script>
-        fetch('https://v1.hitokoto.cn/?c=h&c=j&c=a&encode=text')
-          .then(function (res){
-            return res.json();
-          })
-          .then(function (data) {
-            var hitokoto = document.getElementById('hitokoto');
-            var afrom = document.getElementById('afrom');
-            hitokoto.innerText = data.hitokoto;
-            afrom.innerText =  '——【' + data.from + ' ' + data.from_who + '】';
-          })
-          .catch(function (err) {
-            console.error(err);
-          })
-      </script>
-      </div>
-  </div>
-  
   <div class="top-feature-row">
   <h1 class="fes-title" style="font-family: mengna,'Ubuntu', sans-serif;">
   <i class="fa fa-anchor" aria-hidden="true">
