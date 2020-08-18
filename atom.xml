@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-08-18T14:35:01.781Z</updated>
+  <updated>2020-08-18T16:28:49.057Z</updated>
   <id>/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo二次元主题之Sakura</title>
-    <link href="/2020/08/18/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%A3%8E%E6%A0%BC%E4%B8%BB%E9%A2%98%E4%B9%8BSakura/"/>
-    <id>/2020/08/18/二次元风格主题之Sakura/</id>
-    <published>2020-08-18T14:35:01.781Z</published>
-    <updated>2020-08-18T14:35:01.781Z</updated>
+    <title>日语小记</title>
+    <link href="/2020/08/19/%20%E6%97%A5%E8%AF%AD%E5%B0%8F%E8%AE%B0/"/>
+    <id>/2020/08/19/ 日语小记/</id>
+    <published>2020-08-18T16:28:49.057Z</published>
+    <updated>2020-08-18T16:28:49.057Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,34 @@
       
         
         
-          &lt;h1 id&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot; &quot;&gt;&lt;/a&gt; &lt;/h1&gt;&lt;h1 id=&quot;前言：&quot;&gt;&lt;a href=&quot;#前言：&quot; class=&quot;headerlink&quot; title=&quot;前言：&quot;&gt;&lt;/a&gt;前言：&lt;/h1&gt;&lt;p&gt;​      
+          &lt;hr&gt;
+&lt;h1 id=&quot;一-日语五十音图&quot;&gt;&lt;a href=&quot;#一-日语五十音图&quot; class=&quot;headerlink&quot; title=&quot;一.日语五十音图&quot;&gt;&lt;/a&gt;一.日语五十音图&lt;/h1&gt;&lt;h2 id=&quot;前言：&quot;&gt;&lt;a href=&quot;#前言：&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="笔记" scheme="/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="日语" scheme="/tags/%E6%97%A5%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo二次元主题之Sakura</title>
+    <link href="/2020/08/18/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%A3%8E%E6%A0%BC%E4%B8%BB%E9%A2%98%E4%B9%8BSakura/"/>
+    <id>/2020/08/18/二次元风格主题之Sakura/</id>
+    <published>2020-08-18T15:09:54.747Z</published>
+    <updated>2020-08-18T15:09:54.747Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot; &quot;&gt;&lt;/a&gt; &lt;/h1&gt;&lt;h1 id=&quot;前言：（未完成）&quot;&gt;&lt;a href=&quot;#前言：（未完成）&quot; class=&quot;headerlink&quot;
         
       
     
@@ -67,33 +94,6 @@
     
     
       <category term="Hexo" scheme="/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>日语小记</title>
-    <link href="/2020/08/10/%20%E6%97%A5%E8%AF%AD%E5%B0%8F%E8%AE%B0/"/>
-    <id>/2020/08/10/ 日语小记/</id>
-    <published>2020-08-10T12:28:43.744Z</published>
-    <updated>2020-08-10T12:28:43.744Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;hr&gt;
-&lt;p&gt;一.日语表记法：&lt;br&gt;假名（表音、表义）&lt;br&gt;汉字（表义）&lt;br&gt;罗马字（表音）&lt;br&gt;1.最基本的表音单位：&lt;br&gt;假名：分片假名（表外来语音义）、平假名（表音、独立或与汉字一起表义）&lt;br&gt;假名表（五十音图）&lt;br&gt;2.日语中的汉字：常用汉字1945字（实
-        
-      
-    
-    </summary>
-    
-      <category term="笔记" scheme="/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="日语" scheme="/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
