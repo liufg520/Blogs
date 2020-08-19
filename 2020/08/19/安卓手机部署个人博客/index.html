@@ -44,7 +44,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Hexo二次元主题之Sakura | 🌈ちいの小本🎈</title>
+  <title itemprop="name">安卓手机部署个人博客 | 🌈ちいの小本🎈</title>
   
     <link rel="shortcut icon" href="/img/custom/Favicon.ico">
   
@@ -422,11 +422,11 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200818222114.png);" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200818222114.png">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810101650.jpg);" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810101650.jpg">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      Hexo二次元主题之Sakura</h1>
+      安卓手机部署个人博客</h1>
       <p class="entry-census">
         <span>
           <a href="www.basaka.ga">
@@ -438,7 +438,7 @@
         </span>
         <span class="bull">
         ·</span>
-        2020-8-18<span class="bull">
+        2020-8-19<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -452,216 +452,85 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h1 id><a href="#" class="headerlink" title=" "></a> </h1><h1 id="前言：（未完成）"><a href="#前言：（未完成）" class="headerlink" title="前言：（未完成）"></a>前言：（未完成）</h1><pre><code>     **如何选择一款适合自己的主题呢？如果你是极简主义者：推荐Next主题，如果你和我一样喜欢二次元主题，强烈推荐Sakura主题。如果担心自己看不懂源代码又特别喜欢这个主题该怎么办呢？为此特意整理记录了此篇教程。接下来就使用魔法让主题变得更漂亮吧！**
-</code></pre><h1 id="一-主题下载与安装"><a href="#一-主题下载与安装" class="headerlink" title="一.主题下载与安装"></a>一.主题下载与安装</h1><p><strong>1.首先下载Sakura主题与资源这2个部分，下载地址：</strong></p>
-<p><strong>① Sakura主题下载地址：<a href="https://pan.baidu.com/s/1Dj0tNgoFWVRUIN4ExGnF4A" target="_blank" rel="noopener">https://pan.baidu.com/s/1Dj0tNgoFWVRUIN4ExGnF4A</a> 提取码:1915</strong></p>
-<p><strong>② Sakura资源下载地址：<a href="https://pan.baidu.com/s/1ZogVBWiuSlqsp8imfNXlRg" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZogVBWiuSlqsp8imfNXlRg</a> 提取码:4155</strong></p>
-<p><strong>2.解压安装Sakura主题：使用解压软件解压Hexo-Sakura主题.rar，将Hexo-Sakura文件夹里的文件上传到博客的根目录，重复的文件选择替换。可使用Xftp上传文件到博客根目录。🔖注释：根目录指的就是你安装初始化Hexo的那个目录</strong></p>
-<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-Sakura%E4%B8%BB%E9%A2%98%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png" alt></p>
-<p><strong>3.解压修改Sakura资源：使用解压软件解压SakuraCDN.rar，SakuraCDN文件夹里主要包含404页面、图片，字体，脚本等资源文件。根据《主题资源美化修改》将需要替换资源文件替换成自己的文件。🔖注释：建议使用Vscode或者webstorm编辑器修改</strong></p>
-<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-SakuraCDN%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png" alt></p>
-<p><strong>4.搭建Sakura主题资源CDN：登陆自己的Github新建仓库作为Sakura主题资源的CDN存储，根据《主题资源美化修改》将整理修改好的资源文件上传到GitHub仓库即可。🔖注释：为了方便省事儿建议以下凡是涉及到调用CDN资源的请使用原有的文件名并保持文件路径不变，这样你只需要将原有的CDN地址前缀替换成你的CDN地址前缀就可以了。CDN地址前缀一般为<a href="https://cdn.jsdelivr.net/gh/你的GitHub账号/你的CDN仓库名/" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/你的GitHub账号/你的CDN仓库名/</a>⇨具体如何搭建CDN请参考《使用Github+jsdelivr搭建属于自己的CDN》</strong></p>
-<p><strong>5.安装依赖：在命令行输入<code>npm i</code></strong></p>
-<h1 id="二-目录结构与分析"><a href="#二-目录结构与分析" class="headerlink" title="二.目录结构与分析"></a>二.目录结构与分析</h1><p>[^Sakura主题目录结构分析]: </p>
-<p><img src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-Sakura%E4%B8%BB%E9%A2%98%E7%9B%AE%E5%BD%95%E5%88%86%E6%9E%90.png" style="zoom:200%;"></p>
-<p>​                                                                                          </p>
-<h1 id="三-涉及到的工具分类"><a href="#三-涉及到的工具分类" class="headerlink" title="三.涉及到的工具分类"></a>三.涉及到的工具分类</h1><p><strong>1.在线创意二维码制作网址：<a href="http://www.qmacode.com" target="_blank" rel="noopener">http://www.qmacode.com</a> ⇨描述：制作美化属于自己的个性二维码</strong></p>
-<p><strong>2.在线Favicon图标制作网址：<a href="https://tool.lu/favicon" target="_blank" rel="noopener">https://tool.lu/favicon</a> ⇨描述：制作网站图标，可在线将图片转换成ico格式</strong></p>
-<p><strong>3.在线文件格式转换网址：<a href="https://cloudconvert.com" target="_blank" rel="noopener">https://cloudconvert.com</a> ⇨描述：转换图片格式，字体格式，制作鼠标指针等等</strong></p>
-<h1 id="四-主题资源美化修改"><a href="#四-主题资源美化修改" class="headerlink" title="四.主题资源美化修改"></a>四.主题资源美化修改</h1><h2 id="1-博客目录下的-config配置"><a href="#1-博客目录下的-config配置" class="headerlink" title="1.博客目录下的_config配置"></a>1.博客目录下的_config配置</h2><p><strong>📜文件位置：Hexo根目录/_config.yml</strong></p>
-<p>  <strong>📄修改内容：网站标题、简介、署名</strong></p>
-<p>  <strong>📃修改配置：空白项可不填</strong></p>
-<pre><code># Site
-title: 🌈ちいの小本🎈 
-subtitle:
-description: 介里是萌萌的二次元喵~ 
-keywords: 
-author: ちい 
-language: zh-cn
-timezone:
-</code></pre><h2 id="2-主题目录下的-config配置"><a href="#2-主题目录下的-config配置" class="headerlink" title="2.主题目录下的_config配置"></a>2.主题目录下的_config配置</h2><p><strong>📜文件位置：Hexo根目录/themes/Sakura/_config.yml</strong></p>
-<p>  <strong>📄修改内容：网站名称</strong></p>
-<p>  <strong>📃修改配置：prefixName为站点名字前缀，siteName是你站点名字。</strong></p>
-<pre><code># site name 
-prefixName: さくら村の
-siteName: 小叽
-</code></pre><p>  <strong>📄修改内容： 网站Favicon图标、avatar头像、描述、URL、CDN、首页notice通告、懒加载lazyloadImg</strong></p>
-<p>  <strong>📃修改配置：请在SakuraCDN文件夹找到对应资源文件，例如找到/img/custom/avatar.jpg文件将avatar.jpg文件替换成自己的头像，文件名不变。</strong></p>
-<pre><code># favicon and site master avatar
-favicon: /img/custom/Favicon.ico 
-avatar: /img/custom/avatar.jpg
-url: https://liqian.5201314920.xyz 
-description: 只要有想见的人，就不再是孤身一人了。
-cdn: https://cdn.jsdelivr.net/gh/你的GitHub账号/你的CDN仓库名
-pjax: 1
-notice: (。•﹃ •。)即使我弱了，也不代表你强了
-lazyloadImg: https://cdn.jsdelivr.net/gh/GitHub账号/CDN仓库名/img/loader/orange.progress-bar-stripe-loader.svg 
-</code></pre><p>   <strong>📄修改内容： 网站导航菜单栏配置，根据自己的需要修改</strong></p>
-<p>   <strong>📃修改配置：修改菜单名，不需要的菜单栏可以删掉。注意菜单栏格式，二级菜单最后末尾是没有逗号的。菜单栏图标修改举例⇨fa: fa-book是菜单图标名可修改。菜单栏图标地址：<a href="http://www.fontawesome.com.cn/faicons" target="_blank" rel="noopener">http://www.fontawesome.com.cn/faicons</a></strong></p>
-<pre><code>menus:
-  首页: { path: /, fa: fa-toggle-on faa-shake }
-  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
-    技术: {path: /categories/技术/, fa: fa-globe }, 
-    娱乐: {path: /categories/娱乐/, fa: fa-bomb }, 
-    灵感: {path: /categories/灵感/, fa: fa-eercast},
-    笔记: {path: /categories/笔记/, fa: fa-book }
-  } }
-  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
-    日语: {path: /tags/日语/, fa: fa-language faa-bounce }, 
-    番组: {path: /bangumi/, fa: fa-youtube-play faa-vertical }, 
-    歌单: {path: /music/, fa: fa-headphones },
-    绘画: {path: /tags/绘画/, fa: fa-paint-brush }
-  } }
-  标签: {path: /tags/, fa: fa-tag }
-  分类: {path: /categories/, fa: fa-bookmark }
-  留言: { path: /comment/, fa: fa-paper-plane-o }
-  友链: { path: /links/, fa: fa-link faa-shake }
-  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
-  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
-    我？: {path: /about/, fa: fa-meetup}, 
-     RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
-  } }
-</code></pre><p>  <strong>📄修改内容： 首页背景图、背景样式、首页startdash相关配置</strong></p>
-<p>  <strong>📃修改配置：首页背景图替换，建议将图片格式转换成webp格式。4种背景图样式根据自己的喜好修改。修改startdash对应参数。</strong></p>
-<pre><code># 首页背景图片 
-bg:
-  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg1.webp
-  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp
-  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg3.webp
-  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg4.webp
-  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg5.webp
-  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg6.jpg
-# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
-bgclass: filter-grid
-# startdash url, title, desc img 
-startdash: 
-  - {url: https://www.ted.com/talks?sort=newest&amp;language=zh-tw, title: 技术、娱乐、设计, desc: 值得传播的视频, img: /img/startdash/QQkongjian.jpg}
-  - {url: http://lackk.com, title: 兰客创意, desc: 分享创意及美的一切, img: /img/startdash/QQyinyue.jpg}
-  - {url: https://zh.wikihow.com, title: 万事指南, desc: 汇聚各个领域值得信赖的研究与专业知识, img: /img/startdash/DMweimei.jpg}
-# your site build time or founded date
-#
-siteBuildingTime: 07/07/2020
-</code></pre><p>  <strong>📄修改内容： 电脑端⇨社交配置 </strong></p>
-<p>  <strong>📃修改配置：url改为自己的链接，img可以不改，不需要的社交配置可删除。</strong></p>
-<pre><code>#social  url, img PC端配置
-social:
-  github: {url: http://github.com/liufg520, img: /img/social/github.png}
-  sina: {url: http://weibo.com/liufg520?is_all=1, img: /img/social/sina.png}
-  wangyiyun: {url: http://music.163.com/playlist?id=2149082231, img: /img/social/wangyiyun.png}
-  zhihu: {url: https://www.zhihu.com/people/a-liang-85-58, img: /img/social/zhihu.png}
-  email: {url: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=945356012@qq.com, img: /img/social/email.svg}
-  wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
-</code></pre><p>  <strong>📄修改内容： 手机端⇨社交配置 </strong></p>
-<p>  <strong>📃修改配置：url改为自己的链接，img可以不改，不需要的社交配置可删除。</strong></p>
-<pre><code>#social  url, img 移动端配置
-msocial:
-  github: {url: http://github.com/liufg520, fa: fa-github, color: 333}
-  weibo: {url: http://weibo.com/liufg520?is_all=1, fa: fa-weibo, color: dd4b39}
-  qq: {url: mqqwpa://im/chat?chat_type=wpa&amp;uin=945356012&amp;version=1&amp;src_type=web&amp;web_src=lvlingseeds.com, fa: fa-qq, color: 25c6fe}
-</code></pre><p>  <strong>📄修改内容： 赞赏二维码 </strong></p>
-<p>  <strong>📃修改配置：替换url和二维码图片。</strong></p>
-<pre><code># 赞赏二维码 #
-donate:
-  paypal: https://www.paypal.me/liufg
-  alipay: /img/custom/donate/AlipayQR.jpg
-  wechat: /img/custom/donate/wechanQR.jpg
-  wechatSQ: /img/custom/donate/WeChanSQ.jpg
-</code></pre><p>  <strong>📄修改内容： 首页媒体视频、左下角悬浮歌单 </strong></p>
-<p>  <strong>📃修改配置：替换视频文件，替换网易音乐id值⇨使用浏览器登陆网易云音乐打开我的音乐可以在浏览器地址栏看到对应id数值。</strong></p>
-<pre><code># 视频地址为https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/BeautifulWorld.mp4，配置如下
-movies:
-  url: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN
-  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
-  name: BeautifulWorld.mp4
- #音乐播放器    
-aplayer: 
-  id: 2149082231
-  server: netease
-  type: playlist
-  fixed: true
-  autoplay: false
-  loop: all
-  order: random
-  preload: auto
-  volume: 0.7
-  mutex: true
-</code></pre><p>  <strong>📄修改内容： Valine评论系统</strong></p>
-<p>  <strong>📃修改配置：需要注册leancloud账号：<a href="https://www.leancloud.cn然后获取id和key" target="_blank" rel="noopener">https://www.leancloud.cn然后获取id和key</a> 。可参考官网文档：<a href="https://valine.js.org" target="_blank" rel="noopener">https://valine.js.org</a></strong></p>
-<pre><code># Valine ##极简留言功能
-# You can get your appid and appkey from https://leancloud.cn
-# more info please open https://valine.js.org
-valine:
-  enable: true ##打开valine评论功能true
-  appId: 填你自己leancloud获取的ID
-  appKey: 填你自己leancloud获取的key
-  notify: false #评论mail回复提醒
-  verify: false #验证码
-  visitor: false #统计阅读量
-  avatar: wavatar #自定义头像
-  guest_info: nick,mail,link #评论者相关信息 
-  pageSize: 10 #评论列表分页，每页条数
-  lang: zh-cn # 自定义语言
-  palaceholder: 昵称填写qq可以显示qq头像和昵称哦~ 
-  recordIP: true # 是否记录评论者IP
-  serverURLs: &#39;&#39; 
-  count: true # top_img显示评论数
-</code></pre><h2 id="3-分类页和标签页配置"><a href="#3-分类页和标签页配置" class="headerlink" title="3.分类页和标签页配置"></a>3.分类页和标签页配置</h2><p><strong>📜文件位置：Hexo根目录/themes/Sakura/languages/zh-cn.yml</strong></p>
-<p>  <strong>📄修改内容：分类页和标签页</strong></p>
-<p>  <strong>📃修改配置：如果新增一个分类或者标签在这里添加相关配置。如何新增分类页和标签页请参考Hexo官网文档</strong></p>
-<pre><code>#category 分类页，其它分类按照这个格式创建
-技术:
-    zh: 网络安全 #中文标题
-    en: Network Security # 英文标题
-    img: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/Coding.webp  # 封面图片
-#tag  标签页，标签名即是标题
-灵感:                              
-    img: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/inspiration.webp  # 封面图片
-</code></pre><h2 id="4-单页面封面配置"><a href="#4-单页面封面配置" class="headerlink" title="4.单页面封面配置"></a>4.单页面封面配置</h2><p><strong>📂每个单页面文件夹存放位置：Hexo根目录/source/</strong></p>
-<p><strong>📜每个单页面文件位置：例如留言板页面⇨Hexo根目录/source/comment/index.md</strong></p>
-<p>  <strong>📄修改内容：单页面封面图片</strong></p>
-<p>  <strong>📃修改配置：photos: ⇨换成你喜欢的封面图片哦~</strong></p>
-<pre><code>title: comment
-date: 2020-07-02 23:13:48
-keywords: 
-description: 
-comments: true
-photos: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/Comment.webp 
-</code></pre><h2 id="5-番组单页面配置"><a href="#5-番组单页面配置" class="headerlink" title="5.番组单页面配置"></a>5.番组单页面配置</h2><p><strong>📜番组单页面文件位置：Hexo根目录/source/bangumi/index.md</strong></p>
-<p>  <strong>📄修改内容：番组计划页面</strong></p>
-<p>  <strong>📃修改配置：按照bangumis参数格式修改添加番组计划表哦~</strong></p>
-<pre><code>layout: bangumi
-title: bangumi
-comments: false
-date: 2020-08-17 21:32:48
-keywords:
-description:
-bangumis:
-  - img: https://lain.bgm.tv/pic/cover/l/0e/1e/218971_2y351.jpg
-    title: 朝花夕誓——于离别之朝束起约定之花
-    status: 已追完
-    progress: 100
-    jp: さよならの朝に約束の花をかざろう
-    time: 2018-02-24 SUN.
-    desc: 住在远离尘嚣的土地，一边将每天的事情编织成名为希比欧的布，一边静静生活的伊欧夫人民。在15岁左右外表就停止成长，拥有数百年寿命的他们，被称为“离别的一族”，并被视为活着的传说。没有双亲的伊欧夫少女玛奇亚，过着被伙伴包围的平稳日子，却总感觉“孤身一人”。他们的这种日常，一瞬间就崩溃消失。追求伊欧夫的长寿之血，梅萨蒂军乘坐着名为雷纳特的古代兽发动了进攻。在绝望与混乱之中，伊欧夫的第一美女蕾莉亚被梅萨蒂带走，而玛奇亚暗恋的少年克里姆也失踪了。玛奇亚虽然总算逃脱了，却失去了伙伴和归去之地……。
-</code></pre><h2 id="6-友链单页面配置"><a href="#6-友链单页面配置" class="headerlink" title="6.友链单页面配置"></a>6.友链单页面配置</h2><p><strong>📜友链单页面文件位置：Hexo根目录/source/links/index.md</strong></p>
-<p>  <strong>📄修改内容：添加友链</strong></p>
-<p>  <strong>📃修改配置：按照links参数格式修改添加友链哦~</strong></p>
-<pre><code>layout: links
-title: links
-date: 2018-12-19 23:11:06
-keywords: 友人帐
-description: 
-comments: true
-photos: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/Links.webp
-links:
-  - group: 个人项目
-    desc: 充分说明这家伙是条咸鱼 &lt; (￣︶￣)&gt;
-    items:
-    - url: https://shino.cc/fgvf
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
-      name: Google
-      desc: Google 镜像
-</code></pre>
+          <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>​        <strong>此教程主要记录Hexo博客搭建过程及遇到的相关问题，方便以后自行查看。为什么要在手机上搭建博客呢？手机作为人们每时每刻都离不开的工具，在手机上搭建自己的个人博客一是可以用来装逼二是可以随时随地的发布自己的博文，岂不是美滋滋？(๑•؎ •๑)那么问题来了，该怎么在手机上搭建博客呢？这就不得不提到 Termux这个强大的高级模拟终端了，它的存在可以让你的手机瞬间变成一台小型主机服务器。(́ಢ.౪ಢ‵)此时此刻真想说一声：Termux赛高！！！关于Termux更多美妙的用法请自行度娘研究。</strong></p>
+<p>​        <strong>在这里呢作为小白萌新的我给出一些建议,关于源代码编辑器：电脑端推荐Vscode，手机端推荐jota+。为什么推荐专业的编辑器呢？那是因为在博客搭建完成之后，还需要找一款自己喜欢的主题进行源代码修改。在修改源代码的过程中你就会体会到专业的源代码编辑器是多么的美好，瞬间想起了我之前像SB一样用手机Vim去修改源代码，说多了都是痛苦，哭唧唧(*꒦ິ⌓꒦ີ)。Vim大佬可以忽略我的吐槽！尽量使用电脑去修改源代码，如果不方便用电脑可以用上边推荐的jota+。另外还可以通过Xshell，Xftp连接到Temux终端进行远程管理修改文件。关于博客搭建的方法多种多样，可根据实际的配置环境去度娘寻找适合自己的部署方案。那么接下来我们就乘坐着哆啦A梦的时光机开始进入愉快的搭建之旅吧！</strong></p>
+<h2 id="一-博客平台对比"><a href="#一-博客平台对比" class="headerlink" title="一.博客平台对比"></a>一.博客平台对比</h2><p><strong>Hexo博客平台:</strong> Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。一般选择结合github使用，无需支付服务器成本。</p>
+<p><strong>Typecho博客平台:</strong> Typecho是由type和echo两个词合成的，来自于开发团队的头脑风暴。Typecho基于PHP5开发，支持多种数据库，是一款内核强健﹑扩展方便﹑体验友好﹑运行流畅的轻量级开源博客程序。选用Typecho，搭建独一无二个人网络日志发布平台，享受创作的快乐。</p>
+<p><strong>WordPress博客平台：</strong>WordPress是一款个人博客系统，并逐步演化成一款内容管理系统软件，它是使用PHP语言和MySQL数据库开发的。用户可以在支持 PHP 和 MySQL数据库的服务器上使用自己的博客。</p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0%E8%AF%A5%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F.png" alt></p>
+<h2 id="二-博客部署流程"><a href="#二-博客部署流程" class="headerlink" title="二.博客部署流程"></a>二.博客部署流程</h2><h3 id="1-安装配置Termux"><a href="#1-安装配置Termux" class="headerlink" title="1.安装配置Termux"></a>1.安装配置Termux</h3><p><strong>① 下载地址：<a href="https://pan.baidu.com/s/1yaeFOAJHusuIQL9654whdg" target="_blank" rel="noopener">https://pan.baidu.com/s/1yaeFOAJHusuIQL9654whdg</a> 提取码:e2i6</strong></p>
+<p><strong>② 首次启动Termux会从官网远程服务器加载数据，极大概率会出现以下问题：</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Termux%E5%AE%89%E8%A3%85%E5%88%9D%E5%A7%8B%E5%8C%96%E6%8A%A5%E9%94%99.png" alt></p>
+<p>✨<strong>问题原因</strong>：<strong>从服务器获取数据失败，网络问题。</strong></p>
+<p>🎉<strong>解决办法</strong>：<strong>需要挂梯子去谷歌商店或者从F-Droid开源仓库里重新下载安装Termux。</strong></p>
+<p><strong>③ 打开termux终端，输入以下命令更换默认源为清华大学源加快软件包的下载速度。</strong></p>
+<pre><code>sed -i &#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&#39; $PREFIX/etc/apt/sources.list
+sed -i &#39;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&#39; $PREFIX/etc/apt/sources.list.d/game.list
+sed -i &#39;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&#39; $PREFIX/etc/apt/sources.list.d/science.list
+apt update &amp;&amp; apt upgrade
+</code></pre><p><strong>④ 安装常用基础工具</strong></p>
+<pre><code>pkg install vim curl wget git tree openssh -y
+</code></pre><h3 id="2-安装配置Hexo"><a href="#2-安装配置Hexo" class="headerlink" title="2.安装配置Hexo"></a>2.安装配置Hexo</h3><p><strong>① 由于Hexo基于Nodejs环境运行，所以必须安装Nodejs</strong></p>
+<pre><code>pkg install nodejs-lts  安装稳定版本       
+</code></pre><pre><code>node -v 查看node版本
+</code></pre><pre><code>npm -v  查看npm版本
+</code></pre><p><strong>② 安装初始化Hexo</strong></p>
+<pre><code>npm install hexo-cli -g   使用npm安装Hexo 
+</code></pre><pre><code>hexo -v    查看版本        
+</code></pre><pre><code>mkdir Hexo 新建文件夹
+</code></pre><pre><code>cd Hexo    进入Hexo文件夹 
+</code></pre><pre><code>hexo init  将hexo初始化到Hexo目录下
+</code></pre><p><strong>PS:安装完成后你会看到有WARN，不用担心，不影响使用。</strong></p>
+<p><strong>③ 生成静态文件并启动Hexo，如果端口被占用我们还可以修改Hexo端口。</strong></p>
+<pre><code>hexo g     生成静态网页存放于public目录下
+</code></pre><pre><code>hexo s     启动hexo默认端口4000
+</code></pre><pre><code>vi ~/hexo/node_modules/hexo-server/index.js       修改默认端口(可选)
+hexo.config.server = Object.assign({ port: 8081,  这里我将默认端口改为了8081
+</code></pre><p><strong>PS:这里我修改过默认端口所以访问<a href="http://localhost:8081，" target="_blank" rel="noopener">http://localhost:8081，</a> 如果能够正常访问，则说明 Hexo本地博客已经搭建起来了，将Hexo关联到Github就可以在外网访问您的博客了。</strong></p>
+<h3 id="3-将Hexo部署到GitHubPages"><a href="#3-将Hexo部署到GitHubPages" class="headerlink" title="3.将Hexo部署到GitHubPages"></a>3.将Hexo部署到GitHubPages</h3><p><strong>① 需要一个Github账号，自行注册。注册地址：GIthub官网 <a href="https://github.com" target="_blank" rel="noopener">https://github.com</a></strong> </p>
+<p><strong>② 新建一个 repository。如果你希望你的站点能通过 &lt;你的 GitHub 用户名&gt;.github.io 域名访问，你的 repository 应该直接命名为 &lt;你的 GitHub 用户名&gt;.github.io。如下图所示：</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E9%80%9A%E8%BF%87%E2%87%A8%E4%BD%A0%E7%9A%84GitHub%E7%94%A8%E6%88%B7%E5%90%8D.github.io%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2.png" alt></p>
+<p><strong>③</strong> <strong>安装hexo-deployer-git插件</strong></p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p><strong>④</strong> <strong>配置一键 Deployment功能，repo改为你的仓库地址。Backup功能，需新建仓库分支Backup作为博客备份仓库地址。</strong></p>
+<pre><code>vi ~/hexo/_config.yml   这是站点配置文件
+# Deployment
+## Docs:https://hexo.io/docs/deployment.html
+    deploy:
+      type: git
+      repo: git@github.com:liufg520/liufg520.github.io.git  
+      branch: master
+# backup
+backup:
+  type: git
+  message: Backup My Blog of Github and Coding
+  repository:
+    github: git@github.com:liufg520/liufg520.github.io.git,Backup
+</code></pre><p><strong>⑤</strong> <strong>创建ssh key，密码为空</strong></p>
+<pre><code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;
+</code></pre><p> <strong>注意：输入以上命令直接回车3下密码为空，邮箱地址是注册登录github使用的邮箱地址，改成你自己的邮箱即可。</strong></p>
+<p><strong>⑥</strong> <strong>将生成的公钥添加到GitHub</strong></p>
+<pre><code>cat .ssh/id_rsa.pub  查看复制生成的公钥文件内容
+</code></pre><p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo%E6%B7%BB%E5%8A%A0%E5%85%AC%E9%92%A5Key%E5%88%B0Github.png" alt></p>
+<p><strong>⑦</strong> <strong>测试ssh key是否添加成功</strong></p>
+<pre><code>ssh -T git@github.com
+</code></pre><p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%B7%BB%E5%8A%A0sshKey%E6%B5%8B%E8%AF%95%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F.png" alt></p>
+<p><strong>⑧</strong> <strong>配置个人信息告诉github你是谁来进行权限处理</strong></p>
+<pre><code>git config --global user.email &quot;945356012@qq.com&quot;
+</code></pre><pre><code>git config --global user.name &quot;liufg520&quot;
+</code></pre><p><strong>⑨</strong> <strong>测试Hexo是否将网页推送到GithubPages</strong></p>
+<pre><code>hexo clean  清除旧public目录文件
+</code></pre><pre><code>hexo g      生成新public目录文件
+</code></pre><pre><code>hexo d      部署推送到github
+</code></pre><p><strong>PS：如果返回以下信息表示部署推送成功，使用浏览器访问<a href="https://liufg520.github.io就可以访问到我的博客了！如下图所示：" target="_blank" rel="noopener">https://liufg520.github.io就可以访问到我的博客了！如下图所示：</a></strong><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%A3%80%E6%9F%A5Hexo%E6%98%AF%E5%90%A6%E5%B0%86%E7%BD%91%E9%A1%B5%E6%88%90%E5%8A%9F%E6%8E%A8%E9%80%81%E5%88%B0Github.png" alt></p>
+<p><strong>⑩ Github绑定自定义域名</strong></p>
+<p>​        <strong>⑴  免费申请个人域名  申请域名地址： <a href="http://www.freenom.com/zh/index.html" target="_blank" rel="noopener">http://www.freenom.com/zh/index.html</a></strong> </p>
+<p>​        <strong>⑵  在域名配置管理添加CNAME类型</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E5%9C%A8%E5%9F%9F%E5%90%8D%E7%AE%A1%E7%90%86%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8DCname%E8%AE%B0%E5%BD%95.png" alt></p>
+<p>​     <strong>⑶  在仓库设置—GitHub Pages绑定个人域名</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E5%9C%A8GithubPages%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt></p>
+<p>​        <strong>至此，我们的搭建之旅到此结束了。此时您可以使用您的个人域名来访问自己的博客了，是不是很开心呢！如有疑问可留言给我！能解答的我尽量解答。那么关于下一篇Hexo二次元主题之Sakura我尽量写的详细易懂一些。哆啦A梦：“大雄”，快点回家吃饭啦！不说了不说了，哆啦A梦喊我回家吃饭了呢。みなさん米娜桑，さようなら撒由那拉！！！</strong></p>
+
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -692,15 +561,15 @@ links:
           
             <div class="post-nepre half previous">
           
-            <a href="/2020/08/19/ 日语小记/" rel="prev">
+            <a href="/2020/08/19/二次元风格主题之Sakura/" rel="prev">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200818222114.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200818222114.png">
               </div>
               <span class="label">
               Previous Post</span>
               <div class="info">
                 <h3>
-                日语小记</h3>
+                Hexo二次元主题之Sakura</h3>
                 <hr>
               </div>
             </a>
@@ -710,15 +579,15 @@ links:
           
             <div class="post-nepre half next">
           
-            <a href="/2020/08/18/安卓手机部署个人博客/" rel="next">
+            <a href="/2020/08/19/ 日语小记/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810101650.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810101650.jpg">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                安卓手机部署个人博客</h3>
+                日语小记</h3>
                 <hr>
               </div>
             </a>
