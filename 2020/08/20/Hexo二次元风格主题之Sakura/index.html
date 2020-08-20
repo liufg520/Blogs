@@ -452,7 +452,7 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h1 id="前言：（未完成）"><a href="#前言：（未完成）" class="headerlink" title="前言：（未完成）"></a>前言：（未完成）</h1><p><strong>如何选择一款适合自己的主题呢？如果你是极简主义者：推荐Next主题，如果你和我一样喜欢二次元主题，强烈推荐Sakura主题。如果担心自己看不懂源代码又特别喜欢这个主题该怎么办呢？为此特意整理记录了此篇教程。接下来就使用魔法让博客变得更漂亮吧！</strong></p>
+          <h1 id="前言：（未完成）"><a href="#前言：（未完成）" class="headerlink" title="前言：（未完成）"></a>前言：（未完成）</h1><p><strong>如何选择一款适合自己的主题呢？如果你是极简主义者：推荐Next主题，如果你和我一样喜欢二次元主题，强烈推荐Sakura主题。如果担心自己看不懂源代码又特别喜欢这个主题该怎么办呢？为此特意整理记录了此篇教程。切记切记不要无脑复制，有些配置已经配置过，无需重复配置。接下来就使用魔法让博客变得更漂亮吧！</strong></p>
 <h1 id="一-主题下载与安装"><a href="#一-主题下载与安装" class="headerlink" title="一.主题下载与安装"></a>一.主题下载与安装</h1><p><strong>1.首先下载Sakura主题与资源这2个部分，下载地址：</strong></p>
 <p><strong>① Sakura主题下载地址：<a href="https://pan.baidu.com/s/1Dj0tNgoFWVRUIN4ExGnF4A" target="_blank" rel="noopener">https://pan.baidu.com/s/1Dj0tNgoFWVRUIN4ExGnF4A</a> 提取码:1915</strong></p>
 <p><strong>② Sakura资源下载地址：<a href="https://pan.baidu.com/s/1ZogVBWiuSlqsp8imfNXlRg" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZogVBWiuSlqsp8imfNXlRg</a> 提取码:4155</strong></p>
@@ -616,7 +616,229 @@ valine:
 #tag  标签页，标签名即是标题
 灵感:                              
     img: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/inspiration.webp  # 封面图片
-</code></pre><h2 id="4-单页面封面配置"><a href="#4-单页面封面配置" class="headerlink" title="4.单页面封面配置"></a>4.单页面封面配置</h2><p><strong>📂每个单页面文件夹存放位置：Hexo根目录/source/</strong></p>
+</code></pre><h2 id="4-添加优美的标签页"><a href="#4-添加优美的标签页" class="headerlink" title="4.添加优美的标签页"></a>4.添加优美的标签页</h2><p><strong>📋创建文件：layout/tags.ejs、_widget/tag-cloud.ejs，tag-wordcloud.ejs</strong></p>
+<p><strong>📄添加代码：</strong></p>
+<p><strong>① 在tags.ejs添加以下代码</strong></p>
+<pre><code>&lt;%- partial(&#39;_partial/header&#39;) %&gt;
+&lt;main class=&quot;content&quot;&gt;
+    &lt;%- partial(&#39;_widget/tag-cloud&#39;) %&gt;
+    &lt;%- partial(&#39;_widget/tag-wordcloud&#39;) %&gt;
+&lt;/main&gt;
+</code></pre><p><strong>② 在tag-cloud.ejs添加以下代码</strong></p>
+<pre><code>&lt;%
+var colorArr = [&#39;#F9EBEA&#39;, &#39;#F5EEF8&#39;, &#39;#D5F5E3&#39;, &#39;#E8F8F5&#39;, &#39;#FEF9E7&#39;,
+    &#39;#F8F9F9&#39;, &#39;#82E0AA&#39;, &#39;#D7BDE2&#39;, &#39;#A3E4D7&#39;, &#39;#85C1E9&#39;, &#39;#F8C471&#39;, &#39;#F9E79F&#39;, &#39;#FFF&#39;];
+var colorCount = colorArr.length;
+var hashCode = function (str) {
+    if (!str &amp;&amp; str.length === 0) {
+        return 0;
+    }
+    var hash = 0;
+    for (var i = 0, len = str.length; i &lt; len; i++) {
+        hash = ((hash &lt;&lt; 5) - hash) + str.charCodeAt(i);
+        hash |= 0;
+    }
+    return hash;
+};
+var i = 0;
+var isTag = is_tag();
+%&gt;
+&lt;div id=&quot;tags&quot; class=&quot;container chip-container&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-content&quot;&gt;
+            &lt;div class=&quot;tag-title center-align&quot;&gt;
+                &lt;i class=&quot;fa fa-tags&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;文章标签
+            &lt;/div&gt;
+            &lt;div class=&quot;tag-chips&quot;&gt;
+                &lt;% site.tags.map(function(tag) { %&gt;
+                &lt;%
+                    i++;
+                    var color = i &gt;= colorCount ? colorArr[Math.abs(hashCode(tag.name) % colorCount)]
+                            : colorArr[i - 1];
+                %&gt;
+                &lt;a href=&quot;&lt;%- url_for(tag.path) %&gt;&quot; title=&quot;&lt;%- tag.name %&gt;: &lt;%- tag.length %&gt;&quot;&gt;
+                    &lt;span class=&quot;chip center-align waves-effect waves-light
+                            &lt;% if (isTag &amp;&amp; tag.name == page.tag) { %&gt; chip-active &lt;% } else { %&gt; chip-default &lt;% } %&gt;&quot;
+                            data-tagname=&quot;&lt;%- tag.name %&gt;&quot; style=&quot;background-color: &lt;%- color %&gt;;&quot;&gt;&lt;%- tag.name %&gt;
+                        &lt;span class=&quot;tag-length&quot;&gt;&lt;%- tag.length %&gt;&lt;/span&gt;
+                    &lt;/span&gt;
+                &lt;/a&gt;
+                &lt;% }); %&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p><strong>③ 在tag-wordcloud.ejs添加以下代码</strong></p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/css/jqcloud.css&quot;&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+&lt;/style&gt;
+&lt;div class=&quot;container&quot; data-aos=&quot;fade-up&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div id=&quot;tag-wordcloud&quot; class=&quot;card-content&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/jqcloud-1.0.4.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    &lt;%
+    let tagWordArr = [];
+    site.tags.map(function(tag) {
+        tagWordArr.push({&#39;text&#39;: tag.name, &#39;weight&#39;: tag.length, &#39;link&#39;: tag.permalink});
+    });
+    let tagWords = JSON.stringify(tagWordArr);
+    %&gt;
+    $(&#39;#tag-wordcloud&#39;).jQCloud(&lt;%- tagWords %&gt;, {
+        autoResize: true
+    });
+&lt;/script&gt;
+</code></pre><p><strong>④ 在style.css末尾添加以下代码</strong></p>
+<pre><code>.chip-container {    margin-top: 60px;}.chip-container .tag-title {    margin-bottom: 10px;    color: #3C4858;    font-size: 1.75rem;    font-weight: 400;}.chip-container .tag-chips {    margin: 1rem auto 0.5rem;    max-width: 850px;    text-align: center;}.chip-container .tags-posts {    margin-top: 20px;}.chip-container .chip-default {    color: #34495e;}.chip-container .chip-active {    color: #FFF !important;    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;    box-shadow: 2px 5px 10px #aaa !important;}.chip-container .chip {    margin: 10px 10px;    padding: 19px 14px;    display: inline-flex;    line-height: 0;    font-size: 1rem;    font-weight: 500;    border-radius: 5px;    cursor: pointer;    box-shadow: 0 3px 5px rgba(0, 0, 0, .12);}.chip-container .chip:hover {    color: #fff;    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;}.chip .tag-length {    margin-left: 5px;    margin-right: -2px;    font-size: 0.5rem;}.chip-default .tag-length {    color: #e91e63;    margin-top: 1px;}.chip-active .tag-length {    color: #fff;}.tag-title.center-align{    margin-top: 100px;    text-align : center;}
+</code></pre><p><strong>⑤ 使用命令<code>hexo new page &quot;tags&quot;</code>，修改博客根目录下source/tags/index.md</strong></p>
+<pre><code>---
+title: tags
+date: 2020-07-18 13:50:05
+layout: tags
+---
+</code></pre><h2 id="5-添加优美的分类页"><a href="#5-添加优美的分类页" class="headerlink" title="5.添加优美的分类页"></a>5.添加优美的分类页</h2><p><strong>📋创建文件：layout/categories.ejs、_widget/category-cloud.ejs，category-radar.ejs</strong></p>
+<p><strong>📄添加代码：</strong></p>
+<p><strong>① 在categories.ejs添加以下代码</strong></p>
+<pre><code>&lt;%- partial(&#39;_partial/header&#39;) %&gt;
+&lt;main class=&quot;content&quot;&gt;
+    &lt;%- partial(&#39;_widget/category-cloud&#39;) %&gt;
+    &lt;% if (site.categories &amp;&amp; site.categories.length &gt; 0) { %&gt;
+    &lt;%- partial(&#39;_widget/category-radar&#39;) %&gt;
+    &lt;% } %&gt;
+&lt;/main&gt;
+</code></pre><p><strong>② 在category-cloud.ejs添加以下代码</strong></p>
+<pre><code>&lt;%
+var colorArr = [&#39;#F9EBEA&#39;, &#39;#F5EEF8&#39;, &#39;#D5F5E3&#39;, &#39;#E8F8F5&#39;, &#39;#FEF9E7&#39;,
+    &#39;#F8F9F9&#39;, &#39;#82E0AA&#39;, &#39;#D7BDE2&#39;, &#39;#A3E4D7&#39;, &#39;#85C1E9&#39;, &#39;#F8C471&#39;, &#39;#F9E79F&#39;, &#39;#FFF&#39;];
+var colorCount = colorArr.length;
+var hashCode = function (str) {
+    if (!str &amp;&amp; str.length === 0) {
+        return 0;
+    }
+    var hash = 0;
+    for (var i = 0, len = str.length; i &lt; len; i++) {
+        hash = ((hash &lt;&lt; 5) - hash) + str.charCodeAt(i);
+        hash |= 0;
+    }
+    return hash;
+};
+var i = 0;
+var isCategory = is_category();
+%&gt;
+&lt;div id=&quot;category-cloud&quot; class=&quot;container chip-container&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-content&quot;&gt;
+            &lt;div class=&quot;tag-title center-align&quot;&gt;
+                &lt;i class=&quot;fa fa-bookmark&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;文章分类
+            &lt;/div&gt;
+            &lt;div class=&quot;tag-chips&quot;&gt;
+                &lt;% if (site.categories &amp;&amp; site.categories.length &gt; 0) { %&gt;
+                &lt;% site.categories.map(function(category) { %&gt;
+                &lt;%
+                    i++;
+                    var color = i &gt;= colorCount ? colorArr[Math.abs(hashCode(category.name) % colorCount)]
+                            : colorArr[i - 1];
+                %&gt;
+                &lt;a href=&quot;&lt;%- url_for(category.path) %&gt;&quot; title=&quot;&lt;%- category.name %&gt;: &lt;%- category.length %&gt;&quot;&gt;
+                    &lt;span class=&quot;chip center-align waves-effect waves-light
+                            &lt;% if (isCategory &amp;&amp; category.name == page.category) { %&gt; chip-active &lt;% } else { %&gt; chip-default &lt;% } %&gt;&quot;
+                            style=&quot;background-color: &lt;%- color %&gt;;&quot;&gt;&lt;%- category.name %&gt;
+                        &lt;span class=&quot;tag-length&quot;&gt;&lt;%- category.length %&gt;&lt;/span&gt;
+                    &lt;/span&gt;
+                &lt;/a&gt;
+                &lt;% }); %&gt;
+                &lt;% } else { %&gt;
+                &lt;%= __(&#39;categoryEmptyTip&#39;) %&gt;
+                &lt;% } %&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p><strong>③ 在category-radar.ejs添加以下代码</strong></p>
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+    #category-radar {
+        margin-top: 50px;
+        width: 100%;
+        height: 360px;
+    }
+&lt;/style&gt;
+&lt;div class=&quot;container&quot; data-aos=&quot;fade-up&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div id=&quot;category-radar&quot; class=&quot;card-content&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/echarts.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    let radarChart = echarts.init(document.getElementById(&#39;category-radar&#39;));
+    &lt;%
+        var categories = site.categories;
+        // Find the maximum and average values of the post categories.
+        var radarValueArr = [];
+        categories.some(function(category) {
+            radarValueArr.push(category.length);
+        });
+        var max = Math.max.apply(null, radarValueArr) + Math.min.apply(null, radarValueArr);
+        // Calculate the data needed for the radar chart.
+        var indicatorArr = [];
+        categories.map(function(category) {
+            indicatorArr.push({&#39;name&#39;: category.name, &#39;max&#39;: max});
+        });
+        var indicatorData = JSON.stringify(indicatorArr);
+        var radarValueData = JSON.stringify(radarValueArr);
+    %&gt;
+    let option = {
+        title: {
+            left: &#39;center&#39;,
+            text: &#39;文章分类雷达图&#39;,
+            textStyle: {
+                fontWeight: 500,
+                fontSize: 22
+            }
+        },
+        tooltip: {},
+        radar: {
+            name: {
+                textStyle: {
+                    color: &#39;#3C4858&#39;
+                }
+            },
+            indicator: &lt;%- indicatorData %&gt;,
+            nameGap: 5,
+            center: [&#39;50%&#39;,&#39;55%&#39;],
+            radius: &#39;66%&#39;
+        },
+        series: [{
+            type: &#39;radar&#39;,
+            color: [&#39;#3ecf8e&#39;],
+            itemStyle: {normal: {areaStyle: {type: &#39;default&#39;}}},
+            data : [
+                {
+                    value : &lt;%- radarValueData %&gt;,
+                    name : &#39;文章分类数量&#39;
+                }
+            ]
+        }]
+    };
+
+    radarChart.setOption(option);
+&lt;/script&gt;
+</code></pre><p><strong>④ 使用命令<code>hexo new page &quot;categories&quot;</code>，修改博客根目录下source/categories/index.md</strong></p>
+<pre><code>---
+title: categories
+date: 2020-03-09 13:50:05
+layout: categories
+---
+</code></pre><p><strong>⑤ 修改主题配置文件⇨Hexo根目录/themes/Sakura/_config.yml，将这两行代码放到留言之前</strong></p>
+<pre><code>  标签: {path: /tags/, fa: fa-tag }
+  分类: {path: /categories/, fa: fa-bookmark }
+</code></pre><h2 id="6-单页面封面配置"><a href="#6-单页面封面配置" class="headerlink" title="6.单页面封面配置"></a>6.单页面封面配置</h2><p><strong>📂每个单页面文件夹存放位置：Hexo根目录/source/</strong></p>
 <p><strong>📜每个单页面文件位置：例如留言板页面⇨Hexo根目录/source/comment/index.md</strong></p>
 <p>  <strong>📄修改内容：单页面封面图片</strong></p>
 <p>  <strong>📃修改配置：photos: ⇨换成你喜欢的封面图片哦~</strong></p>
@@ -626,7 +848,7 @@ keywords:
 description: 
 comments: true
 photos: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/Comment.webp 
-</code></pre><h2 id="5-番组单页面配置"><a href="#5-番组单页面配置" class="headerlink" title="5.番组单页面配置"></a>5.番组单页面配置</h2><p><strong>📜番组单页面文件位置：Hexo根目录/source/bangumi/index.md</strong></p>
+</code></pre><h2 id="7-番组单页面配置"><a href="#7-番组单页面配置" class="headerlink" title="7.番组单页面配置"></a>7.番组单页面配置</h2><p><strong>📜番组单页面文件位置：Hexo根目录/source/bangumi/index.md</strong></p>
 <p>  <strong>📄修改内容：番组计划页面</strong></p>
 <p>  <strong>📃修改配置：按照bangumis参数格式修改添加番组计划表哦~</strong></p>
 <pre><code>layout: bangumi
@@ -643,7 +865,7 @@ bangumis:
     jp: さよならの朝に約束の花をかざろう
     time: 2018-02-24 SUN.
     desc: 住在远离尘嚣的土地，一边将每天的事情编织成名为希比欧的布，一边静静生活的伊欧夫人民。在15岁左右外表就停止成长，拥有数百年寿命的他们，被称为“离别的一族”，并被视为活着的传说。没有双亲的伊欧夫少女玛奇亚，过着被伙伴包围的平稳日子，却总感觉“孤身一人”。他们的这种日常，一瞬间就崩溃消失。追求伊欧夫的长寿之血，梅萨蒂军乘坐着名为雷纳特的古代兽发动了进攻。在绝望与混乱之中，伊欧夫的第一美女蕾莉亚被梅萨蒂带走，而玛奇亚暗恋的少年克里姆也失踪了。玛奇亚虽然总算逃脱了，却失去了伙伴和归去之地……。
-</code></pre><h2 id="6-友链单页面配置"><a href="#6-友链单页面配置" class="headerlink" title="6.友链单页面配置"></a>6.友链单页面配置</h2><p><strong>📜友链单页面文件位置：Hexo根目录/source/links/index.md</strong></p>
+</code></pre><h2 id="8-友链单页面配置"><a href="#8-友链单页面配置" class="headerlink" title="8.友链单页面配置"></a>8.友链单页面配置</h2><p><strong>📜友链单页面文件位置：Hexo根目录/source/links/index.md</strong></p>
 <p>  <strong>📄修改内容：添加友链</strong></p>
 <p>  <strong>📃修改配置：按照links参数格式修改添加友链哦~</strong></p>
 <pre><code>layout: links
@@ -661,7 +883,20 @@ links:
       img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
       name: Google
       desc: Google 镜像
-</code></pre>
+</code></pre><h2 id="9-导航栏中的关于"><a href="#9-导航栏中的关于" class="headerlink" title="9.导航栏中的关于"></a>9.导航栏中的关于</h2><p><strong>📜文件位置：js/botui.js</strong></p>
+<p>  <strong>📄修改内容：关于—我？对话修改</strong></p>
+<p>  <strong>📃修改配置：主要修改content后面双引号里的内容</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E5%85%B3%E4%BA%8E-%E6%88%91%EF%BC%9F%E5%AF%B9%E8%AF%9D%E9%85%8D%E7%BD%AE.png" alt></p>
+<h2 id="10-鼠标点击特效"><a href="#10-鼠标点击特效" class="headerlink" title="10.鼠标点击特效"></a>10.鼠标点击特效</h2><p><strong>📜文件位置：themes/Sakura/layout/layout.ejs</strong></p>
+<p>  <strong>📄修改内容：添加鼠标点击特效代码</strong></p>
+<p>  <strong>📃修改配置：主要修改content后面双引号里的内容</strong></p>
+<pre><code>&lt;!-- 点击出现爱心 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js&quot;&gt;&lt;/script&gt;
+&lt;!-- 鼠标移动特效彩色雪花 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehua.js&quot;&gt;&lt;/script&gt;
+&lt;!-- 点击出现社会主义文字 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/shehuizhuyi.js&quot;&gt;&lt;/script&gt;
+&lt;!-- 点击出现彩色气球爆炸效果 --&gt;&lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;&gt;&lt;/script&gt; 
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/clickBom.js&quot;&gt;&lt;/script&gt;
+</code></pre><p><strong>🎁效果展示：</strong></p>
+
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -693,7 +928,7 @@ links:
           
             <div class="post-nepre full next">
           
-            <a href="/2020/08/19/ 日语小记/" rel="next">
+            <a href="/2020/08/20/ 日语小记/" rel="next">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp">
               </div>
@@ -1279,5 +1514,7 @@ $(document).ready(function() {
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>  <!--不蒜子计数-->
 <script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/Live2d/autoload.js"></script>  <!--lived2d看板娘-->
 
-
+<!-- 鼠标移动特效彩色雪花 --><script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehua.js"></script>
+<!-- 点击出现彩色气球爆炸效果 --><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/clickBom.js"></script>
 
