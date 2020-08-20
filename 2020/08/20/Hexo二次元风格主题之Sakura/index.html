@@ -471,53 +471,197 @@
 <h1 id="四-主题资源美化修改"><a href="#四-主题资源美化修改" class="headerlink" title="四.主题资源美化修改"></a>四.主题资源美化修改</h1><h2 id="1-博客目录的-config配置"><a href="#1-博客目录的-config配置" class="headerlink" title="1.博客目录的_config配置"></a>1.博客目录的_config配置</h2><p><strong>📜文件位置：Hexo根目录/_config.yml</strong></p>
 <p>  <strong>📄修改内容：网站标题、简介、署名</strong></p>
 <p>  <strong>📃修改配置：空白项可不填</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: 🌈ちいの小本🎈 </span><br><span class="line">subtitle:</span><br><span class="line">description: 介里是萌萌的二次元喵~ </span><br><span class="line">keywords: </span><br><span class="line">author: ちい </span><br><span class="line">language: zh-cn</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
-<h2 id="2-主题目录的-config配置"><a href="#2-主题目录的-config配置" class="headerlink" title="2.主题目录的_config配置"></a>2.主题目录的_config配置</h2><p><strong>📜文件位置：Hexo根目录/themes/Sakura/_config.yml</strong></p>
+<pre><code># Site
+title: 🌈ちいの小本🎈 
+subtitle:
+description: 介里是萌萌的二次元喵~ 
+keywords: 
+author: ちい 
+language: zh-cn
+timezone:
+</code></pre><h2 id="2-主题目录的-config配置"><a href="#2-主题目录的-config配置" class="headerlink" title="2.主题目录的_config配置"></a>2.主题目录的_config配置</h2><p><strong>📜文件位置：Hexo根目录/themes/Sakura/_config.yml</strong></p>
 <p>  <strong>📄修改内容：网站名称</strong></p>
 <p>  <strong>📃修改配置：prefixName为站点名字前缀，siteName是你站点名字。</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># site name </span><br><span class="line">prefixName: さくら村の</span><br><span class="line">siteName: 小叽</span><br></pre></td></tr></table></figure>
-<p>  <strong>📄修改内容： 网站Favicon图标、avatar头像、描述、URL、CDN、首页notice通告、懒加载lazyloadImg</strong></p>
+<pre><code># site name 
+prefixName: さくら村の
+siteName: 小叽
+</code></pre><p>  <strong>📄修改内容： 网站Favicon图标、avatar头像、描述、URL、CDN、首页notice通告、懒加载lazyloadImg</strong></p>
 <p>  <strong>📃修改配置：请在SakuraCDN文件夹找到对应资源文件，例如找到/img/custom/avatar.jpg文件将avatar.jpg文件替换成自己的头像，文件名不变。</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># favicon and site master avatar</span><br><span class="line">favicon: /img/custom/Favicon.ico </span><br><span class="line">avatar: /img/custom/avatar.jpg</span><br><span class="line">url: https://liqian.5201314920.xyz </span><br><span class="line">description: 只要有想见的人，就不再是孤身一人了。</span><br><span class="line">cdn: https://cdn.jsdelivr.net/gh/你的GitHub账号/你的CDN仓库名</span><br><span class="line">pjax: 1</span><br><span class="line">notice: (。•﹃ •。)即使我弱了，也不代表你强了</span><br><span class="line">lazyloadImg: https://cdn.jsdelivr.net/gh/GitHub账号/CDN仓库名/img/loader/orange.progress-bar-stripe-loader.svg</span><br></pre></td></tr></table></figure>
-<p>   <strong>📄修改内容： 网站导航菜单栏配置，根据自己的需要修改</strong></p>
+<pre><code># favicon and site master avatar
+favicon: /img/custom/Favicon.ico 
+avatar: /img/custom/avatar.jpg
+url: https://liqian.5201314920.xyz 
+description: 只要有想见的人，就不再是孤身一人了。
+cdn: https://cdn.jsdelivr.net/gh/你的GitHub账号/你的CDN仓库名
+pjax: 1
+notice: (。•﹃ •。)即使我弱了，也不代表你强了
+lazyloadImg: https://cdn.jsdelivr.net/gh/GitHub账号/CDN仓库名/img/loader/orange.progress-bar-stripe-loader.svg 
+</code></pre><p>   <strong>📄修改内容： 网站导航菜单栏配置，根据自己的需要修改</strong></p>
 <p>   <strong>📃修改配置：修改菜单名，不需要的菜单栏可以删掉。注意菜单栏格式，二级菜单最后末尾是没有逗号的。菜单栏图标修改举例⇨fa: fa-book是菜单图标名可修改。菜单栏图标地址：<a href="http://www.fontawesome.com.cn/faicons" target="_blank" rel="noopener">http://www.fontawesome.com.cn/faicons</a></strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">menus:</span><br><span class="line">  首页: &#123; path: /, fa: fa-toggle-on faa-shake &#125;</span><br><span class="line">  归档: &#123; path: /archives, fa: fa-archive faa-shake, submenus: &#123; </span><br><span class="line">    技术: &#123;path: /categories/技术/, fa: fa-globe &#125;, </span><br><span class="line">    娱乐: &#123;path: /categories/娱乐/, fa: fa-bomb &#125;, </span><br><span class="line">    灵感: &#123;path: /categories/灵感/, fa: fa-eercast&#125;,</span><br><span class="line">    笔记: &#123;path: /categories/笔记/, fa: fa-book &#125;</span><br><span class="line">  &#125; &#125;</span><br><span class="line">  清单: &#123; path: javascript:;, fa: fa-list-ul faa-vertical, submenus: &#123; </span><br><span class="line">    日语: &#123;path: /tags/日语/, fa: fa-language faa-bounce &#125;, </span><br><span class="line">    番组: &#123;path: /bangumi/, fa: fa-youtube-play faa-vertical &#125;, </span><br><span class="line">    歌单: &#123;path: /music/, fa: fa-headphones &#125;,</span><br><span class="line">    绘画: &#123;path: /tags/绘画/, fa: fa-paint-brush &#125;</span><br><span class="line">  &#125; &#125;</span><br><span class="line">  标签: &#123;path: /tags/, fa: fa-tag &#125;</span><br><span class="line">  分类: &#123;path: /categories/, fa: fa-bookmark &#125;</span><br><span class="line">  留言: &#123; path: /comment/, fa: fa-paper-plane-o &#125;</span><br><span class="line">  友链: &#123; path: /links/, fa: fa-link faa-shake &#125;</span><br><span class="line">  赞赏: &#123; path: /donate/, fa: fa-heart faa-pulse &#125;</span><br><span class="line">  关于: &#123; path: /, fa: fa-leaf faa-wrench , submenus: &#123; </span><br><span class="line">    我？: &#123;path: /about/, fa: fa-meetup&#125;, </span><br><span class="line">     RSS: &#123; path: /atom.xml, fa: fa-rss faa-pulse &#125;</span><br><span class="line">  &#125; &#125;</span><br></pre></td></tr></table></figure>
-<p>  <strong>📄修改内容： 首页背景图、背景样式、首页startdash相关配置</strong></p>
+<pre><code>menus:
+  首页: { path: /, fa: fa-toggle-on faa-shake }
+  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+    技术: {path: /categories/技术/, fa: fa-globe }, 
+    娱乐: {path: /categories/娱乐/, fa: fa-bomb }, 
+    灵感: {path: /categories/灵感/, fa: fa-eercast},
+    笔记: {path: /categories/笔记/, fa: fa-book }
+  } }
+  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+    日语: {path: /tags/日语/, fa: fa-language faa-bounce }, 
+    番组: {path: /bangumi/, fa: fa-youtube-play faa-vertical }, 
+    歌单: {path: /music/, fa: fa-headphones },
+    绘画: {path: /tags/绘画/, fa: fa-paint-brush }
+  } }
+  标签: {path: /tags/, fa: fa-tag }
+  分类: {path: /categories/, fa: fa-bookmark }
+  留言: { path: /comment/, fa: fa-paper-plane-o }
+  友链: { path: /links/, fa: fa-link faa-shake }
+  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+    我？: {path: /about/, fa: fa-meetup}, 
+     RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+  } }
+</code></pre><p>  <strong>📄修改内容： 首页背景图、背景样式、首页startdash相关配置</strong></p>
 <p>  <strong>📃修改配置：首页背景图替换，建议将图片格式转换成webp格式。4种背景图样式根据自己的喜好修改。修改startdash对应参数。</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 首页背景图片 </span><br><span class="line">bg:</span><br><span class="line">  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg1.webp</span><br><span class="line">  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp</span><br><span class="line">  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg3.webp</span><br><span class="line">  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg4.webp</span><br><span class="line">  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg5.webp</span><br><span class="line">  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg6.jpg</span><br><span class="line"># 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点</span><br><span class="line">bgclass: filter-grid</span><br><span class="line"># startdash url, title, desc img </span><br><span class="line">startdash: </span><br><span class="line">  - &#123;url: https://www.ted.com/talks?sort=newest&amp;language=zh-tw, title: 技术、娱乐、设计, desc: 值得传播的视频, img: /img/startdash/QQkongjian.jpg&#125;</span><br><span class="line">  - &#123;url: http://lackk.com, title: 兰客创意, desc: 分享创意及美的一切, img: /img/startdash/QQyinyue.jpg&#125;</span><br><span class="line">  - &#123;url: https://zh.wikihow.com, title: 万事指南, desc: 汇聚各个领域值得信赖的研究与专业知识, img: /img/startdash/DMweimei.jpg&#125;</span><br><span class="line"># your site build time or founded date</span><br><span class="line">#</span><br><span class="line">siteBuildingTime: 07/07/2020</span><br></pre></td></tr></table></figure>
-<p>  <strong>📄修改内容： 电脑端⇨社交配置 </strong></p>
+<pre><code># 首页背景图片 
+bg:
+  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg1.webp
+  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp
+  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg3.webp
+  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg4.webp
+  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg5.webp
+  - https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg6.jpg
+# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
+bgclass: filter-grid
+# startdash url, title, desc img 
+startdash: 
+  - {url: https://www.ted.com/talks?sort=newest&amp;language=zh-tw, title: 技术、娱乐、设计, desc: 值得传播的视频, img: /img/startdash/QQkongjian.jpg}
+  - {url: http://lackk.com, title: 兰客创意, desc: 分享创意及美的一切, img: /img/startdash/QQyinyue.jpg}
+  - {url: https://zh.wikihow.com, title: 万事指南, desc: 汇聚各个领域值得信赖的研究与专业知识, img: /img/startdash/DMweimei.jpg}
+# your site build time or founded date
+#
+siteBuildingTime: 07/07/2020
+</code></pre><p>  <strong>📄修改内容： 电脑端⇨社交配置 </strong></p>
 <p>  <strong>📃修改配置：url改为自己的链接，img可以不改，不需要的社交配置可删除。</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#social  url, img PC端配置</span><br><span class="line">social:</span><br><span class="line">  github: &#123;url: http://github.com/liufg520, img: /img/social/github.png&#125;</span><br><span class="line">  sina: &#123;url: http://weibo.com/liufg520?is_all=1, img: /img/social/sina.png&#125;</span><br><span class="line">  wangyiyun: &#123;url: http://music.163.com/playlist?id=2149082231, img: /img/social/wangyiyun.png&#125;</span><br><span class="line">  zhihu: &#123;url: https://www.zhihu.com/people/a-liang-85-58, img: /img/social/zhihu.png&#125;</span><br><span class="line">  email: &#123;url: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=945356012@qq.com, img: /img/social/email.svg&#125;</span><br><span class="line">  wechat: &#123;url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png&#125;</span><br></pre></td></tr></table></figure>
-<p>  <strong>📄修改内容： 手机端⇨社交配置 </strong></p>
+<pre><code>#social  url, img PC端配置
+social:
+  github: {url: http://github.com/liufg520, img: /img/social/github.png}
+  sina: {url: http://weibo.com/liufg520?is_all=1, img: /img/social/sina.png}
+  wangyiyun: {url: http://music.163.com/playlist?id=2149082231, img: /img/social/wangyiyun.png}
+  zhihu: {url: https://www.zhihu.com/people/a-liang-85-58, img: /img/social/zhihu.png}
+  email: {url: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=945356012@qq.com, img: /img/social/email.svg}
+  wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+</code></pre><p>  <strong>📄修改内容： 手机端⇨社交配置 </strong></p>
 <p>  <strong>📃修改配置：url改为自己的链接，img可以不改，不需要的社交配置可删除。</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#social  url, img 移动端配置</span><br><span class="line">msocial:</span><br><span class="line">  github: &#123;url: http://github.com/liufg520, fa: fa-github, color: 333&#125;</span><br><span class="line">  weibo: &#123;url: http://weibo.com/liufg520?is_all=1, fa: fa-weibo, color: dd4b39&#125;</span><br><span class="line">  qq: &#123;url: mqqwpa://im/chat?chat_type=wpa&amp;uin=945356012&amp;version=1&amp;src_type=web&amp;web_src=lvlingseeds.com, fa: fa-qq, color: 25c6fe&#125;</span><br></pre></td></tr></table></figure>
-<p>  <strong>📄修改内容： 赞赏二维码 </strong></p>
+<pre><code>#social  url, img 移动端配置
+msocial:
+  github: {url: http://github.com/liufg520, fa: fa-github, color: 333}
+  weibo: {url: http://weibo.com/liufg520?is_all=1, fa: fa-weibo, color: dd4b39}
+  qq: {url: mqqwpa://im/chat?chat_type=wpa&amp;uin=945356012&amp;version=1&amp;src_type=web&amp;web_src=lvlingseeds.com, fa: fa-qq, color: 25c6fe}
+</code></pre><p>  <strong>📄修改内容： 赞赏二维码 </strong></p>
 <p>  <strong>📃修改配置：替换url和二维码图片。</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 赞赏二维码 #</span><br><span class="line">donate:</span><br><span class="line">  paypal: https://www.paypal.me/liufg</span><br><span class="line">  alipay: /img/custom/donate/AlipayQR.jpg</span><br><span class="line">  wechat: /img/custom/donate/wechanQR.jpg</span><br><span class="line">  wechatSQ: /img/custom/donate/WeChanSQ.jpg</span><br></pre></td></tr></table></figure>
-<p>  <strong>📄修改内容： 首页媒体视频、左下角悬浮歌单 </strong></p>
+<pre><code># 赞赏二维码 #
+donate:
+  paypal: https://www.paypal.me/liufg
+  alipay: /img/custom/donate/AlipayQR.jpg
+  wechat: /img/custom/donate/wechanQR.jpg
+  wechatSQ: /img/custom/donate/WeChanSQ.jpg
+</code></pre><p>  <strong>📄修改内容： 首页媒体视频、左下角悬浮歌单 </strong></p>
 <p>  <strong>📃修改配置：替换视频文件，替换网易音乐id值⇨使用浏览器登陆网易云音乐打开我的音乐可以在浏览器地址栏看到对应id数值。</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 视频地址为https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/BeautifulWorld.mp4，配置如下</span><br><span class="line">movies:</span><br><span class="line">  url: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN</span><br><span class="line">  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用</span><br><span class="line">  name: BeautifulWorld.mp4</span><br><span class="line"> #音乐播放器    </span><br><span class="line">aplayer: </span><br><span class="line">  id: 2149082231</span><br><span class="line">  server: netease</span><br><span class="line">  type: playlist</span><br><span class="line">  fixed: true</span><br><span class="line">  autoplay: false</span><br><span class="line">  loop: all</span><br><span class="line">  order: random</span><br><span class="line">  preload: auto</span><br><span class="line">  volume: 0.7</span><br><span class="line">  mutex: true</span><br></pre></td></tr></table></figure>
-<p>  <strong>📄修改内容： Valine评论系统</strong></p>
+<pre><code># 视频地址为https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/BeautifulWorld.mp4，配置如下
+movies:
+  url: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN
+  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
+  name: BeautifulWorld.mp4
+ #音乐播放器    
+aplayer: 
+  id: 2149082231
+  server: netease
+  type: playlist
+  fixed: true
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.7
+  mutex: true
+</code></pre><p>  <strong>📄修改内容： Valine评论系统</strong></p>
 <p>  <strong>📃修改配置：需要注册leancloud账号：<a href="https://www.leancloud.cn然后获取id和key" target="_blank" rel="noopener">https://www.leancloud.cn然后获取id和key</a> 。可参考官网文档：<a href="https://valine.js.org" target="_blank" rel="noopener">https://valine.js.org</a></strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Valine ##极简留言功能</span><br><span class="line"># You can get your appid and appkey from https://leancloud.cn</span><br><span class="line"># more info please open https://valine.js.org</span><br><span class="line">valine:</span><br><span class="line">  enable: true ##打开valine评论功能true</span><br><span class="line">  appId: 填你自己leancloud获取的ID</span><br><span class="line">  appKey: 填你自己leancloud获取的key</span><br><span class="line">  notify: false #评论mail回复提醒</span><br><span class="line">  verify: false #验证码</span><br><span class="line">  visitor: false #统计阅读量</span><br><span class="line">  avatar: wavatar #自定义头像</span><br><span class="line">  guest_info: nick,mail,link #评论者相关信息 </span><br><span class="line">  pageSize: 10 #评论列表分页，每页条数</span><br><span class="line">  lang: zh-cn # 自定义语言</span><br><span class="line">  palaceholder: 昵称填写qq可以显示qq头像和昵称哦~ </span><br><span class="line">  recordIP: true # 是否记录评论者IP</span><br><span class="line">  serverURLs: &apos;&apos; </span><br><span class="line">  count: true # top_img显示评论数</span><br></pre></td></tr></table></figure>
-<h2 id="3-分类页和标签页配置"><a href="#3-分类页和标签页配置" class="headerlink" title="3.分类页和标签页配置"></a>3.分类页和标签页配置</h2><p><strong>📜文件位置：Hexo根目录/themes/Sakura/languages/zh-cn.yml</strong></p>
+<pre><code># Valine ##极简留言功能
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
+valine:
+  enable: true ##打开valine评论功能true
+  appId: 填你自己leancloud获取的ID
+  appKey: 填你自己leancloud获取的key
+  notify: false #评论mail回复提醒
+  verify: false #验证码
+  visitor: false #统计阅读量
+  avatar: wavatar #自定义头像
+  guest_info: nick,mail,link #评论者相关信息 
+  pageSize: 10 #评论列表分页，每页条数
+  lang: zh-cn # 自定义语言
+  palaceholder: 昵称填写qq可以显示qq头像和昵称哦~ 
+  recordIP: true # 是否记录评论者IP
+  serverURLs: &#39;&#39; 
+  count: true # top_img显示评论数
+</code></pre><h2 id="3-分类页和标签页配置"><a href="#3-分类页和标签页配置" class="headerlink" title="3.分类页和标签页配置"></a>3.分类页和标签页配置</h2><p><strong>📜文件位置：Hexo根目录/themes/Sakura/languages/zh-cn.yml</strong></p>
 <p>  <strong>📄修改内容：分类页和标签页</strong></p>
 <p>  <strong>📃修改配置：如果新增一个分类或者标签在这里添加相关配置。如何新增分类页和标签页请参考Hexo官网文档</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#category 分类页，其它分类按照这个格式创建</span><br><span class="line">技术:</span><br><span class="line">    zh: 网络安全 #中文标题</span><br><span class="line">    en: Network Security # 英文标题</span><br><span class="line">    img: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/Coding.webp  # 封面图片</span><br><span class="line">#tag  标签页，标签名即是标题</span><br><span class="line">灵感:                              </span><br><span class="line">    img: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/inspiration.webp  # 封面图片</span><br></pre></td></tr></table></figure>
-<h2 id="4-单页面封面配置"><a href="#4-单页面封面配置" class="headerlink" title="4.单页面封面配置"></a>4.单页面封面配置</h2><p><strong>📂每个单页面文件夹存放位置：Hexo根目录/source/</strong></p>
+<pre><code>#category 分类页，其它分类按照这个格式创建
+技术:
+    zh: 网络安全 #中文标题
+    en: Network Security # 英文标题
+    img: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/Coding.webp  # 封面图片
+#tag  标签页，标签名即是标题
+灵感:                              
+    img: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/inspiration.webp  # 封面图片
+</code></pre><h2 id="4-单页面封面配置"><a href="#4-单页面封面配置" class="headerlink" title="4.单页面封面配置"></a>4.单页面封面配置</h2><p><strong>📂每个单页面文件夹存放位置：Hexo根目录/source/</strong></p>
 <p><strong>📜每个单页面文件位置：例如留言板页面⇨Hexo根目录/source/comment/index.md</strong></p>
 <p>  <strong>📄修改内容：单页面封面图片</strong></p>
 <p>  <strong>📃修改配置：photos: ⇨换成你喜欢的封面图片哦~</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: comment</span><br><span class="line">date: 2020-07-02 23:13:48</span><br><span class="line">keywords: </span><br><span class="line">description: </span><br><span class="line">comments: true</span><br><span class="line">photos: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/Comment.webp</span><br></pre></td></tr></table></figure>
-<h2 id="5-番组单页面配置"><a href="#5-番组单页面配置" class="headerlink" title="5.番组单页面配置"></a>5.番组单页面配置</h2><p><strong>📜番组单页面文件位置：Hexo根目录/source/bangumi/index.md</strong></p>
+<pre><code>title: comment
+date: 2020-07-02 23:13:48
+keywords: 
+description: 
+comments: true
+photos: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/Comment.webp 
+</code></pre><h2 id="5-番组单页面配置"><a href="#5-番组单页面配置" class="headerlink" title="5.番组单页面配置"></a>5.番组单页面配置</h2><p><strong>📜番组单页面文件位置：Hexo根目录/source/bangumi/index.md</strong></p>
 <p>  <strong>📄修改内容：番组计划页面</strong></p>
 <p>  <strong>📃修改配置：按照bangumis参数格式修改添加番组计划表哦~</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">layout: bangumi</span><br><span class="line">title: bangumi</span><br><span class="line">comments: false</span><br><span class="line">date: 2020-08-17 21:32:48</span><br><span class="line">keywords:</span><br><span class="line">description:</span><br><span class="line">bangumis:</span><br><span class="line">  - img: https://lain.bgm.tv/pic/cover/l/0e/1e/218971_2y351.jpg</span><br><span class="line">    title: 朝花夕誓——于离别之朝束起约定之花</span><br><span class="line">    status: 已追完</span><br><span class="line">    progress: 100</span><br><span class="line">    jp: さよならの朝に約束の花をかざろう</span><br><span class="line">    time: 2018-02-24 SUN.</span><br><span class="line">    desc: 住在远离尘嚣的土地，一边将每天的事情编织成名为希比欧的布，一边静静生活的伊欧夫人民。在15岁左右外表就停止成长，拥有数百年寿命的他们，被称为“离别的一族”，并被视为活着的传说。没有双亲的伊欧夫少女玛奇亚，过着被伙伴包围的平稳日子，却总感觉“孤身一人”。他们的这种日常，一瞬间就崩溃消失。追求伊欧夫的长寿之血，梅萨蒂军乘坐着名为雷纳特的古代兽发动了进攻。在绝望与混乱之中，伊欧夫的第一美女蕾莉亚被梅萨蒂带走，而玛奇亚暗恋的少年克里姆也失踪了。玛奇亚虽然总算逃脱了，却失去了伙伴和归去之地……。</span><br></pre></td></tr></table></figure>
-<h2 id="6-友链单页面配置"><a href="#6-友链单页面配置" class="headerlink" title="6.友链单页面配置"></a>6.友链单页面配置</h2><p><strong>📜友链单页面文件位置：Hexo根目录/source/links/index.md</strong></p>
+<pre><code>layout: bangumi
+title: bangumi
+comments: false
+date: 2020-08-17 21:32:48
+keywords:
+description:
+bangumis:
+  - img: https://lain.bgm.tv/pic/cover/l/0e/1e/218971_2y351.jpg
+    title: 朝花夕誓——于离别之朝束起约定之花
+    status: 已追完
+    progress: 100
+    jp: さよならの朝に約束の花をかざろう
+    time: 2018-02-24 SUN.
+    desc: 住在远离尘嚣的土地，一边将每天的事情编织成名为希比欧的布，一边静静生活的伊欧夫人民。在15岁左右外表就停止成长，拥有数百年寿命的他们，被称为“离别的一族”，并被视为活着的传说。没有双亲的伊欧夫少女玛奇亚，过着被伙伴包围的平稳日子，却总感觉“孤身一人”。他们的这种日常，一瞬间就崩溃消失。追求伊欧夫的长寿之血，梅萨蒂军乘坐着名为雷纳特的古代兽发动了进攻。在绝望与混乱之中，伊欧夫的第一美女蕾莉亚被梅萨蒂带走，而玛奇亚暗恋的少年克里姆也失踪了。玛奇亚虽然总算逃脱了，却失去了伙伴和归去之地……。
+</code></pre><h2 id="6-友链单页面配置"><a href="#6-友链单页面配置" class="headerlink" title="6.友链单页面配置"></a>6.友链单页面配置</h2><p><strong>📜友链单页面文件位置：Hexo根目录/source/links/index.md</strong></p>
 <p>  <strong>📄修改内容：添加友链</strong></p>
 <p>  <strong>📃修改配置：按照links参数格式修改添加友链哦~</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">layout: links</span><br><span class="line">title: links</span><br><span class="line">date: 2018-12-19 23:11:06</span><br><span class="line">keywords: 友人帐</span><br><span class="line">description: </span><br><span class="line">comments: true</span><br><span class="line">photos: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/Links.webp</span><br><span class="line">links:</span><br><span class="line">  - group: 个人项目</span><br><span class="line">    desc: 充分说明这家伙是条咸鱼 &lt; (￣︶￣)&gt;</span><br><span class="line">    items:</span><br><span class="line">    - url: https://shino.cc/fgvf</span><br><span class="line">      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg</span><br><span class="line">      name: Google</span><br><span class="line">      desc: Google 镜像</span><br></pre></td></tr></table></figure>
-
+<pre><code>layout: links
+title: links
+date: 2018-12-19 23:11:06
+keywords: 友人帐
+description: 
+comments: true
+photos: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/Links.webp
+links:
+  - group: 个人项目
+    desc: 充分说明这家伙是条咸鱼 &lt; (￣︶￣)&gt;
+    items:
+    - url: https://shino.cc/fgvf
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      name: Google
+      desc: Google 镜像
+</code></pre>
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
