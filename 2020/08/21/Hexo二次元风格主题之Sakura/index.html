@@ -452,7 +452,7 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h1 id="前言：（未完成）"><a href="#前言：（未完成）" class="headerlink" title="前言：（未完成）"></a>前言：（未完成）</h1><p><strong>如何选择一款适合自己的主题呢？如果你是极简主义者：推荐Next主题，如果你和我一样喜欢二次元主题，强烈推荐Sakura主题。如果担心自己看不懂源代码又特别喜欢这个主题该怎么办呢？为此特意整理记录了此篇教程。切记切记不要无脑复制，有些配置已经配置过，无需重复配置。接下来就使用魔法让博客变得更漂亮吧！</strong></p>
+          <h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p><strong>如何选择一款适合自己的主题呢？如果你是极简主义者：推荐Next主题，如果你和我一样喜欢二次元主题，强烈推荐Sakura主题。如果担心自己看不懂源代码又特别喜欢这个主题该怎么办呢？为此特意整理记录了此篇教程。切记切记不要无脑复制，有些配置已经配置过，无需重复配置。请多多使用F12开发者工具去校对修改，博客页面中涉及到图标、字符等等资源的样式都可以用开发者工具去调试修改。对于问题的排错，也是很方便的利器呢。接下来就使用魔法让博客变得更漂亮吧！</strong></p>
 <h1 id="一-主题下载与安装"><a href="#一-主题下载与安装" class="headerlink" title="一.主题下载与安装"></a>一.主题下载与安装</h1><p><strong>1.首先下载Sakura主题与资源这2个部分，下载地址：</strong></p>
 <p><strong>① Sakura主题下载地址：<a href="https://pan.baidu.com/s/1QIfVtWPAqDSHijc63rBfHQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1QIfVtWPAqDSHijc63rBfHQ</a> 提取码:dr9w</strong></p>
 <p><strong>② Sakura资源下载地址：<a href="https://pan.baidu.com/s/1ZogVBWiuSlqsp8imfNXlRg" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZogVBWiuSlqsp8imfNXlRg</a> 提取码:4155</strong></p>
@@ -468,6 +468,7 @@
 <h1 id="三-涉及到的工具分类"><a href="#三-涉及到的工具分类" class="headerlink" title="三.涉及到的工具分类"></a>三.涉及到的工具分类</h1><p><strong>1.在线创意二维码制作网址：<a href="http://www.qmacode.com" target="_blank" rel="noopener">http://www.qmacode.com</a> ⇨描述：制作美化属于自己的个性二维码</strong></p>
 <p><strong>2.在线Favicon图标制作网址：<a href="https://tool.lu/favicon" target="_blank" rel="noopener">https://tool.lu/favicon</a> ⇨描述：制作网站图标，可在线将图片转换成ico格式</strong></p>
 <p><strong>3.在线文件格式转换网址：<a href="https://cloudconvert.com" target="_blank" rel="noopener">https://cloudconvert.com</a> ⇨描述：转换图片格式，字体格式，制作鼠标指针等等</strong></p>
+<p><strong>4.在线自定义鼠标光标：<a href="https://custom-cursor.com/en/constructor" target="_blank" rel="noopener">https://custom-cursor.com/en/constructor</a> ⇨描述：可下载光标图片转换成cur格式即可</strong></p>
 <h1 id="四-主题资源美化修改"><a href="#四-主题资源美化修改" class="headerlink" title="四.主题资源美化修改"></a>四.主题资源美化修改</h1><h2 id="1-博客目录的-config配置"><a href="#1-博客目录的-config配置" class="headerlink" title="1.博客目录的_config配置"></a>1.博客目录的_config配置</h2><p><strong>📜文件位置：Hexo根目录/_config.yml</strong></p>
 <p>  <strong>📄修改内容：网站标题、简介、署名</strong></p>
 <p>  <strong>📃修改配置：空白项可不填</strong></p>
@@ -486,7 +487,7 @@ timezone:
 prefixName: さくら村の
 siteName: 小叽
 </code></pre><p>  <strong>📄修改内容： 网站Favicon图标、avatar头像、描述、URL、CDN、首页notice通告、懒加载lazyloadImg</strong></p>
-<p>  <strong>📃修改配置：请在SakuraCDN文件夹找到对应资源文件，例如找到/img/custom/avatar.jpg文件将avatar.jpg文件替换成自己的头像，文件名不变。</strong></p>
+<p>  <strong>📃修改配置：找到对应CDN资源文件，例如找到img/custom/avatar.jpg文件将avatar.jpg文件替换成自己的头像，文件名不变。</strong></p>
 <pre><code># favicon and site master avatar
 favicon: /img/custom/Favicon.ico 
 avatar: /img/custom/avatar.jpg
@@ -885,7 +886,15 @@ links:
 <p>  <strong>📄修改内容：关于⇨我？对话内容修改</strong></p>
 <p>  <strong>📃修改配置：主要修改content后面双引号里的内容</strong></p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E5%85%B3%E4%BA%8E-%E6%88%91%EF%BC%9F%E5%AF%B9%E8%AF%9D%E9%85%8D%E7%BD%AE.png" alt></p>
-<h2 id="10-美化特效配置"><a href="#10-美化特效配置" class="headerlink" title="10.美化特效配置"></a>10.美化特效配置</h2><p><strong>📜文件位置：themes/Sakura/layout/layout.ejs</strong></p>
+<h2 id="10-页面预加载配置"><a href="#10-页面预加载配置" class="headerlink" title="10.页面预加载配置"></a>10.页面预加载配置</h2><p><strong>📜文件位置：themes/Sakura/layout/layout.ejs</strong></p>
+<p>  <strong>📄配置功能：使网站页面在1 分钟内即时。官网：<a href="https://instant.page" target="_blank" rel="noopener">https://instant.page</a></strong></p>
+<p>  <strong>📃添加代码：在layout.ejs添加以下代码。</strong></p>
+<pre><code>&lt;!-- 页面预加载 --&gt;&lt;script src=&quot;//instant.page/5.1.0&quot; type=&quot;module&quot; integrity=&quot;sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw&quot;&gt;&lt;/script&gt;
+</code></pre><h2 id="11-添加不蒜子计数"><a href="#11-添加不蒜子计数" class="headerlink" title="11.添加不蒜子计数"></a>11.添加不蒜子计数</h2><p><strong>📜文件位置：themes/Sakura/layout/layout.ejs</strong></p>
+<p>  <strong>📄配置功能：查看访问量pv、用户访问量uv使用</strong></p>
+<p>  <strong>📃添加代码：在layout.ejs末尾添加以下代码。</strong></p>
+<pre><code>&lt;!--不蒜子计数器 --&gt;&lt;script src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;
+</code></pre><h2 id="12-添加美化特效"><a href="#12-添加美化特效" class="headerlink" title="12.添加美化特效"></a>12.添加美化特效</h2><p><strong>📜文件位置：themes/Sakura/layout/layout.ejs</strong></p>
 <p>  <strong>📄添加特效：鼠标点击、移动特效</strong></p>
 <p>  <strong>📃添加代码：在layout.ejs末尾添加以下代码，点击特效可组合。</strong></p>
 <pre><code>&lt;!-- 点击出现爱心 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js&quot;&gt;&lt;/script&gt;
@@ -914,9 +923,81 @@ links:
 <p><strong>📄添加Live2D看板娘：可更换人物模型和皮肤哦~</strong></p>
 <p><strong>📃添加代码：在layout.ejs末尾添加以下代码。</strong></p>
 <pre><code>&lt;!--看板娘--&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/Live2d/autoload.js&quot;&gt;&lt;/script&gt; 
-</code></pre><p><strong>💖看板娘如何配置默认皮肤❓</strong></p>
-<p>① 选好自己喜欢得人物模型和皮肤，打开浏览器开发者工具，进入控制台可以查看对应的参数。操作如下：</p>
-
+</code></pre><p><strong>💖如何设置看板娘默认皮肤❓</strong></p>
+<p><strong>① 打开浏览器开发者工具，在控制台查看Live2D模型参数值</strong></p>
+<p><strong>② 修改Liv2d目录下的waifu-tips.js文件，填入对应模型材质ID即可</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E7%9C%8B%E6%9D%BF%E5%A8%98%E9%BB%98%E8%AE%A4%E7%9A%AE%E8%82%A4.gif" alt></p>
+<h2 id="13-添加一言语句"><a href="#13-添加一言语句" class="headerlink" title="13.添加一言语句"></a>13.添加一言语句</h2><p><strong>📜文件位置：themes/Sakura/layout/headertop.ejs</strong></p>
+<p>  <strong>📄修改内容：将社交配置图标上方描述替换成一言语句</strong></p>
+<p>  <strong>📃修改配置：将描述语句注释掉，添加替换成一言API。具体可参考一言官网：<a href="https://developer.hitokoto.cn" target="_blank" rel="noopener">https://developer.hitokoto.cn</a></strong></p>
+<pre><code>&lt;!-- 找到这个位置 --&gt;&lt;div class=&quot;header-info&quot;&gt;  
+&lt;!-- 把这句注释掉 &lt;p&gt;&lt;%= theme.description %&gt;&lt;/p&gt; --&gt; 
+&lt;!-- 添加一言语句 --&gt;
+&lt;p id=&quot;hitokoto&quot;&gt;:D 获取中...&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&quot;https://v1.hitokoto.cn/?c=a&amp;max_length=24&amp;encode=js&amp;select=%23hitokoto&quot; defer&gt;&lt;/script&gt;
+</code></pre><h2 id="14-添加网站运行时间"><a href="#14-添加网站运行时间" class="headerlink" title="14.添加网站运行时间"></a>14.添加网站运行时间</h2><p><strong>📜文件位置：themes/Sakura/layout/footer.ejs</strong></p>
+<p>  <strong>📄修改内容：添加网站运行时间</strong></p>
+<p>  <strong>📃修改配置：载入天数和载入时分秒这2句代码放在适合的位置即可</strong></p>
+<pre><code>&lt;!-- 在博客底部添加网站运行时间 --&gt;
+&lt;span id=&quot;timeDate&quot;&gt;载入天数...&lt;/span&gt;
+&lt;span id=&quot;times&quot;&gt;载入时分秒...&lt;/span&gt;
+&lt;script&gt;
+  var now = new Date();
+  function createtime() {
+    var grt= new Date(&quot;07/07/2020 16:44:00&quot;);//此处修改你的建站时间或者网站上线时间
+    now.setTime(now.getTime()+250);
+    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+    if(String(hnum).length ==1 ){hnum = &quot;0&quot; + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = &quot;0&quot; + mnum;}
+    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = &quot;0&quot; + snum;}
+    document.getElementById(&quot;timeDate&quot;).innerHTML = &quot;本站已运行 &quot;+dnum+&quot; 天 &quot;;
+    document.getElementById(&quot;times&quot;).innerHTML = hnum + &quot; 小时 &quot; + mnum + &quot; 分 &quot; + snum + &quot; 秒&quot;;
+  }
+  setInterval(&quot;createtime()&quot;,250);
+&lt;/script&gt;
+</code></pre><h2 id="15-添加主题切换工具"><a href="#15-添加主题切换工具" class="headerlink" title="15.添加主题切换工具"></a>15.添加主题切换工具</h2><p><strong>📜文件位置：themes/Sakura/layout/footer.ejs</strong></p>
+<p>  <strong>📄修改内容：添加右下角主题切换工具栏</strong></p>
+<p>  <strong>📃添加代码：不需要的工具按钮可选择注释</strong></p>
+<pre><code>&lt;!--网站底部主题切换工具栏--&gt;
+    &lt;div class=&quot;skin-menu no-select&quot; id=&quot;mainskin&quot; style=&quot;position: fixed&quot;&gt;
+      &lt;div class=&quot;theme-controls row-container&quot;&gt;
+       &lt;ul class=&quot;menu-list&quot;&gt;
+        &lt;li id=&quot;white-bg&quot;&gt; &lt;i class=&quot;iconfont icon-sakura&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li id=&quot;dark-bg&quot;&gt; &lt;i class=&quot;iconfont icon-time&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li id=&quot;KAdots-bg&quot;&gt; &lt;i class=&quot;iconfont icon-dots&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li id=&quot;pixiv-bg&quot;&gt; &lt;i class=&quot;iconfont icon-pixiv&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;!--&lt;li id=&quot;sakura-bg&quot;&gt; &lt;i class=&quot;iconfont icon-sakura&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li id=&quot;gribs-bg&quot;&gt; &lt;i class=&quot;iconfont icon-notice&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li id=&quot;totem-bg&quot;&gt; &lt;i class=&quot;iconfont icon-message&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li id=&quot;bing-bg&quot;&gt; &lt;i class=&quot;iconfont icon-bing&quot;&gt;&lt;/i&gt;&lt;/li&gt;--&gt;
+       &lt;/ul&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;canvas id=&quot;night-mode-cover&quot;&gt;&lt;/canvas&gt;
+     &lt;div class=&quot;changeSkin-gear no-select cc_pointer&quot; style=&quot;visibility: visible; bottom: 0px;&quot;&gt;
+      &lt;div class=&quot;keys cc_pointer&quot; id=&quot;setbtn&quot;&gt; 
+       &lt;span id=&quot;open-skinMenu&quot;&gt; 阅读模式 | SCHEME TOOL  
+         &lt;i class=&quot;iconfont icon-gear inline-block rotating cc_pointer&quot;&gt;&lt;/i&gt; 
+       &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre><h2 id="16-修改鼠标样式"><a href="#16-修改鼠标样式" class="headerlink" title="16.修改鼠标样式"></a>16.修改鼠标样式</h2><p><strong>📜代码文件位置：css/style.css</strong></p>
+<p><strong>📜资源文件位置：img/cursor/</strong></p>
+<p>  <strong>📄修改内容：制作自己喜欢得鼠标指针，替换鼠标资源文件</strong></p>
+<p>  <strong>📃添加代码：资源文件名不变，查找替换CDN地址前缀即可</strong></p>
+<pre><code>  cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/ayuda.cur),auto
+  cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/work.cur),alias
+  cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/texto.cur),auto
+  cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/normal.cur),auto
+  cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/No_Disponible.cur),auto;
+  cursor: url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/ayuda.cur),auto !important;
+  cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/No_Disponible.cur),auto;
+  cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/No_Disponible.cur),auto;
+  cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/No_Disponible.cur),auto
+  cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/texto.cur),auto
+</code></pre>
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -1529,7 +1610,7 @@ $(document).ready(function() {
 
 <!--<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/sakura.js"></script>   樱花飘落特效-->
 <!--<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/xuehua.js"></script>   鼠标雪花特效-->
-<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/canvas-nest.min.js"></script><!--背景动态线条特效-->
+<!--<script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/canvas-nest.min.js"></script>背景动态线条特效-->
 <script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/js/noSomeKey.js"></script>  <!--禁止鼠标复制-->
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>  <!--不蒜子计数-->
 <script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/Live2d/autoload.js"></script>  <!--lived2d看板娘-->
