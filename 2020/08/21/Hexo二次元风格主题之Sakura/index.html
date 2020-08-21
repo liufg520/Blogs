@@ -454,7 +454,7 @@
         <div class="entry-content">
           <h1 id="前言：（未完成）"><a href="#前言：（未完成）" class="headerlink" title="前言：（未完成）"></a>前言：（未完成）</h1><p><strong>如何选择一款适合自己的主题呢？如果你是极简主义者：推荐Next主题，如果你和我一样喜欢二次元主题，强烈推荐Sakura主题。如果担心自己看不懂源代码又特别喜欢这个主题该怎么办呢？为此特意整理记录了此篇教程。切记切记不要无脑复制，有些配置已经配置过，无需重复配置。接下来就使用魔法让博客变得更漂亮吧！</strong></p>
 <h1 id="一-主题下载与安装"><a href="#一-主题下载与安装" class="headerlink" title="一.主题下载与安装"></a>一.主题下载与安装</h1><p><strong>1.首先下载Sakura主题与资源这2个部分，下载地址：</strong></p>
-<p><strong>① Sakura主题下载地址：<a href="https://pan.baidu.com/s/1Dj0tNgoFWVRUIN4ExGnF4A" target="_blank" rel="noopener">https://pan.baidu.com/s/1Dj0tNgoFWVRUIN4ExGnF4A</a> 提取码:1915</strong></p>
+<p><strong>① Sakura主题下载地址：<a href="https://pan.baidu.com/s/1QIfVtWPAqDSHijc63rBfHQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1QIfVtWPAqDSHijc63rBfHQ</a> 提取码:dr9w</strong></p>
 <p><strong>② Sakura资源下载地址：<a href="https://pan.baidu.com/s/1ZogVBWiuSlqsp8imfNXlRg" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZogVBWiuSlqsp8imfNXlRg</a> 提取码:4155</strong></p>
 <p><strong>2.解压安装Sakura主题：使用解压软件解压Hexo-Sakura主题.rar，将Hexo-Sakura文件夹里的文件上传到博客的根目录，重复的文件选择替换。可使用Xftp上传文件到博客根目录。🔖注释：根目录指的就是你安装初始化Hexo的那个目录</strong></p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-Sakura%E4%B8%BB%E9%A2%98%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png" alt></p>
@@ -617,7 +617,6 @@ valine:
 灵感:                              
     img: https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/banner/inspiration.webp  # 封面图片
 </code></pre><h2 id="4-添加优美的标签页"><a href="#4-添加优美的标签页" class="headerlink" title="4.添加优美的标签页"></a>4.添加优美的标签页</h2><p><strong>📋创建文件：layout/tags.ejs、_widget/tag-cloud.ejs，tag-wordcloud.ejs</strong></p>
-<p><strong>📄添加代码：</strong></p>
 <p><strong>① 在tags.ejs添加以下代码</strong></p>
 <pre><code>&lt;%- partial(&#39;_partial/header&#39;) %&gt;
 &lt;main class=&quot;content&quot;&gt;
@@ -894,7 +893,7 @@ links:
 &lt;!-- 点击出现社会主义文字 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/shehuizhuyi.js&quot;&gt;&lt;/script&gt;
 &lt;!-- 点击出现彩色气球爆炸效果 --&gt;&lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;&gt;&lt;/script&gt; 
 &lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/clickBom.js&quot;&gt;&lt;/script&gt;
-</code></pre><p><strong>🎁彩色气球爆炸效果展示，其它特效自行测试：</strong></p>
+</code></pre><p><strong>🎁彩色气球爆炸特效展示，其它特效自行测试：</strong></p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E9%BC%A0%E6%A0%87%E7%89%B9%E6%95%88%E5%B1%95%E7%A4%BA.gif" alt></p>
 <p>  <strong>📄添加特效：背景特效⇨①飘动彩带 ②动态线条（任意选一个即可）</strong></p>
 <p>  <strong>📃添加代码：在layout.ejs末尾添加以下代码。</strong></p>
@@ -906,12 +905,17 @@ links:
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E5%8D%9A%E5%AE%A2%E8%83%8C%E6%99%AF%E5%8A%A8%E6%80%81%E7%BA%BF%E6%9D%A1%E7%89%B9%E6%95%88.gif" alt></p>
 <p><strong>📄添加特效：漂浮物特效⇨①樱花飘落 ②雪花飘落（任意选一个即可）</strong></p>
 <p><strong>📃添加代码：在layout.ejs末尾添加以下代码。</strong></p>
-<pre><code>&lt;!-- 樱花飘落 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js&quot;&gt;&lt;/script&gt;
-&lt;!-- 雪花飘落特效1 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/snow.js&quot;&gt;&lt;/script&gt;
-&lt;!-- 雪花飘落特效2 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehuapiaoluo.js&quot;&gt;&lt;/script&gt;
+<pre><code>&lt;!-- 樱花飘落特效 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js&quot;&gt;&lt;/script&gt;
+&lt;!-- 雪花飘落特效 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehuapiaoluo.js&quot;&gt;&lt;/script&gt;
 </code></pre><p><strong>🎁樱花飘落特效展示：</strong></p>
 <p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%BC%82%E6%B5%AE%E7%89%A9%E7%89%B9%E6%95%88.gif" alt></p>
 <p><strong>🎁雪花飘落特效展示：</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%BC%82%E6%B5%AE%E7%89%A9%E7%89%B9%E6%95%88%E9%9B%AA%E8%8A%B1%E9%A3%98%E8%90%BD.gif" alt></p>
+<p><strong>📄添加Live2D看板娘：可更换人物模型和皮肤哦~</strong></p>
+<p><strong>📃添加代码：在layout.ejs末尾添加以下代码。</strong></p>
+<pre><code>&lt;!--看板娘--&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/Live2d/autoload.js&quot;&gt;&lt;/script&gt; 
+</code></pre><p><strong>💖看板娘如何配置默认皮肤❓</strong></p>
+<p>① 选好自己喜欢得人物模型和皮肤，打开浏览器开发者工具，进入控制台可以查看对应的参数。操作如下：</p>
 
         </div>
         <!-- .entry-content -->
@@ -1530,4 +1534,3 @@ $(document).ready(function() {
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>  <!--不蒜子计数-->
 <script src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/Live2d/autoload.js"></script>  <!--lived2d看板娘-->
 
-<!-- 雪花飘落特效2 --><script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehuapiaoluo.js"></script>
