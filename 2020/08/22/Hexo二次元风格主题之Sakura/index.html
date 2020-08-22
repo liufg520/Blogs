@@ -438,7 +438,7 @@
         </span>
         <span class="bull">
         ·</span>
-        2020-8-21<span class="bull">
+        2020-8-22<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -453,17 +453,17 @@
         
         <div class="entry-content">
           <h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p><strong>如何选择一款适合自己的主题呢？如果你是极简主义者：推荐Next主题，如果你和我一样喜欢二次元主题，强烈推荐Sakura主题。如果担心自己看不懂源代码又特别喜欢这个主题该怎么办呢？为此特意整理记录了此篇教程。切记切记不要无脑复制，有些配置已经配置过，无需重复配置。请多多使用F12开发者工具去校对修改，博客页面中涉及到图标、字符等等资源的样式都可以用开发者工具去调试修改。对于问题的排错，也是很方便的利器呢。接下来就使用魔法让博客变得更漂亮吧！</strong></p>
-<h1 id="一-主题下载与安装"><a href="#一-主题下载与安装" class="headerlink" title="一.主题下载与安装"></a>一.主题下载与安装</h1><p><strong>1.首先下载Sakura主题与资源这2个部分，下载地址：</strong></p>
+<h1 id="一-主题资源下载安装"><a href="#一-主题资源下载安装" class="headerlink" title="一.主题资源下载安装"></a>一.主题资源下载安装</h1><p><strong>1.首先下载Sakura主题与资源这2个部分，下载地址：</strong></p>
 <p><strong>① Sakura主题下载地址：<a href="https://pan.baidu.com/s/1QIfVtWPAqDSHijc63rBfHQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1QIfVtWPAqDSHijc63rBfHQ</a> 提取码:dr9w</strong></p>
 <p><strong>② Sakura资源下载地址：<a href="https://pan.baidu.com/s/1ZogVBWiuSlqsp8imfNXlRg" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZogVBWiuSlqsp8imfNXlRg</a> 提取码:4155</strong></p>
 <p><strong>2.解压安装Sakura主题：使用解压软件解压Hexo-Sakura主题.rar，将Hexo-Sakura文件夹里的文件上传到博客的根目录，重复的文件选择替换。可使用Xftp上传文件到博客根目录。🔖注释：根目录指的就是你安装初始化Hexo的那个目录</strong></p>
-<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-Sakura%E4%B8%BB%E9%A2%98%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png" alt></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-Sakura%E4%B8%BB%E9%A2%98%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.gif" alt></p>
 <p><strong>3.解压修改Sakura资源：使用解压软件解压SakuraCDN.rar，SakuraCDN文件夹里主要包含404页面、图片，字体，脚本等资源文件。根据《主题资源美化修改》将需要替换资源文件替换成自己的文件。🔖注释：建议使用Vscode或者webstorm编辑器修改</strong></p>
-<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-SakuraCDN%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png" alt></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-SakuraCDN%E8%B5%84%E6%BA%90%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.gif" alt></p>
 <p><strong>4.搭建Sakura主题资源CDN：登陆自己的Github新建仓库作为Sakura主题资源的CDN存储，根据《主题资源美化修改》将整理修改好的资源文件上传到GitHub仓库即可。🔖注释：为了方便省事儿建议以下凡是涉及到调用CDN资源的请使用原有的文件名并保持文件路径不变，这样你只需要将原有的CDN地址前缀替换成你的CDN地址前缀就可以了。CDN地址前缀一般为<a href="https://cdn.jsdelivr.net/gh/你的GitHub账号/你的CDN仓库名/" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/你的GitHub账号/你的CDN仓库名/</a>⇨具体如何搭建CDN请参考《使用Github+jsdelivr搭建属于自己的CDN》</strong></p>
 <p><strong>5.安装依赖：在命令行输入<code>npm i</code></strong></p>
-<h1 id="二-目录结构与分析"><a href="#二-目录结构与分析" class="headerlink" title="二.目录结构与分析"></a>二.目录结构与分析</h1><p><strong>📌Sakura主题目录分析：</strong></p>
-<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-Sakura%E4%B8%BB%E9%A2%98%E7%9B%AE%E5%BD%95%E5%88%86%E6%9E%90%E5%9B%BE.png" alt></p>
+<h1 id="二-文件目录结构分析"><a href="#二-文件目录结构分析" class="headerlink" title="二.文件目录结构分析"></a>二.文件目录结构分析</h1><p><strong>📌Sakura主题文件目录分析：</strong></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/Hexo-Sakura%E4%B8%BB%E9%A2%98%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E5%88%86%E6%9E%90%E5%9B%BE.gif" alt></p>
 <p>​                                                                                          </p>
 <h1 id="三-涉及到的工具分类"><a href="#三-涉及到的工具分类" class="headerlink" title="三.涉及到的工具分类"></a>三.涉及到的工具分类</h1><p><strong>1.在线创意二维码制作网址：<a href="http://www.qmacode.com" target="_blank" rel="noopener">http://www.qmacode.com</a> ⇨描述：制作美化属于自己的个性二维码</strong></p>
 <p><strong>2.在线Favicon图标制作网址：<a href="https://tool.lu/favicon" target="_blank" rel="noopener">https://tool.lu/favicon</a> ⇨描述：制作网站图标，可在线将图片转换成ico格式</strong></p>
@@ -885,7 +885,7 @@ links:
 </code></pre><h2 id="9-关于单页面配置"><a href="#9-关于单页面配置" class="headerlink" title="9.关于单页面配置"></a>9.关于单页面配置</h2><p><strong>📜文件位置：js/botui.js</strong></p>
 <p>  <strong>📄修改内容：关于⇨我？对话内容修改</strong></p>
 <p>  <strong>📃修改配置：主要修改content后面双引号里的内容</strong></p>
-<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E5%85%B3%E4%BA%8E-%E6%88%91%EF%BC%9F%E5%AF%B9%E8%AF%9D%E9%85%8D%E7%BD%AE.png" alt></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E5%85%B3%E4%BA%8E%E2%80%94%E6%88%91%EF%BC%9F%E5%AF%B9%E8%AF%9D%E5%86%85%E5%AE%B9%E4%BF%AE%E6%94%B9.gif" alt></p>
 <h2 id="10-页面预加载配置"><a href="#10-页面预加载配置" class="headerlink" title="10.页面预加载配置"></a>10.页面预加载配置</h2><p><strong>📜文件位置：themes/Sakura/layout/layout.ejs</strong></p>
 <p>  <strong>📄配置功能：使网站页面在1 分钟内即时。官网：<a href="https://instant.page" target="_blank" rel="noopener">https://instant.page</a></strong></p>
 <p>  <strong>📃添加代码：在layout.ejs添加以下代码。</strong></p>
@@ -903,23 +903,23 @@ links:
 &lt;!-- 点击出现彩色气球爆炸效果 --&gt;&lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;&gt;&lt;/script&gt; 
 &lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/clickBom.js&quot;&gt;&lt;/script&gt;
 </code></pre><p><strong>🎁彩色气球爆炸特效展示，其它特效自行测试：</strong></p>
-<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E9%BC%A0%E6%A0%87%E7%89%B9%E6%95%88%E5%B1%95%E7%A4%BA.gif" alt></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%B0%94%E7%90%83%E7%88%86%E7%82%B8%E7%89%B9%E6%95%88%E5%B1%95%E7%A4%BA.gif" alt></p>
 <p>  <strong>📄添加特效：背景特效⇨①飘动彩带 ②动态线条（任意选一个即可）</strong></p>
 <p>  <strong>📃添加代码：在layout.ejs末尾添加以下代码。</strong></p>
 <pre><code>&lt;!-- 飘动彩带 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/piao.js&quot;&gt;&lt;/script&gt;
 &lt;!-- 动态线条 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js&quot;&gt;&lt;/script&gt;
 </code></pre><p><strong>🎁彩色飘带背景特效展示：</strong></p>
-<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E8%83%8C%E6%99%AF%E5%BD%A9%E8%89%B2%E9%A3%98%E5%B8%A6%E7%89%B9%E6%95%88.gif" alt></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E5%BD%A9%E8%89%B2%E9%A3%98%E5%B8%A6%E8%83%8C%E6%99%AF%E7%89%B9%E6%95%88.gif" alt></p>
 <p><strong>🎁动态线条背景特效展示：</strong></p>
-<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E5%8D%9A%E5%AE%A2%E8%83%8C%E6%99%AF%E5%8A%A8%E6%80%81%E7%BA%BF%E6%9D%A1%E7%89%B9%E6%95%88.gif" alt></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E5%8A%A8%E6%80%81%E7%BA%BF%E6%9D%A1%E8%83%8C%E6%99%AF%E7%89%B9%E6%95%88.gif" alt></p>
 <p><strong>📄添加特效：漂浮物特效⇨①樱花飘落 ②雪花飘落（任意选一个即可）</strong></p>
 <p><strong>📃添加代码：在layout.ejs末尾添加以下代码。</strong></p>
 <pre><code>&lt;!-- 樱花飘落特效 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js&quot;&gt;&lt;/script&gt;
 &lt;!-- 雪花飘落特效 --&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehuapiaoluo.js&quot;&gt;&lt;/script&gt;
 </code></pre><p><strong>🎁樱花飘落特效展示：</strong></p>
-<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%BC%82%E6%B5%AE%E7%89%A9%E7%89%B9%E6%95%88.gif" alt></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%BC%82%E6%B5%AE%E7%89%A9%E7%89%B9%E6%95%88%E5%B1%95%E7%A4%BA.gif" alt></p>
 <p><strong>🎁雪花飘落特效展示：</strong></p>
-<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E6%BC%82%E6%B5%AE%E7%89%A9%E7%89%B9%E6%95%88%E9%9B%AA%E8%8A%B1%E9%A3%98%E8%90%BD.gif" alt></p>
+<p><img data-action="zoom" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E7%BD%91%E7%BB%9C/%E9%9B%AA%E8%8A%B1%E9%A3%98%E8%90%BD%E6%BC%82%E6%B5%AE%E7%89%A9%E7%89%B9%E6%95%88%E5%B1%95%E7%A4%BA.gif" alt></p>
 <p><strong>📄添加Live2D看板娘：可更换人物模型和皮肤哦~</strong></p>
 <p><strong>📃添加代码：在layout.ejs末尾添加以下代码。</strong></p>
 <pre><code>&lt;!--看板娘--&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/Live2d/autoload.js&quot;&gt;&lt;/script&gt; 
@@ -1025,36 +1025,19 @@ links:
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
+        
           
-            <div class="post-nepre half previous">
+            <div class="post-nepre full next">
           
-            <a href="/2020/08/21/安卓手机部署个人博客/" rel="prev">
+            <a href="/2020/08/22/安卓手机部署个人博客/" rel="next">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810101650.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/liufg520/Blog-Pictures/%E8%83%8C%E6%99%AF%E5%9B%BE/20200810101650.jpg">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                安卓手机部署个人博客</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-          
-            <div class="post-nepre half next">
-          
-            <a href="/2020/08/20/ 日语小记/" rel="next">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cover/bg2.webp">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                日语小记</h3>
+                安卓手机部署个人博客</h3>
                 <hr>
               </div>
             </a>
