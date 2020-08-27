@@ -438,7 +438,7 @@
         </span>
         <span class="bull">
         ·</span>
-        2020-8-26<span class="bull">
+        2020-8-27<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -1001,11 +1001,14 @@ links:
   cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/No_Disponible.cur),auto;
   cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/No_Disponible.cur),auto
   cursor:url(https://cdn.jsdelivr.net/gh/liufg520/Hexo-Sakura-CDN/img/cursor/texto.cur),auto
-</code></pre><h2 id="18-添加动态404页面"><a href="#18-添加动态404页面" class="headerlink" title="18.添加动态404页面"></a>18.添加动态404页面</h2><p><strong>📜404.html文件位置：Hexo根目录/source/404.html</strong></p>
-<p><strong>📜404页面CDN资源文件位置：404文件夹</strong></p>
-<p>  <strong>📄404.html文件修改：将CDN前缀地址替换成你自己的。</strong></p>
-<p>  <strong>📂404目录文件替换：将img目录下的图片替换成你自己的，文件名不变。</strong></p>
-<p>  <strong>📃修改404.html代码：可修改</strong></p>
+</code></pre><h2 id="18-添加404跳转页面"><a href="#18-添加404跳转页面" class="headerlink" title="18.添加404跳转页面"></a>18.添加404跳转页面</h2><p><strong>1.寻找一款自己喜欢的404模板，推荐一个模板网站：<a href="https://404.life" target="_blank" rel="noopener">https://404.life</a></strong></p>
+<p><strong>2.新建404单页面，在Hexo根目录/source/404/index.md关闭layout</strong></p>
+<pre><code>---
+layout: false #注释：如果不禁用layout，404页面会引入其它页面布局，导致404页面布局混乱。
+---
+</code></pre><p><strong>3.将下载好的404模板上传到Hexo博客根目录的source目录下或者将404模板上传到CDN仓库。</strong></p>
+<p><strong>4.模板的404.html必须存放在source目录下，注意404.html调用的资源路径，根据自己的实际路径修改。</strong></p>
+<p><img data-action="zoom" src="https://i.loli.net/2020/08/27/dOwkaq4Q8EsHlgK.gif" alt></p>
 
         </div>
         <!-- .entry-content -->
